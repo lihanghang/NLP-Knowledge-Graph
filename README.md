@@ -1,4 +1,10 @@
-# Field-Knowledge-Graph
-领域知识图谱。包括知识获取、知识库构建、知识库应用三大技术研究与应用。
-![知识图谱综述](./知识图谱.svg)  
+Deep learning for Knowledge-Graph
+---
+# 认知智能系列。包括知识获取、知识库构建、知识库应用三大技术研究与应用。
+1. [知识图谱综述](http://naotu.baidu.com/file/cffcb478adf07522b64eddb8914c0884?token=01df87c5af357993)   
+2. [知识图谱的挑战](http://naotu.baidu.com/file/9e3257e54c15c6607fa9d5d40111e1bc?token=d8acd3739ba44f6b)  
+3. [深度学习与知识图谱](http://naotu.baidu.com/file/c1e3580697d86dcb29797c068b7a1679?token=76a20c7f80d0137b)  
+4. [CN-DBpedia: A Never-Ending Chinese Knowledge Extraction System](http://naotu.baidu.com/file/a5cf40aae93fe42373e8700dc8d999c8?token=bd54a903100040e8)  
+
+---
 WeChat：LHH754086474
