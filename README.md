@@ -7,5 +7,5 @@ Deep learning for Knowledge-Graph
 4. [CN-DBpedia: A Never-Ending Chinese Knowledge Extraction System](http://naotu.baidu.com/file/a5cf40aae93fe42373e8700dc8d999c8?token=bd54a903100040e8)  
 5. [赵汀阳：人工智能的自我意识何以可能？1-3](http://m.aisixiang.com/data/114807.html)
 ---
-WeChat：LHH754086474
+WeChat：LHH754086474  
 update at 20190223 by Li HangHang
