@@ -14,4 +14,4 @@ Deep learning for Knowledge-Graph
 1. [CSDN|公开课笔记：一文详解启发式对话中的知识管理_aispeech](http://www.aispeech.com/index.php?m=content&c=index&a=show&catid=22&id=339)
 ---
 WeChat：LHH754086474  
-update at 20190223 by Li HangHang
+update at 20190304
