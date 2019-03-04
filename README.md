@@ -10,7 +10,7 @@ Deep learning for Knowledge-Graph
 5. [KBQA](http://naotu.baidu.com/file/5c17a01de73d972501d8b3cd187908cb?token=b9a47b442d527efe)  
 6. [赵汀阳：人工智能的自我意识何以可能？1-3](http://m.aisixiang.com/data/114807.html)
 
-#### dialogue system
+#### dialogue system  
 1. [CSDN|公开课笔记：一文详解启发式对话中的知识管理_aispeech](http://www.aispeech.com/index.php?m=content&c=index&a=show&catid=22&id=339)
 ---
 WeChat：LHH754086474  
