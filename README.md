@@ -9,9 +9,15 @@ Deep learning for Knowledge-Graph
 4. [CN-DBpedia: A Never-Ending Chinese Knowledge Extraction System](http://naotu.baidu.com/file/a5cf40aae93fe42373e8700dc8d999c8?token=bd54a903100040e8)  
 5. [KBQA](http://naotu.baidu.com/file/5c17a01de73d972501d8b3cd187908cb?token=b9a47b442d527efe)  
 6. [赵汀阳：人工智能的自我意识何以可能？1-3](http://m.aisixiang.com/data/114807.html)
+#### 事理图谱  
+1. [事理图谱综述](http://naotu.baidu.com/file/528dabd616383f39971be09020fc9cab?token=1d18d940bf63ea42)
+
+
+
+
 
 #### dialogue system  
 1. [CSDN|公开课笔记：一文详解启发式对话中的知识管理_aispeech](http://www.aispeech.com/index.php?m=content&c=index&a=show&catid=22&id=339)
 ---
 WeChat：LHH754086474  
-update at 20190304
+update at 20190305
