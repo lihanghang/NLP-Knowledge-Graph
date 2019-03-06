@@ -18,6 +18,22 @@ Deep learning for Knowledge-Graph
 
 #### dialogue system  
 1. [CSDN|公开课笔记：一文详解启发式对话中的知识管理_aispeech](http://www.aispeech.com/index.php?m=content&c=index&a=show&catid=22&id=339)
+
+
+
+#### 中英文文本预处理工具列表
+| 编号        | 名称    |  主要功能  |
+| --------   | -----:  | :----:     |
+| 1          |         |            |
+|            |         |            |
+|            |         |            |
+#### 中英文知识图谱数据集列表
+| 编号        | 名称    |  应用任务  |
+| --------   | -----:  | :----:     |
+| 1          |         |            |
+|            |         |            |
+|            |         |            |
+
 ---
 WeChat：LHH754086474  
-update at 20190305
+update at 20190306
