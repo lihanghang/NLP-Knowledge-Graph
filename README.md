@@ -43,9 +43,9 @@ Deep learning for Knowledge-Graph
 #### 中英文知识图谱数据集列表
 | 编号        | 名称    |  应用任务  |
 | --------   | -----:  | :----:     |
-| 1          | OpenKG      |  开放知识图谱          |
-| 2          | CN-Probase  |大规模中文概念图谱            |
-| 3          | SentiBridge | 中文实体情感知识库，刻画人们如何描述某个实体，包含新闻、旅游、餐饮，共计30万对|
+| 1          | [OpenKG](http://www.openkg.cn/ )      |  开放知识图谱          |
+| 2          | [CN-Probase](http://openkg.cn/dataset/cndbpedia)  |大规模中文概念图谱            |
+| 3          | [SentiBridge](https://github.com/rainarch/SentiBridge/ ) | 中文实体情感知识库，刻画人们如何描述某个实体，包含新闻、旅游、餐饮，共计30万对|
 
 ---
 WeChat：LHH754086474  
