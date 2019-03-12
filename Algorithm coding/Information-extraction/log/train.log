@@ -1,0 +1,576 @@
+2019-03-12 21:32:25,452 - log/train.log - INFO - model_type     :	idcnn
+2019-03-12 21:32:25,452 - log/train.log - INFO - num_chars      :	3544
+2019-03-12 21:32:25,452 - log/train.log - INFO - char_dim       :	100
+2019-03-12 21:32:25,452 - log/train.log - INFO - num_tags       :	13
+2019-03-12 21:32:25,452 - log/train.log - INFO - seg_dim        :	20
+2019-03-12 21:32:25,452 - log/train.log - INFO - lstm_dim       :	100
+2019-03-12 21:32:25,452 - log/train.log - INFO - batch_size     :	20
+2019-03-12 21:32:25,452 - log/train.log - INFO - emb_file       :	data/vec.txt
+2019-03-12 21:32:25,452 - log/train.log - INFO - clip           :	5.0
+2019-03-12 21:32:25,452 - log/train.log - INFO - dropout_keep   :	0.5
+2019-03-12 21:32:25,452 - log/train.log - INFO - optimizer      :	Adam
+2019-03-12 21:32:25,452 - log/train.log - INFO - lr             :	0.001
+2019-03-12 21:32:25,452 - log/train.log - INFO - tag_schema     :	iobes
+2019-03-12 21:32:25,452 - log/train.log - INFO - pre_emb        :	True
+2019-03-12 21:32:25,452 - log/train.log - INFO - zeros          :	False
+2019-03-12 21:32:25,452 - log/train.log - INFO - lower          :	True
+2019-03-12 21:32:26,479 - log/train.log - INFO - Created model with fresh parameters.
+2019-03-12 21:32:26,824 - log/train.log - INFO - Load pre-trained embedding.
+2019-03-12 21:32:26,825 - log/train.log - INFO - start training
+2019-03-12 21:32:34,959 - log/train.log - INFO - iteration:1 step:100/305, NER loss:27.865067
+2019-03-12 21:32:41,511 - log/train.log - INFO - iteration:1 step:200/305, NER loss:16.028868
+2019-03-12 21:32:48,084 - log/train.log - INFO - iteration:1 step:300/305, NER loss:11.698180
+2019-03-12 21:32:48,412 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:32:48,710 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 50 phrases; correct: 23.
+
+2019-03-12 21:32:48,710 - log/train.log - INFO - accuracy:  95.43%; precision:  46.00%; recall:  48.94%; FB1:  47.42
+
+2019-03-12 21:32:48,710 - log/train.log - INFO -               LOC: precision:  46.43%; recall:  52.00%; FB1:  49.06  28
+
+2019-03-12 21:32:48,710 - log/train.log - INFO -               ORG: precision:  75.00%; recall:  66.67%; FB1:  70.59  8
+
+2019-03-12 21:32:48,710 - log/train.log - INFO -               PER: precision:  28.57%; recall:  30.77%; FB1:  29.63  14
+
+2019-03-12 21:32:48,760 - log/train.log - INFO - new best dev f1 score:47.420
+2019-03-12 21:32:48,901 - log/train.log - INFO - model saved
+2019-03-12 21:32:48,901 - log/train.log - INFO - evaluate:test
+2019-03-12 21:32:48,974 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 64 phrases; correct: 32.
+
+2019-03-12 21:32:48,974 - log/train.log - INFO - accuracy:  94.11%; precision:  50.00%; recall:  46.38%; FB1:  48.12
+
+2019-03-12 21:32:48,974 - log/train.log - INFO -               LOC: precision:  50.00%; recall:  45.16%; FB1:  47.46  28
+
+2019-03-12 21:32:48,974 - log/train.log - INFO -               ORG: precision:  44.44%; recall:  44.44%; FB1:  44.44  18
+
+2019-03-12 21:32:48,974 - log/train.log - INFO -               PER: precision:  55.56%; recall:  50.00%; FB1:  52.63  18
+
+2019-03-12 21:32:49,029 - log/train.log - INFO - new best test f1 score:48.120
+2019-03-12 21:32:55,597 - log/train.log - INFO - iteration:2 step:95/305, NER loss: 9.441546
+2019-03-12 21:33:01,668 - log/train.log - INFO - iteration:2 step:195/305, NER loss: 7.682212
+2019-03-12 21:33:08,670 - log/train.log - INFO - iteration:2 step:295/305, NER loss: 8.348871
+2019-03-12 21:33:09,375 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:33:09,442 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 50 phrases; correct: 34.
+
+2019-03-12 21:33:09,442 - log/train.log - INFO - accuracy:  96.97%; precision:  68.00%; recall:  72.34%; FB1:  70.10
+
+2019-03-12 21:33:09,442 - log/train.log - INFO -               LOC: precision:  70.37%; recall:  76.00%; FB1:  73.08  27
+
+2019-03-12 21:33:09,442 - log/train.log - INFO -               ORG: precision:  85.71%; recall:  66.67%; FB1:  75.00  7
+
+2019-03-12 21:33:09,442 - log/train.log - INFO -               PER: precision:  56.25%; recall:  69.23%; FB1:  62.07  16
+
+2019-03-12 21:33:09,483 - log/train.log - INFO - new best dev f1 score:70.100
+2019-03-12 21:33:09,585 - log/train.log - INFO - model saved
+2019-03-12 21:33:09,585 - log/train.log - INFO - evaluate:test
+2019-03-12 21:33:09,673 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 57 phrases; correct: 40.
+
+2019-03-12 21:33:09,673 - log/train.log - INFO - accuracy:  96.01%; precision:  70.18%; recall:  57.97%; FB1:  63.49
+
+2019-03-12 21:33:09,673 - log/train.log - INFO -               LOC: precision:  69.57%; recall:  51.61%; FB1:  59.26  23
+
+2019-03-12 21:33:09,673 - log/train.log - INFO -               ORG: precision:  68.75%; recall:  61.11%; FB1:  64.71  16
+
+2019-03-12 21:33:09,673 - log/train.log - INFO -               PER: precision:  72.22%; recall:  65.00%; FB1:  68.42  18
+
+2019-03-12 21:33:09,717 - log/train.log - INFO - new best test f1 score:63.490
+2019-03-12 21:33:15,916 - log/train.log - INFO - iteration:3 step:90/305, NER loss: 6.701960
+2019-03-12 21:33:22,518 - log/train.log - INFO - iteration:3 step:190/305, NER loss: 6.022181
+2019-03-12 21:33:28,990 - log/train.log - INFO - iteration:3 step:290/305, NER loss: 5.906919
+2019-03-12 21:33:29,947 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:33:30,011 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 50 phrases; correct: 34.
+
+2019-03-12 21:33:30,011 - log/train.log - INFO - accuracy:  97.04%; precision:  68.00%; recall:  72.34%; FB1:  70.10
+
+2019-03-12 21:33:30,011 - log/train.log - INFO -               LOC: precision:  63.64%; recall:  84.00%; FB1:  72.41  33
+
+2019-03-12 21:33:30,011 - log/train.log - INFO -               ORG: precision:  75.00%; recall:  66.67%; FB1:  70.59  8
+
+2019-03-12 21:33:30,011 - log/train.log - INFO -               PER: precision:  77.78%; recall:  53.85%; FB1:  63.64  9
+
+2019-03-12 21:33:30,052 - log/train.log - INFO - new best dev f1 score:70.100
+2019-03-12 21:33:30,157 - log/train.log - INFO - model saved
+2019-03-12 21:33:30,158 - log/train.log - INFO - evaluate:test
+2019-03-12 21:33:30,224 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 60 phrases; correct: 35.
+
+2019-03-12 21:33:30,225 - log/train.log - INFO - accuracy:  94.25%; precision:  58.33%; recall:  50.72%; FB1:  54.26
+
+2019-03-12 21:33:30,225 - log/train.log - INFO -               LOC: precision:  51.52%; recall:  54.84%; FB1:  53.12  33
+
+2019-03-12 21:33:30,225 - log/train.log - INFO -               ORG: precision:  66.67%; recall:  55.56%; FB1:  60.61  15
+
+2019-03-12 21:33:30,225 - log/train.log - INFO -               PER: precision:  66.67%; recall:  40.00%; FB1:  50.00  12
+
+2019-03-12 21:33:35,720 - log/train.log - INFO - iteration:4 step:85/305, NER loss: 4.860951
+2019-03-12 21:33:43,126 - log/train.log - INFO - iteration:4 step:185/305, NER loss: 5.303653
+2019-03-12 21:33:49,124 - log/train.log - INFO - iteration:4 step:285/305, NER loss: 4.287794
+2019-03-12 21:33:50,515 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:33:50,578 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 50 phrases; correct: 34.
+
+2019-03-12 21:33:50,578 - log/train.log - INFO - accuracy:  96.59%; precision:  68.00%; recall:  72.34%; FB1:  70.10
+
+2019-03-12 21:33:50,578 - log/train.log - INFO -               LOC: precision:  66.67%; recall:  72.00%; FB1:  69.23  27
+
+2019-03-12 21:33:50,578 - log/train.log - INFO -               ORG: precision:  70.00%; recall:  77.78%; FB1:  73.68  10
+
+2019-03-12 21:33:50,578 - log/train.log - INFO -               PER: precision:  69.23%; recall:  69.23%; FB1:  69.23  13
+
+2019-03-12 21:33:50,620 - log/train.log - INFO - new best dev f1 score:70.100
+2019-03-12 21:33:50,724 - log/train.log - INFO - model saved
+2019-03-12 21:33:50,725 - log/train.log - INFO - evaluate:test
+2019-03-12 21:33:50,804 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 59 phrases; correct: 45.
+
+2019-03-12 21:33:50,805 - log/train.log - INFO - accuracy:  95.60%; precision:  76.27%; recall:  65.22%; FB1:  70.31
+
+2019-03-12 21:33:50,805 - log/train.log - INFO -               LOC: precision:  65.22%; recall:  48.39%; FB1:  55.56  23
+
+2019-03-12 21:33:50,805 - log/train.log - INFO -               ORG: precision:  82.35%; recall:  77.78%; FB1:  80.00  17
+
+2019-03-12 21:33:50,805 - log/train.log - INFO -               PER: precision:  84.21%; recall:  80.00%; FB1:  82.05  19
+
+2019-03-12 21:33:50,849 - log/train.log - INFO - new best test f1 score:70.310
+2019-03-12 21:33:56,038 - log/train.log - INFO - iteration:5 step:80/305, NER loss: 4.322119
+2019-03-12 21:34:02,883 - log/train.log - INFO - iteration:5 step:180/305, NER loss: 4.206718
+2019-03-12 21:34:09,601 - log/train.log - INFO - iteration:5 step:280/305, NER loss: 4.046012
+2019-03-12 21:34:11,202 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:34:11,266 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 55 phrases; correct: 38.
+
+2019-03-12 21:34:11,268 - log/train.log - INFO - accuracy:  97.04%; precision:  69.09%; recall:  80.85%; FB1:  74.51
+
+2019-03-12 21:34:11,268 - log/train.log - INFO -               LOC: precision:  67.74%; recall:  84.00%; FB1:  75.00  31
+
+2019-03-12 21:34:11,268 - log/train.log - INFO -               ORG: precision:  77.78%; recall:  77.78%; FB1:  77.78  9
+
+2019-03-12 21:34:11,268 - log/train.log - INFO -               PER: precision:  66.67%; recall:  76.92%; FB1:  71.43  15
+
+2019-03-12 21:34:11,317 - log/train.log - INFO - new best dev f1 score:74.510
+2019-03-12 21:34:11,422 - log/train.log - INFO - model saved
+2019-03-12 21:34:11,423 - log/train.log - INFO - evaluate:test
+2019-03-12 21:34:11,503 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 61 phrases; correct: 43.
+
+2019-03-12 21:34:11,503 - log/train.log - INFO - accuracy:  94.86%; precision:  70.49%; recall:  62.32%; FB1:  66.15
+
+2019-03-12 21:34:11,504 - log/train.log - INFO -               LOC: precision:  56.67%; recall:  54.84%; FB1:  55.74  30
+
+2019-03-12 21:34:11,504 - log/train.log - INFO -               ORG: precision:  75.00%; recall:  66.67%; FB1:  70.59  16
+
+2019-03-12 21:34:11,504 - log/train.log - INFO -               PER: precision:  93.33%; recall:  70.00%; FB1:  80.00  15
+
+2019-03-12 21:34:18,421 - log/train.log - INFO - iteration:6 step:75/305, NER loss: 3.190995
+2019-03-12 21:34:28,403 - log/train.log - INFO - iteration:6 step:175/305, NER loss: 3.771344
+2019-03-12 21:34:36,534 - log/train.log - INFO - iteration:6 step:275/305, NER loss: 3.195068
+2019-03-12 21:34:38,919 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:34:38,984 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 54 phrases; correct: 39.
+
+2019-03-12 21:34:38,984 - log/train.log - INFO - accuracy:  97.49%; precision:  72.22%; recall:  82.98%; FB1:  77.23
+
+2019-03-12 21:34:38,984 - log/train.log - INFO -               LOC: precision:  67.65%; recall:  92.00%; FB1:  77.97  34
+
+2019-03-12 21:34:38,984 - log/train.log - INFO -               ORG: precision:  87.50%; recall:  77.78%; FB1:  82.35  8
+
+2019-03-12 21:34:38,984 - log/train.log - INFO -               PER: precision:  75.00%; recall:  69.23%; FB1:  72.00  12
+
+2019-03-12 21:34:39,030 - log/train.log - INFO - new best dev f1 score:77.230
+2019-03-12 21:34:39,138 - log/train.log - INFO - model saved
+2019-03-12 21:34:39,139 - log/train.log - INFO - evaluate:test
+2019-03-12 21:34:39,220 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 62 phrases; correct: 47.
+
+2019-03-12 21:34:39,220 - log/train.log - INFO - accuracy:  94.99%; precision:  75.81%; recall:  68.12%; FB1:  71.76
+
+2019-03-12 21:34:39,220 - log/train.log - INFO -               LOC: precision:  70.00%; recall:  67.74%; FB1:  68.85  30
+
+2019-03-12 21:34:39,221 - log/train.log - INFO -               ORG: precision:  70.59%; recall:  66.67%; FB1:  68.57  17
+
+2019-03-12 21:34:39,221 - log/train.log - INFO -               PER: precision:  93.33%; recall:  70.00%; FB1:  80.00  15
+
+2019-03-12 21:34:39,266 - log/train.log - INFO - new best test f1 score:71.760
+2019-03-12 21:34:46,007 - log/train.log - INFO - iteration:7 step:70/305, NER loss: 2.946318
+2019-03-12 21:34:55,184 - log/train.log - INFO - iteration:7 step:170/305, NER loss: 2.765874
+2019-03-12 21:35:06,536 - log/train.log - INFO - iteration:7 step:270/305, NER loss: 3.174257
+2019-03-12 21:35:09,177 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:35:09,244 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 53 phrases; correct: 34.
+
+2019-03-12 21:35:09,244 - log/train.log - INFO - accuracy:  96.78%; precision:  64.15%; recall:  72.34%; FB1:  68.00
+
+2019-03-12 21:35:09,244 - log/train.log - INFO -               LOC: precision:  65.52%; recall:  76.00%; FB1:  70.37  29
+
+2019-03-12 21:35:09,244 - log/train.log - INFO -               ORG: precision:  66.67%; recall:  66.67%; FB1:  66.67  9
+
+2019-03-12 21:35:09,244 - log/train.log - INFO -               PER: precision:  60.00%; recall:  69.23%; FB1:  64.29  15
+
+2019-03-12 21:35:09,245 - log/train.log - INFO - evaluate:test
+2019-03-12 21:35:09,307 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 65 phrases; correct: 51.
+
+2019-03-12 21:35:09,307 - log/train.log - INFO - accuracy:  96.14%; precision:  78.46%; recall:  73.91%; FB1:  76.12
+
+2019-03-12 21:35:09,307 - log/train.log - INFO -               LOC: precision:  70.97%; recall:  70.97%; FB1:  70.97  31
+
+2019-03-12 21:35:09,307 - log/train.log - INFO -               ORG: precision:  75.00%; recall:  66.67%; FB1:  70.59  16
+
+2019-03-12 21:35:09,307 - log/train.log - INFO -               PER: precision:  94.44%; recall:  85.00%; FB1:  89.47  18
+
+2019-03-12 21:35:09,364 - log/train.log - INFO - new best test f1 score:76.120
+2019-03-12 21:35:15,516 - log/train.log - INFO - iteration:8 step:65/305, NER loss: 2.681096
+2019-03-12 21:35:22,309 - log/train.log - INFO - iteration:8 step:165/305, NER loss: 2.552592
+2019-03-12 21:35:28,966 - log/train.log - INFO - iteration:8 step:265/305, NER loss: 2.513135
+2019-03-12 21:35:32,012 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:35:32,087 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 52 phrases; correct: 38.
+
+2019-03-12 21:35:32,087 - log/train.log - INFO - accuracy:  97.36%; precision:  73.08%; recall:  80.85%; FB1:  76.77
+
+2019-03-12 21:35:32,087 - log/train.log - INFO -               LOC: precision:  73.33%; recall:  88.00%; FB1:  80.00  30
+
+2019-03-12 21:35:32,087 - log/train.log - INFO -               ORG: precision:  87.50%; recall:  77.78%; FB1:  82.35  8
+
+2019-03-12 21:35:32,087 - log/train.log - INFO -               PER: precision:  64.29%; recall:  69.23%; FB1:  66.67  14
+
+2019-03-12 21:35:32,088 - log/train.log - INFO - evaluate:test
+2019-03-12 21:35:32,146 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 65 phrases; correct: 52.
+
+2019-03-12 21:35:32,147 - log/train.log - INFO - accuracy:  95.81%; precision:  80.00%; recall:  75.36%; FB1:  77.61
+
+2019-03-12 21:35:32,147 - log/train.log - INFO -               LOC: precision:  75.86%; recall:  70.97%; FB1:  73.33  29
+
+2019-03-12 21:35:32,147 - log/train.log - INFO -               ORG: precision:  76.47%; recall:  72.22%; FB1:  74.29  17
+
+2019-03-12 21:35:32,147 - log/train.log - INFO -               PER: precision:  89.47%; recall:  85.00%; FB1:  87.18  19
+
+2019-03-12 21:35:32,194 - log/train.log - INFO - new best test f1 score:77.610
+2019-03-12 21:35:36,515 - log/train.log - INFO - iteration:9 step:60/305, NER loss: 2.180174
+2019-03-12 21:35:44,167 - log/train.log - INFO - iteration:9 step:160/305, NER loss: 2.357730
+2019-03-12 21:35:50,928 - log/train.log - INFO - iteration:9 step:260/305, NER loss: 2.119681
+2019-03-12 21:35:53,805 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:35:53,868 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 54 phrases; correct: 36.
+
+2019-03-12 21:35:53,868 - log/train.log - INFO - accuracy:  97.30%; precision:  66.67%; recall:  76.60%; FB1:  71.29
+
+2019-03-12 21:35:53,868 - log/train.log - INFO -               LOC: precision:  58.82%; recall:  80.00%; FB1:  67.80  34
+
+2019-03-12 21:35:53,868 - log/train.log - INFO -               ORG: precision:  87.50%; recall:  77.78%; FB1:  82.35  8
+
+2019-03-12 21:35:53,868 - log/train.log - INFO -               PER: precision:  75.00%; recall:  69.23%; FB1:  72.00  12
+
+2019-03-12 21:35:53,869 - log/train.log - INFO - evaluate:test
+2019-03-12 21:35:53,925 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 66 phrases; correct: 54.
+
+2019-03-12 21:35:53,925 - log/train.log - INFO - accuracy:  97.16%; precision:  81.82%; recall:  78.26%; FB1:  80.00
+
+2019-03-12 21:35:53,926 - log/train.log - INFO -               LOC: precision:  73.53%; recall:  80.65%; FB1:  76.92  34
+
+2019-03-12 21:35:53,926 - log/train.log - INFO -               ORG: precision:  86.67%; recall:  72.22%; FB1:  78.79  15
+
+2019-03-12 21:35:53,926 - log/train.log - INFO -               PER: precision:  94.12%; recall:  80.00%; FB1:  86.49  17
+
+2019-03-12 21:35:53,972 - log/train.log - INFO - new best test f1 score:80.000
+2019-03-12 21:35:57,828 - log/train.log - INFO - iteration:10 step:55/305, NER loss: 2.169363
+2019-03-12 21:36:04,185 - log/train.log - INFO - iteration:10 step:155/305, NER loss: 1.968089
+2019-03-12 21:36:10,875 - log/train.log - INFO - iteration:10 step:255/305, NER loss: 2.054453
+2019-03-12 21:36:14,187 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:36:14,250 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 50 phrases; correct: 35.
+
+2019-03-12 21:36:14,250 - log/train.log - INFO - accuracy:  97.55%; precision:  70.00%; recall:  74.47%; FB1:  72.16
+
+2019-03-12 21:36:14,250 - log/train.log - INFO -               LOC: precision:  60.00%; recall:  72.00%; FB1:  65.45  30
+
+2019-03-12 21:36:14,250 - log/train.log - INFO -               ORG: precision:  87.50%; recall:  77.78%; FB1:  82.35  8
+
+2019-03-12 21:36:14,250 - log/train.log - INFO -               PER: precision:  83.33%; recall:  76.92%; FB1:  80.00  12
+
+2019-03-12 21:36:14,251 - log/train.log - INFO - evaluate:test
+2019-03-12 21:36:14,310 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 62 phrases; correct: 50.
+
+2019-03-12 21:36:14,310 - log/train.log - INFO - accuracy:  96.14%; precision:  80.65%; recall:  72.46%; FB1:  76.34
+
+2019-03-12 21:36:14,310 - log/train.log - INFO -               LOC: precision:  73.33%; recall:  70.97%; FB1:  72.13  30
+
+2019-03-12 21:36:14,310 - log/train.log - INFO -               ORG: precision:  86.67%; recall:  72.22%; FB1:  78.79  15
+
+2019-03-12 21:36:14,310 - log/train.log - INFO -               PER: precision:  88.24%; recall:  75.00%; FB1:  81.08  17
+
+2019-03-12 21:36:17,616 - log/train.log - INFO - iteration:11 step:50/305, NER loss: 1.681643
+2019-03-12 21:36:23,930 - log/train.log - INFO - iteration:11 step:150/305, NER loss: 1.842525
+2019-03-12 21:36:30,083 - log/train.log - INFO - iteration:11 step:250/305, NER loss: 1.584900
+2019-03-12 21:36:34,275 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:36:34,338 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 55 phrases; correct: 39.
+
+2019-03-12 21:36:34,338 - log/train.log - INFO - accuracy:  97.30%; precision:  70.91%; recall:  82.98%; FB1:  76.47
+
+2019-03-12 21:36:34,338 - log/train.log - INFO -               LOC: precision:  70.97%; recall:  88.00%; FB1:  78.57  31
+
+2019-03-12 21:36:34,338 - log/train.log - INFO -               ORG: precision:  70.00%; recall:  77.78%; FB1:  73.68  10
+
+2019-03-12 21:36:34,338 - log/train.log - INFO -               PER: precision:  71.43%; recall:  76.92%; FB1:  74.07  14
+
+2019-03-12 21:36:34,339 - log/train.log - INFO - evaluate:test
+2019-03-12 21:36:34,398 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 69 phrases; correct: 57.
+
+2019-03-12 21:36:34,398 - log/train.log - INFO - accuracy:  96.14%; precision:  82.61%; recall:  82.61%; FB1:  82.61
+
+2019-03-12 21:36:34,398 - log/train.log - INFO -               LOC: precision:  75.76%; recall:  80.65%; FB1:  78.12  33
+
+2019-03-12 21:36:34,398 - log/train.log - INFO -               ORG: precision:  83.33%; recall:  83.33%; FB1:  83.33  18
+
+2019-03-12 21:36:34,398 - log/train.log - INFO -               PER: precision:  94.44%; recall:  85.00%; FB1:  89.47  18
+
+2019-03-12 21:36:34,445 - log/train.log - INFO - new best test f1 score:82.610
+2019-03-12 21:36:37,231 - log/train.log - INFO - iteration:12 step:45/305, NER loss: 1.701667
+2019-03-12 21:36:44,293 - log/train.log - INFO - iteration:12 step:145/305, NER loss: 1.624346
+2019-03-12 21:36:53,084 - log/train.log - INFO - iteration:12 step:245/305, NER loss: 1.687021
+2019-03-12 21:36:57,579 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:36:57,642 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 52 phrases; correct: 40.
+
+2019-03-12 21:36:57,642 - log/train.log - INFO - accuracy:  97.68%; precision:  76.92%; recall:  85.11%; FB1:  80.81
+
+2019-03-12 21:36:57,643 - log/train.log - INFO -               LOC: precision:  76.67%; recall:  92.00%; FB1:  83.64  30
+
+2019-03-12 21:36:57,643 - log/train.log - INFO -               ORG: precision:  70.00%; recall:  77.78%; FB1:  73.68  10
+
+2019-03-12 21:36:57,643 - log/train.log - INFO -               PER: precision:  83.33%; recall:  76.92%; FB1:  80.00  12
+
+2019-03-12 21:36:57,692 - log/train.log - INFO - new best dev f1 score:80.810
+2019-03-12 21:36:57,802 - log/train.log - INFO - model saved
+2019-03-12 21:36:57,803 - log/train.log - INFO - evaluate:test
+2019-03-12 21:36:57,890 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 66 phrases; correct: 56.
+
+2019-03-12 21:36:57,890 - log/train.log - INFO - accuracy:  97.36%; precision:  84.85%; recall:  81.16%; FB1:  82.96
+
+2019-03-12 21:36:57,890 - log/train.log - INFO -               LOC: precision:  75.76%; recall:  80.65%; FB1:  78.12  33
+
+2019-03-12 21:36:57,890 - log/train.log - INFO -               ORG: precision:  92.86%; recall:  72.22%; FB1:  81.25  14
+
+2019-03-12 21:36:57,890 - log/train.log - INFO -               PER: precision:  94.74%; recall:  90.00%; FB1:  92.31  19
+
+2019-03-12 21:36:57,939 - log/train.log - INFO - new best test f1 score:82.960
+2019-03-12 21:37:00,732 - log/train.log - INFO - iteration:13 step:40/305, NER loss: 1.730063
+2019-03-12 21:37:07,624 - log/train.log - INFO - iteration:13 step:140/305, NER loss: 1.355833
+2019-03-12 21:37:15,710 - log/train.log - INFO - iteration:13 step:240/305, NER loss: 1.639243
+2019-03-12 21:37:20,541 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:37:20,605 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 52 phrases; correct: 40.
+
+2019-03-12 21:37:20,605 - log/train.log - INFO - accuracy:  97.88%; precision:  76.92%; recall:  85.11%; FB1:  80.81
+
+2019-03-12 21:37:20,605 - log/train.log - INFO -               LOC: precision:  75.86%; recall:  88.00%; FB1:  81.48  29
+
+2019-03-12 21:37:20,605 - log/train.log - INFO -               ORG: precision:  77.78%; recall:  77.78%; FB1:  77.78  9
+
+2019-03-12 21:37:20,605 - log/train.log - INFO -               PER: precision:  78.57%; recall:  84.62%; FB1:  81.48  14
+
+2019-03-12 21:37:20,654 - log/train.log - INFO - new best dev f1 score:80.810
+2019-03-12 21:37:20,766 - log/train.log - INFO - model saved
+2019-03-12 21:37:20,767 - log/train.log - INFO - evaluate:test
+2019-03-12 21:37:20,832 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 70 phrases; correct: 57.
+
+2019-03-12 21:37:20,832 - log/train.log - INFO - accuracy:  97.02%; precision:  81.43%; recall:  82.61%; FB1:  82.01
+
+2019-03-12 21:37:20,832 - log/train.log - INFO -               LOC: precision:  78.12%; recall:  80.65%; FB1:  79.37  32
+
+2019-03-12 21:37:20,832 - log/train.log - INFO -               ORG: precision:  88.24%; recall:  83.33%; FB1:  85.71  17
+
+2019-03-12 21:37:20,832 - log/train.log - INFO -               PER: precision:  80.95%; recall:  85.00%; FB1:  82.93  21
+
+2019-03-12 21:37:22,966 - log/train.log - INFO - iteration:14 step:35/305, NER loss: 1.314279
+2019-03-12 21:37:30,269 - log/train.log - INFO - iteration:14 step:135/305, NER loss: 1.421763
+2019-03-12 21:37:36,436 - log/train.log - INFO - iteration:14 step:235/305, NER loss: 1.420836
+2019-03-12 21:37:41,220 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:37:41,285 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 55 phrases; correct: 37.
+
+2019-03-12 21:37:41,286 - log/train.log - INFO - accuracy:  96.72%; precision:  67.27%; recall:  78.72%; FB1:  72.55
+
+2019-03-12 21:37:41,286 - log/train.log - INFO -               LOC: precision:  70.00%; recall:  84.00%; FB1:  76.36  30
+
+2019-03-12 21:37:41,286 - log/train.log - INFO -               ORG: precision:  60.00%; recall:  66.67%; FB1:  63.16  10
+
+2019-03-12 21:37:41,286 - log/train.log - INFO -               PER: precision:  66.67%; recall:  76.92%; FB1:  71.43  15
+
+2019-03-12 21:37:41,286 - log/train.log - INFO - evaluate:test
+2019-03-12 21:37:41,344 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 69 phrases; correct: 58.
+
+2019-03-12 21:37:41,344 - log/train.log - INFO - accuracy:  96.55%; precision:  84.06%; recall:  84.06%; FB1:  84.06
+
+2019-03-12 21:37:41,344 - log/train.log - INFO -               LOC: precision:  83.33%; recall:  80.65%; FB1:  81.97  30
+
+2019-03-12 21:37:41,344 - log/train.log - INFO -               ORG: precision:  83.33%; recall:  83.33%; FB1:  83.33  18
+
+2019-03-12 21:37:41,344 - log/train.log - INFO -               PER: precision:  85.71%; recall:  90.00%; FB1:  87.80  21
+
+2019-03-12 21:37:41,395 - log/train.log - INFO - new best test f1 score:84.060
+2019-03-12 21:37:43,928 - log/train.log - INFO - iteration:15 step:30/305, NER loss: 1.368332
+2019-03-12 21:37:52,088 - log/train.log - INFO - iteration:15 step:130/305, NER loss: 1.279608
+2019-03-12 21:38:00,928 - log/train.log - INFO - iteration:15 step:230/305, NER loss: 1.176486
+2019-03-12 21:38:06,878 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:38:06,942 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 53 phrases; correct: 38.
+
+2019-03-12 21:38:06,942 - log/train.log - INFO - accuracy:  97.36%; precision:  71.70%; recall:  80.85%; FB1:  76.00
+
+2019-03-12 21:38:06,942 - log/train.log - INFO -               LOC: precision:  70.97%; recall:  88.00%; FB1:  78.57  31
+
+2019-03-12 21:38:06,942 - log/train.log - INFO -               ORG: precision:  66.67%; recall:  66.67%; FB1:  66.67  9
+
+2019-03-12 21:38:06,942 - log/train.log - INFO -               PER: precision:  76.92%; recall:  76.92%; FB1:  76.92  13
+
+2019-03-12 21:38:06,943 - log/train.log - INFO - evaluate:test
+2019-03-12 21:38:07,000 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 71 phrases; correct: 59.
+
+2019-03-12 21:38:07,000 - log/train.log - INFO - accuracy:  96.96%; precision:  83.10%; recall:  85.51%; FB1:  84.29
+
+2019-03-12 21:38:07,000 - log/train.log - INFO -               LOC: precision:  75.68%; recall:  90.32%; FB1:  82.35  37
+
+2019-03-12 21:38:07,000 - log/train.log - INFO -               ORG: precision:  93.75%; recall:  83.33%; FB1:  88.24  16
+
+2019-03-12 21:38:07,000 - log/train.log - INFO -               PER: precision:  88.89%; recall:  80.00%; FB1:  84.21  18
+
+2019-03-12 21:38:07,052 - log/train.log - INFO - new best test f1 score:84.290
+2019-03-12 21:38:09,041 - log/train.log - INFO - iteration:16 step:25/305, NER loss: 1.217111
+2019-03-12 21:38:17,184 - log/train.log - INFO - iteration:16 step:125/305, NER loss: 1.062361
+2019-03-12 21:38:26,220 - log/train.log - INFO - iteration:16 step:225/305, NER loss: 1.193236
+2019-03-12 21:38:32,000 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:38:32,082 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 51 phrases; correct: 37.
+
+2019-03-12 21:38:32,083 - log/train.log - INFO - accuracy:  97.17%; precision:  72.55%; recall:  78.72%; FB1:  75.51
+
+2019-03-12 21:38:32,083 - log/train.log - INFO -               LOC: precision:  77.78%; recall:  84.00%; FB1:  80.77  27
+
+2019-03-12 21:38:32,083 - log/train.log - INFO -               ORG: precision:  54.55%; recall:  66.67%; FB1:  60.00  11
+
+2019-03-12 21:38:32,083 - log/train.log - INFO -               PER: precision:  76.92%; recall:  76.92%; FB1:  76.92  13
+
+2019-03-12 21:38:32,083 - log/train.log - INFO - evaluate:test
+2019-03-12 21:38:32,141 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 71 phrases; correct: 55.
+
+2019-03-12 21:38:32,141 - log/train.log - INFO - accuracy:  95.53%; precision:  77.46%; recall:  79.71%; FB1:  78.57
+
+2019-03-12 21:38:32,141 - log/train.log - INFO -               LOC: precision:  77.42%; recall:  77.42%; FB1:  77.42  31
+
+2019-03-12 21:38:32,141 - log/train.log - INFO -               ORG: precision:  72.22%; recall:  72.22%; FB1:  72.22  18
+
+2019-03-12 21:38:32,141 - log/train.log - INFO -               PER: precision:  81.82%; recall:  90.00%; FB1:  85.71  22
+
+2019-03-12 21:38:33,717 - log/train.log - INFO - iteration:17 step:20/305, NER loss: 1.244756
+2019-03-12 21:38:41,215 - log/train.log - INFO - iteration:17 step:120/305, NER loss: 0.944596
+2019-03-12 21:38:48,806 - log/train.log - INFO - iteration:17 step:220/305, NER loss: 1.171020
+2019-03-12 21:38:54,749 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:38:54,816 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 54 phrases; correct: 39.
+
+2019-03-12 21:38:54,816 - log/train.log - INFO - accuracy:  96.97%; precision:  72.22%; recall:  82.98%; FB1:  77.23
+
+2019-03-12 21:38:54,816 - log/train.log - INFO -               LOC: precision:  78.57%; recall:  88.00%; FB1:  83.02  28
+
+2019-03-12 21:38:54,816 - log/train.log - INFO -               ORG: precision:  60.00%; recall:  66.67%; FB1:  63.16  10
+
+2019-03-12 21:38:54,816 - log/train.log - INFO -               PER: precision:  68.75%; recall:  84.62%; FB1:  75.86  16
+
+2019-03-12 21:38:54,816 - log/train.log - INFO - evaluate:test
+2019-03-12 21:38:54,878 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 70 phrases; correct: 59.
+
+2019-03-12 21:38:54,878 - log/train.log - INFO - accuracy:  96.89%; precision:  84.29%; recall:  85.51%; FB1:  84.89
+
+2019-03-12 21:38:54,878 - log/train.log - INFO -               LOC: precision:  83.87%; recall:  83.87%; FB1:  83.87  31
+
+2019-03-12 21:38:54,878 - log/train.log - INFO -               ORG: precision:  88.24%; recall:  83.33%; FB1:  85.71  17
+
+2019-03-12 21:38:54,878 - log/train.log - INFO -               PER: precision:  81.82%; recall:  90.00%; FB1:  85.71  22
+
+2019-03-12 21:38:54,930 - log/train.log - INFO - new best test f1 score:84.890
+2019-03-12 21:38:56,313 - log/train.log - INFO - iteration:18 step:15/305, NER loss: 1.140020
+2019-03-12 21:39:03,560 - log/train.log - INFO - iteration:18 step:115/305, NER loss: 0.918858
+2019-03-12 21:39:10,365 - log/train.log - INFO - iteration:18 step:215/305, NER loss: 0.997946
+2019-03-12 21:39:17,304 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:39:17,369 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 53 phrases; correct: 39.
+
+2019-03-12 21:39:17,369 - log/train.log - INFO - accuracy:  97.55%; precision:  73.58%; recall:  82.98%; FB1:  78.00
+
+2019-03-12 21:39:17,369 - log/train.log - INFO -               LOC: precision:  73.33%; recall:  88.00%; FB1:  80.00  30
+
+2019-03-12 21:39:17,369 - log/train.log - INFO -               ORG: precision:  66.67%; recall:  66.67%; FB1:  66.67  9
+
+2019-03-12 21:39:17,369 - log/train.log - INFO -               PER: precision:  78.57%; recall:  84.62%; FB1:  81.48  14
+
+2019-03-12 21:39:17,369 - log/train.log - INFO - evaluate:test
+2019-03-12 21:39:17,428 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 71 phrases; correct: 59.
+
+2019-03-12 21:39:17,428 - log/train.log - INFO - accuracy:  96.62%; precision:  83.10%; recall:  85.51%; FB1:  84.29
+
+2019-03-12 21:39:17,428 - log/train.log - INFO -               LOC: precision:  79.41%; recall:  87.10%; FB1:  83.08  34
+
+2019-03-12 21:39:17,428 - log/train.log - INFO -               ORG: precision:  88.24%; recall:  83.33%; FB1:  85.71  17
+
+2019-03-12 21:39:17,428 - log/train.log - INFO -               PER: precision:  85.00%; recall:  85.00%; FB1:  85.00  20
+
+2019-03-12 21:39:18,133 - log/train.log - INFO - iteration:19 step:10/305, NER loss: 1.114964
+2019-03-12 21:39:24,871 - log/train.log - INFO - iteration:19 step:110/305, NER loss: 0.979155
+2019-03-12 21:39:31,615 - log/train.log - INFO - iteration:19 step:210/305, NER loss: 0.817640
+2019-03-12 21:39:39,369 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:39:39,438 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 49 phrases; correct: 40.
+
+2019-03-12 21:39:39,438 - log/train.log - INFO - accuracy:  97.94%; precision:  81.63%; recall:  85.11%; FB1:  83.33
+
+2019-03-12 21:39:39,438 - log/train.log - INFO -               LOC: precision:  84.62%; recall:  88.00%; FB1:  86.27  26
+
+2019-03-12 21:39:39,438 - log/train.log - INFO -               ORG: precision:  66.67%; recall:  66.67%; FB1:  66.67  9
+
+2019-03-12 21:39:39,438 - log/train.log - INFO -               PER: precision:  85.71%; recall:  92.31%; FB1:  88.89  14
+
+2019-03-12 21:39:39,491 - log/train.log - INFO - new best dev f1 score:83.330
+2019-03-12 21:39:39,604 - log/train.log - INFO - model saved
+2019-03-12 21:39:39,605 - log/train.log - INFO - evaluate:test
+2019-03-12 21:39:39,685 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 66 phrases; correct: 60.
+
+2019-03-12 21:39:39,685 - log/train.log - INFO - accuracy:  98.04%; precision:  90.91%; recall:  86.96%; FB1:  88.89
+
+2019-03-12 21:39:39,685 - log/train.log - INFO -               LOC: precision:  89.66%; recall:  83.87%; FB1:  86.67  29
+
+2019-03-12 21:39:39,686 - log/train.log - INFO -               ORG: precision:  88.24%; recall:  83.33%; FB1:  85.71  17
+
+2019-03-12 21:39:39,686 - log/train.log - INFO -               PER: precision:  95.00%; recall:  95.00%; FB1:  95.00  20
+
+2019-03-12 21:39:39,738 - log/train.log - INFO - new best test f1 score:88.890
+2019-03-12 21:39:40,065 - log/train.log - INFO - iteration:20 step:5/305, NER loss: 1.014723
+2019-03-12 21:39:47,290 - log/train.log - INFO - iteration:20 step:105/305, NER loss: 0.948447
+2019-03-12 21:39:54,568 - log/train.log - INFO - iteration:20 step:205/305, NER loss: 0.775062
+2019-03-12 21:40:03,957 - log/train.log - INFO - iteration:21 step:0/305, NER loss: 0.928149
+2019-03-12 21:40:03,958 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:40:04,021 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 56 phrases; correct: 40.
+
+2019-03-12 21:40:04,022 - log/train.log - INFO - accuracy:  97.17%; precision:  71.43%; recall:  85.11%; FB1:  77.67
+
+2019-03-12 21:40:04,022 - log/train.log - INFO -               LOC: precision:  73.33%; recall:  88.00%; FB1:  80.00  30
+
+2019-03-12 21:40:04,022 - log/train.log - INFO -               ORG: precision:  60.00%; recall:  66.67%; FB1:  63.16  10
+
+2019-03-12 21:40:04,022 - log/train.log - INFO -               PER: precision:  75.00%; recall:  92.31%; FB1:  82.76  16
+
+2019-03-12 21:40:04,022 - log/train.log - INFO - evaluate:test
+2019-03-12 21:40:04,088 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 71 phrases; correct: 61.
+
+2019-03-12 21:40:04,088 - log/train.log - INFO - accuracy:  97.23%; precision:  85.92%; recall:  88.41%; FB1:  87.14
+
+2019-03-12 21:40:04,088 - log/train.log - INFO -               LOC: precision:  87.10%; recall:  87.10%; FB1:  87.10  31
+
+2019-03-12 21:40:04,088 - log/train.log - INFO -               ORG: precision:  83.33%; recall:  83.33%; FB1:  83.33  18
+
+2019-03-12 21:40:04,088 - log/train.log - INFO -               PER: precision:  86.36%; recall:  95.00%; FB1:  90.48  22
+
+2019-03-12 21:40:11,811 - log/train.log - INFO - iteration:21 step:100/305, NER loss: 0.742917
+2019-03-12 21:40:20,364 - log/train.log - INFO - iteration:21 step:200/305, NER loss: 0.894515
+2019-03-12 21:40:29,210 - log/train.log - INFO - iteration:21 step:300/305, NER loss: 0.919303
+2019-03-12 21:40:29,508 - log/train.log - INFO - evaluate:dev
+2019-03-12 21:40:29,593 - log/train.log - INFO - processed 1553 tokens with 47 phrases; found: 51 phrases; correct: 40.
+
+2019-03-12 21:40:29,593 - log/train.log - INFO - accuracy:  98.07%; precision:  78.43%; recall:  85.11%; FB1:  81.63
+
+2019-03-12 21:40:29,593 - log/train.log - INFO -               LOC: precision:  78.57%; recall:  88.00%; FB1:  83.02  28
+
+2019-03-12 21:40:29,593 - log/train.log - INFO -               ORG: precision:  75.00%; recall:  66.67%; FB1:  70.59  8
+
+2019-03-12 21:40:29,593 - log/train.log - INFO -               PER: precision:  80.00%; recall:  92.31%; FB1:  85.71  15
+
+2019-03-12 21:40:29,594 - log/train.log - INFO - evaluate:test
+2019-03-12 21:40:29,653 - log/train.log - INFO - processed 1478 tokens with 69 phrases; found: 66 phrases; correct: 57.
+
+2019-03-12 21:40:29,653 - log/train.log - INFO - accuracy:  96.48%; precision:  86.36%; recall:  82.61%; FB1:  84.44
+
+2019-03-12 21:40:29,653 - log/train.log - INFO -               LOC: precision:  86.21%; recall:  80.65%; FB1:  83.33  29
+
+2019-03-12 21:40:29,653 - log/train.log - INFO -               ORG: precision:  87.50%; recall:  77.78%; FB1:  82.35  16
+
+2019-03-12 21:40:29,653 - log/train.log - INFO -               PER: precision:  85.71%; recall:  90.00%; FB1:  87.80  21
+
