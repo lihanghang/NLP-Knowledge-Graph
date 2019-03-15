@@ -1,5 +1,5 @@
 {
-    "model_type": "idcnn",
+    "model_type": "bilstm",
     "num_chars": 3544,
     "char_dim": 100,
     "num_tags": 13,

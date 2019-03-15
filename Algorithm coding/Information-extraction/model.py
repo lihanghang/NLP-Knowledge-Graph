@@ -9,7 +9,7 @@ from data_utils import create_input, iobes_iob
 
 
 '''
-IDCNN-CRF for NER Model
+IDCNN-CRF and Bi-LSTM for NER Model
 by Mason
 date:20190312
 '''
@@ -79,7 +79,7 @@ class Model(object):
             model_outputs = self.biLSTM_layer(model_inputs, self.lstm_dim, self.lengths)
 
             # logits for tags
-            self.logits = self.project_layer_bilstm(model_inputs)
+            self.logits = self.project_layer_bilstm(model_outputs)
         elif self.model_type == 'idcnn':
             # apply dropout before feed to idcnn layer
             model_inputs = tf.nn.dropout(embedding, self.dropout)
@@ -165,7 +165,7 @@ class Model(object):
                 lstm_cell["forward"],
                 lstm_cell["backward"],
                 model_inputs,
-                dtype=tf.int32,
+                dtype=tf.float32,
                 sequence_length=lengths
             )
             return tf.concat(outputs, axis=2)
@@ -232,7 +232,7 @@ class Model(object):
        with tf.variable_scope("project" if not name else name):
            with tf.variable_scope("hidden"):
                W = tf.get_variable("W", shape=[self.lstm_dim*2, self.lstm_dim], dtype=tf.float32, initializer=self.initializer)
-               b = tf.get_variable("b", shape=[self.num_tags], dtype=tf.float32, initializer=tf.zeros_initializer)
+               b = tf.get_variable("b", shape=[self.lstm_dim], dtype=tf.float32, initializer=tf.zeros_initializer())
                output = tf.reshape(lstm_outputs, shape=[-1, self.lstm_dim*2])
                hidden = tf.tanh(tf.nn.xw_plus_b(output, W, b))
 

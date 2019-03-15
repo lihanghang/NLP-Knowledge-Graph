@@ -40,12 +40,12 @@
 手 O O
 ？ O O
 
-健 O O
-身 O O
-器 O O
-材 O O
-市 O O
-场 O O
+健 O I-LOC
+身 O I-LOC
+器 O I-LOC
+材 O I-LOC
+市 O I-LOC
+场 O I-LOC
 怎 O O
 么 O O
 了 O O
@@ -93,7 +93,7 @@
 、 O O
 行 O O
 、 O O
-忠 O B-PER
+忠 O O
 、 O O
 信 O O
 。 O O
@@ -184,8 +184,8 @@
 场 O O
 比 O O
 赛 O O
-天 B-ORG O
-津 I-ORG O
+天 B-ORG B-LOC
+津 I-ORG I-LOC
 记 I-ORG O
 者 I-ORG O
 队 I-ORG O
@@ -200,9 +200,9 @@
 没 O O
 想 O O
 到 O O
-琼 B-PER B-PER
-斯 I-PER I-PER
-会 O O
+琼 B-PER B-ORG
+斯 I-PER I-ORG
+会 O I-ORG
 赢 O O
 得 O O
 如 O O
@@ -219,9 +219,9 @@
 拳 O O
 击 O O
 赛 O O
-莫 B-PER B-PER
-斯 I-PER I-PER
-利 I-PER I-PER
+莫 B-PER B-LOC
+斯 I-PER I-LOC
+利 I-PER I-LOC
 卫 O O
 冕 O O
 成 O O
@@ -243,9 +243,9 @@
 寞 O O
 。 O O
 
-香 B-LOC B-ORG
-港 I-LOC I-ORG
-高 O I-ORG
+香 B-LOC B-LOC
+港 I-LOC I-LOC
+高 O B-ORG
 尔 O I-ORG
 夫 O I-ORG
 球 O I-ORG
@@ -307,9 +307,9 @@
 授 O O
 。 O O
 
-玛 B-PER B-PER
-丽 I-PER I-PER
-亚 I-PER I-PER
+玛 B-PER B-LOC
+丽 I-PER I-LOC
+亚 I-PER I-LOC
 一 O O
 家 O O
 被 O O
@@ -713,8 +713,8 @@
 想 O O
 到 O O
 了 O O
-工 B-ORG O
-会 I-ORG O
+工 B-ORG B-ORG
+会 I-ORG I-ORG
 ， O O
 找 O O
 到 O O
@@ -739,7 +739,7 @@
 跌 O O
 。 O O
 
-伊 B-LOC O
+伊 B-LOC B-LOC
 重 O O
 申 O O
 尊 O O
@@ -751,7 +751,7 @@
 定 O O
 的 O O
 伊 B-LOC B-LOC
-科 B-LOC I-LOC
+科 B-LOC B-LOC
 边 O O
 界 O O
 
@@ -1011,15 +1011,15 @@
 举 O O
 行 O O
 
-九 B-ORG O
-三 I-ORG O
-学 I-ORG O
-社 I-ORG O
-十 I-ORG O
-届 I-ORG O
-中 I-ORG O
-常 I-ORG O
-会 I-ORG O
+九 B-ORG B-ORG
+三 I-ORG I-ORG
+学 I-ORG I-ORG
+社 I-ORG I-ORG
+十 I-ORG I-ORG
+届 I-ORG I-ORG
+中 I-ORG I-ORG
+常 I-ORG I-ORG
+会 I-ORG I-ORG
 二 O O
 次 O O
 会 O O
@@ -1027,8 +1027,8 @@
 举 O O
 行 O O
 
-苏 B-LOC B-LOC
-南 O I-LOC
+苏 B-LOC O
+南 O O
 ， O O
 是 O O
 我 O O
@@ -1393,9 +1393,9 @@
 械 O O
 手 O O
 的 O O
-灵 O B-PER
-敏 O I-PER
-度 O I-PER
+灵 O O
+敏 O O
+度 O O
 和 O O
 准 O O
 确 O O
@@ -1491,9 +1491,9 @@
 会 O O
 议 O O
 
-企 O O
-办 O O
-中 O B-ORG
+企 O B-ORG
+办 O I-ORG
+中 O I-ORG
 小 O I-ORG
 学 O I-ORG
 素 O I-ORG
@@ -1567,8 +1567,8 @@
 雨 O O
 区 O O
 将 O O
-东 O O
-移 O O
+东 O B-LOC
+移 O I-LOC
 并 O O
 迅 O O
 速 O O

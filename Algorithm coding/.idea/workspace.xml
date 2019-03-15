@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6166b7f-1216-4a19-868b-0cd535e14bb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/config_file" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/conlleval.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/data/example.dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/data/example.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/data/example.train" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/data/vec.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/data_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/rnncell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Information-extraction/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my summary/知识图谱技术与对话系统的应用.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../my summary/知识图谱技术与对话系统的应用.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/config_file" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/config_file" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/log/train.log" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/log/train.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/result/ner_predict.utf8" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/result/ner_predict.utf8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information-extraction/train.log" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/train.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,15 +20,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Algorithm_coding$main.coverage" NAME="main Coverage Results" MODIFIED="1552397537740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Information-extraction" />
+    <SUITE FILE_PATH="coverage/Algorithm_coding$main.coverage" NAME="main Coverage Results" MODIFIED="1552446425315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Information-extraction" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Information-extraction/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+            <state relative-caret-position="320">
+              <caret line="383" column="38" selection-start-line="383" selection-start-column="38" selection-end-line="383" selection-end-column="38" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -41,29 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Information-extraction/log/train.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="314" column="86" selection-start-line="314" selection-start-column="86" selection-end-line="314" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Information-extraction/rnncell.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Information-extraction/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
               <folding>
                 <element signature="e#16#25#0" expanded="true" />
               </folding>
@@ -72,10 +49,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/client/session.py">
+        <entry file="file://$PROJECT_DIR$/Information-extraction/log/train.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="928" selection-start-line="928" selection-end-line="928" />
+            <state relative-caret-position="89">
+              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -83,29 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Information-extraction/config_file">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/platform/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Information-extraction/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3078">
-              <caret line="171" selection-start-line="171" selection-end-line="171" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -147,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2723" />
     <option name="y" value="24" />
     <option name="width" value="1400" />
@@ -177,13 +133,17 @@
               <item name="Algorithm coding" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm coding" type="462c0819:PsiDirectoryNode" />
               <item name="Information-extraction" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithm coding" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm coding" type="462c0819:PsiDirectoryNode" />
               <item name="Information-extraction" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm coding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -258,23 +218,22 @@
       <updated>1552369296611</updated>
       <workItem from="1552369297785" duration="145000" />
       <workItem from="1552369519892" duration="17624000" />
-      <workItem from="1552388251809" duration="8680000" />
+      <workItem from="1552388251809" duration="17934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26449000" />
+    <option name="totallyTimeSpent" value="35703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="-11" width="1922" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23454158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43912593" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39958376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -354,13 +313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/conlleval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -388,13 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/data/example.train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="294585" column="3" selection-start-line="294585" selection-start-column="3" selection-end-line="294585" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Information-extraction/data/vec.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
@@ -402,27 +347,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/readme.md">
+    <entry file="file://$PROJECT_DIR$/Information-extraction/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="126">
             <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/maps.pkl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -440,16 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3078">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Information-extraction/rnncell.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -461,16 +382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="928" selection-start-line="928" selection-end-line="928" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/data_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="312" column="8" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="8" />
-          <folding>
-            <element signature="e#18#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -488,24 +399,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/config_file">
+    <entry file="file://$PROJECT_DIR$/Information-extraction/maps.pkl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="54">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/conlleval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-235">
+          <caret line="240" column="28" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
+          <folding>
+            <element signature="e#362#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="545" selection-start-line="545" selection-end-line="545" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Information-extraction/log/train.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="314" column="86" selection-start-line="314" selection-start-column="86" selection-end-line="314" selection-end-column="93" />
+        <state relative-caret-position="89">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/data/example.train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="294408" column="2" selection-start-line="294408" selection-start-column="2" selection-end-line="294408" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="312" column="8" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="8" />
+          <folding>
+            <element signature="e#18#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1981">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/config_file">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Information-extraction/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+        <state relative-caret-position="320">
+          <caret line="383" column="38" selection-start-line="383" selection-start-column="38" selection-end-line="383" selection-end-column="38" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -514,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Information-extraction/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="221">
+          <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>

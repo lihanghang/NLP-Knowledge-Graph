@@ -49,8 +49,8 @@ flags.DEFINE_string("train_file",   os.path.join("data", "example.train"),  "Pat
 flags.DEFINE_string("dev_file",     os.path.join("data", "example.dev"),    "Path for dev data")
 flags.DEFINE_string("test_file",    os.path.join("data", "example.test"),   "Path for test data")
 
-flags.DEFINE_string("model_type", "idcnn", "Model type, can be idcnn or bilstm")
-#flags.DEFINE_string("model_type", "bilstm", "Model type, can be idcnn or bilstm")
+#flags.DEFINE_string("model_type", "idcnn", "Model type, can be idcnn or bilstm")
+flags.DEFINE_string("model_type", "bilstm", "Model type, can be idcnn or bilstm")
 
 FLAGS = tf.app.flags.FLAGS
 assert FLAGS.clip < 5.1, "gradient clip should't be too much"
@@ -202,13 +202,6 @@ def evaluate_line():
     with tf.Session(config=tf_config) as sess:
         model = create_model(sess, Model, FLAGS.ckpt_path, load_word2vec, config, id_to_char, logger, False)
         while True:
-            # try:
-            #     line = input("请输入测试句子:")
-            #     result = model.evaluate_line(sess, input_from_line(line, char_to_id), id_to_tag)
-            #     print(result)
-            # except Exception as e:
-            #     logger.info(e)
-
                 line = input("请输入测试句子:")
                 result = model.evaluate_line(sess, input_from_line(line, char_to_id), id_to_tag)
                 print(result)
