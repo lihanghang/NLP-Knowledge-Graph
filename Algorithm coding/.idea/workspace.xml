@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c6166b7f-1216-4a19-868b-0cd535e14bb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/ckpt/ner.ckpt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/config_file" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/config_file" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/log/train.log" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/log/train.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/result/ner_predict.utf8" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/result/ner_predict.utf8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information-extraction/train.log" beforeDir="false" afterPath="$PROJECT_DIR$/Information-extraction/train.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Information-extraction/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="383" column="38" selection-start-line="383" selection-start-column="38" selection-end-line="383" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -39,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Information-extraction/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+            <state relative-caret-position="573">
+              <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
               <folding>
                 <element signature="e#16#25#0" expanded="true" />
               </folding>
@@ -49,19 +40,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Information-extraction/log/train.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Information-extraction/config_file">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -103,11 +85,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2723" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2442" />
     <option name="y" value="24" />
-    <option name="width" value="1400" />
-    <option name="height" value="1056" />
+    <option name="width" value="1398" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -123,23 +105,6 @@
             <path>
               <item name="Algorithm coding" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm coding" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm coding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm coding" type="462c0819:PsiDirectoryNode" />
-              <item name="Information-extraction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm coding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm coding" type="462c0819:PsiDirectoryNode" />
-              <item name="Information-extraction" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm coding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm coding" type="462c0819:PsiDirectoryNode" />
-              <item name="Information-extraction" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithm coding" type="b2602c69:ProjectViewProjectNode" />
@@ -219,16 +184,17 @@
       <workItem from="1552369297785" duration="145000" />
       <workItem from="1552369519892" duration="17624000" />
       <workItem from="1552388251809" duration="17934000" />
+      <workItem from="1552819946132" duration="1352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35703000" />
+    <option name="totallyTimeSpent" value="37055000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="-11" width="1922" height="1092" extended-state="6" />
+    <frame x="2442" y="24" width="1398" height="1020" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23454158" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32865584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -323,9 +289,7 @@
     <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/_api/v1/nn/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Information-extraction/data/example.dev">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1126">
@@ -433,13 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Information-extraction/log/train.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Information-extraction/data/example.train">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -470,14 +427,24 @@
     <entry file="file://$PROJECT_DIR$/Information-extraction/config_file">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/log/train.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-1134" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Information-extraction/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="383" column="38" selection-start-line="383" selection-start-column="38" selection-end-line="383" selection-end-column="38" />
+        <state relative-caret-position="360">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -486,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Information-extraction/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="573">
+          <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
