@@ -1,6 +1,6 @@
 ## 构建爬虫系统实现网络知识获取 
 ### 爬虫框架图  
-![Scrapy](https://github.com/lihanghang/Knowledge-Graph/tree/master/Algorithm-code/KBSpider/image)  
+![Scrapy](https://github.com/lihanghang/Knowledge-Graph/tree/master/Algorithm-code/KBSpider/image/Scrapy.png)  
 ### 基础文件说明  
 scrapy.cfg: 项目的配置文件。  
 mySpider/: 项目的Python模块，将会从这里引用代码。  
