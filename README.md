@@ -45,12 +45,21 @@ Deep learning for Knowledge-Graph
 | 1          | THULAC  |中文词法分析工具，支持C++/JAVA/Python by清华|
 | 2          |  LTP      | 语言技术平台 pylyp LTP的Python封装 by 哈工大|
 | 3          |   HanLP   | 支持Java|
+| 4          |   结巴分词   | 中文分词（仅支持分词），Java、python、C++|
+| 5          |   jiagu   | 提供中文分词、词性标注、命名实体识别、关键词抽取、文本摘要、新词发现等常用自然语言处理功能。Python|
+| 6          |   fudanNLP   |中文分词（分词、词性标注、命名实体识别）， 支持Java|
 #### 中英文知识图谱数据集列表
 | 编号        | 名称    |  应用任务  |
 | --------   | -----:  | :----:     |
 | 1          | [OpenKG](http://www.openkg.cn/ )      |  开放知识图谱          |
 | 2          | [CN-Probase](http://openkg.cn/dataset/cndbpedia)  |大规模中文概念图谱            |
 | 3          | [SentiBridge](https://github.com/rainarch/SentiBridge/ ) | 中文实体情感知识库，刻画人们如何描述某个实体，包含新闻、旅游、餐饮，共计30万对|
+| 4          | [音乐知识图谱](http://www.openkg.cn/dataset/music ) | 中文音乐知识图谱，歌手、歌曲等信息|
+| 5          | [人物类RDF知识](http://www.openkg.cn/dataset/rdf/resource/08fdd9ee-6d98-4efc-a8ff-e58ab7a9d3ac) | 采集自百科网站的人物类知识，共65万个RDF三元组|
+| 6          | [中国旅游景点知识图谱](http://www.openkg.cn/dataset/tourist-attraction/resource/dbed4401-a870-4118-95a5-edaccc968ae6 ) | 中国旅游景点中文知识图谱是CASIA-KB知识图谱的一部分。抽取自百度百科和互动百科。旅游景点知识图谱可用于地理、生活、娱乐等应用。|
+| 7          | [200万条商品画像数据](http://www.openkg.cn/dataset/200/resource/33d459e5-f686-4855-af18-d1c9fa5b572f) | 本数据是百分点在7年运营过程中积累的产品画像数据的小结，百分点自建了丰富的电商品分类体系和媒体分类体系。|
+| 8          | [中文症状库](http://www.openkg.cn/dataset/symptom-in-chinese/resource/302dc775-8e4d-41fb-954e-260ce8037cbc) | 这是一个包含症状实体和症状相关三元组的数据集。中文症状库的数据来自8个主流的健康咨询网站、3个中文百科网站和电子病历。|
+| 9          | [cnSchema机场知识图谱](http://openkg1.oss-cn-beijing.aliyuncs.com/2a2b80c5-6d50-40f8-a48b-7b832f0026c1/airportcnschema.json) | 基于cnSchema的机场知识图谱可查询世界各机场的属性，包含名称、时区、机场代码、地理位置（经纬度）等。|
 
 ---
 #### 思考
@@ -60,4 +69,4 @@ Deep learning for Knowledge-Graph
 
 ---
 WeChat：LHH754086474  
-update at 20190325
+update at 20190329
