@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6166b7f-1216-4a19-868b-0cd535e14bb3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Text-Similarity/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Text-Similarity/siamese_network.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/语义相似度/atec_nlp_sim_train2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/Knowledge-driven dialogue/A Knowledge-Grounded Neural Conversation Model*.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/Knowledge-driven dialogue/A+Survey+on+Dialogue+Systems.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/Knowledge-driven dialogue/Commonsense Knowledge Aware Conversation Generation with Graph Attention.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/Knowledge-driven dialogue/Large-scale Simple Question Answering with Memory Network.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/Knowledge-driven dialogue/Learning Symmetric Collaborative Dialogue Agents with Dynamic.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/Knowledge-driven dialogue/Mem2Seq: Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/Knowledge-driven dialogue/StalemateBreaker: A Proactive Content-Introducing Approach&#10;to Automatic Human-Computer Conversation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/图谱架构.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/问答系统/KBQA.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../应用/问答系统/平安人寿谢舒翼-智能问答系统的探索与实践.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,90 +29,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/ops/nn.py">
+        <entry file="file://$PROJECT_DIR$/Text-Similarity/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Information-extraction/rnncell.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3096">
-              <caret line="193" column="26" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
+            <state relative-caret-position="18">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
               <folding>
-                <element signature="e#41#79#0" expanded="true" />
+                <element signature="e#212#235#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/seq2seq+Att.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/ops/gen_beam_search_ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/python/ops/helper.py">
+        <entry file="file://$PROJECT_DIR$/Text-Similarity/siamese_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/ops/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8118">
-              <caret line="458" column="18" selection-start-line="458" selection-start-column="18" selection-end-line="458" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/ops/embedding_ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4554">
-              <caret line="274" column="27" selection-start-line="274" selection-start-column="27" selection-end-line="274" selection-end-column="27" />
+            <state relative-caret-position="679">
+              <caret line="80" column="9" lean-forward="true" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,12 +90,14 @@
         <option value="$PROJECT_DIR$/Information-extraction/main.py" />
         <option value="$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py" />
         <option value="$PROJECT_DIR$/model/seq2seq+Att.py" />
+        <option value="$PROJECT_DIR$/Text-Similarity/model.py" />
+        <option value="$PROJECT_DIR$/Text-Similarity/siamese_network.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="2367" />
-    <option name="y" value="165" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2127" />
+    <option name="y" value="24" />
     <option name="width" value="1394" />
     <option name="height" value="983" />
   </component>
@@ -159,7 +109,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Algorithm-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm-code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm-code" type="462c0819:PsiDirectoryNode" />
+              <item name="Text-Similarity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -189,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.seq2seq+Att">
+  <component name="RunManager" selected="Python.model">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Algorithm coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,6 +199,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Algorithm coding" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Text-Similarity" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Text-Similarity/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="seq2seq+Att" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,6 +242,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.model" />
         <item itemvalue="Python.seq2seq+Att" />
         <item itemvalue="Python.main" />
       </list>
@@ -280,17 +265,18 @@
       <workItem from="1552905067905" duration="1087000" />
       <workItem from="1553079529600" duration="6241000" />
       <workItem from="1553746944720" duration="1728000" />
+      <workItem from="1553922937598" duration="7395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46777000" />
+    <option name="totallyTimeSpent" value="54172000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2367" y="165" width="1394" height="983" extended-state="1" />
+    <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3127786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22863248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -304,8 +290,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3298647" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.35949942" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.19897959" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -571,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/seq2seq+Att.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/ops/gen_beam_search_ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -611,8 +590,35 @@
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/python/ops/helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+        <state relative-caret-position="324">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/seq2seq+Att.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text-Similarity/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding>
+            <element signature="e#212#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text-Similarity/siamese_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="80" column="9" lean-forward="true" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
