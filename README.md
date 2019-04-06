@@ -48,6 +48,22 @@ Deep learning for Knowledge-Graph
 | 4          |   结巴分词   | 中文分词（仅支持分词），Java、python、C++|
 | 5          |   jiagu   | 提供中文分词、词性标注、命名实体识别、关键词抽取、文本摘要、新词发现等常用自然语言处理功能。Python|
 | 6          |   fudanNLP   |中文分词（分词、词性标注、命名实体识别）， 支持Java|
+| 7          |   deepdive   |斯坦福大学的开源知识抽取工具（三元组抽取）， 支持python|
+| 8          |   FudanDNN-NLP3.0   |用于中文分词、命名识别、词性标注、句子分类、语义分析、知识库访问、对话问答,支持Java----复旦大学计算机学院机器人研究实验室所开发的基于深度学习的中文自然语言处理工具|
+| 9          |   Stanford CoreNLP   |可进行多语言的词性标注器、命名实体的识别器、解析器（句子与语法结构）、指代消解器（就是在篇章中确定代词指向哪个名词短语的问题）、情感分析器、   引导模式学习器、开放信息提取器， Java/Python----- Stanford CoreNLP是斯坦福大学的自然语言处理工具包,工具包需要java的支持|
+#### 图存储与查询工具
+| 编号        | 名称    |  主要功能  |
+| --------   | -----:  | :----:     |
+| 1          | [Neo4j](https://www.w3cschool.cn/neo4j/)  |开源图形数据库，由Java开发。|
+| 2          | [OrientDB](https://www.w3cschool.cn/orientdb/)     | 开源的noSQL数据库，可处理文档、图形、传统数据库组件。由Java编写，存储速度快。|
+| 3          | [Virtuoso](https://shop.openlinksw.com/license_generator/virtuoso-download/)  | 支持RDF与SPARQL查询。|
+| 4          | [Titan](https://blog.csdn.net/albg_boy/article/details/78439051)   | 可与Gremlin/Hbase进行集成，可实现分布式存储和计算的图数据处理。|
+| 5          | [Apache Jena-IDB ](https://blog.csdn.net/svenhuayuncheng/article/details/78751300)   | TDB是使用triple store的形式对RDF数据提供持久性存储（persistent store），TDB相比RDB、SDB更快且具有扩展性。|
+| 6          | [Cypher](https://neo4j.com/docs/developer-manual/3.4/cypher/)   |声明式图查询语言，表达高效查询和更新图数据库。|
+| 7          | [Gremlin](http://tinkerpop.apache.org/)   |一种函数式数据流语言，可以使得用户使用简洁的方式表述复杂的属性图（property graph）的遍历或查询。|
+| 8          |　[SPARQL](https://www.w3.org/TR/sparql11-query/) |为RDF开发的一种查询语言和数据获取协议。|  
+
+
 #### 中英文知识图谱数据集列表
 | 编号        | 名称    |  应用任务  |
 | --------   | -----:  | :----:     |
@@ -60,17 +76,18 @@ Deep learning for Knowledge-Graph
 | 7          | [200万条商品画像数据](http://www.openkg.cn/dataset/200/resource/33d459e5-f686-4855-af18-d1c9fa5b572f) | 本数据是百分点在7年运营过程中积累的产品画像数据的小结，百分点自建了丰富的电商品分类体系和媒体分类体系。|
 | 8          | [中文症状库](http://www.openkg.cn/dataset/symptom-in-chinese/resource/302dc775-8e4d-41fb-954e-260ce8037cbc) | 这是一个包含症状实体和症状相关三元组的数据集。中文症状库的数据来自8个主流的健康咨询网站、3个中文百科网站和电子病历。|
 | 9          | [cnSchema机场知识图谱](http://openkg1.oss-cn-beijing.aliyuncs.com/2a2b80c5-6d50-40f8-a48b-7b832f0026c1/airportcnschema.json) | 基于cnSchema的机场知识图谱可查询世界各机场的属性，包含名称、时区、机场代码、地理位置（经纬度）等。|
-
+--- 
 
 #### 比赛
-- ATEC蚂蚁开发者大赛之学习赛--NLP之问题相似度计算--2019-3  
-
+1. ATEC蚂蚁开发者大赛之学习赛--NLP之问题相似度计算--2019-3  
+2. 百度2019语言与智能技术竞赛之第二赛道--[知识驱动对话](http://lic2019.ccf.org.cn/talk)--2019-4  
 ---
 #### 思考
 - 知识图谱的构建是一个体系化的工程项目，目前结合深度学习技术以及自然语言处理知识在一定程度上提升了构建的效率并降低了成本。知识图谱的地位在认知智能是一个基础资源设施，基于此可以进行问答、对话、、推荐系统、可解释性的增强等方面的应用。  
 - 目前对于垂直领域的知识图谱构建需求较多。应用方面在智能问答和主动式对话系统的实践是比较热点的方向。
 - 个人觉得一套爬虫系统可以为知识库提供动态更新的知识来源。
+- 结合知识/常识的对话系统，更具准确性和多样性，是一个值得研究的方向，可让机器引导用户进行话题的交流。如上面比赛２就是这一方向的应用。　　
 
 ---
 WeChat：LHH754086474  
-update at 20190401
+update at 20190406
