@@ -61,6 +61,10 @@ Deep learning for Knowledge-Graph
 | 8          | [中文症状库](http://www.openkg.cn/dataset/symptom-in-chinese/resource/302dc775-8e4d-41fb-954e-260ce8037cbc) | 这是一个包含症状实体和症状相关三元组的数据集。中文症状库的数据来自8个主流的健康咨询网站、3个中文百科网站和电子病历。|
 | 9          | [cnSchema机场知识图谱](http://openkg1.oss-cn-beijing.aliyuncs.com/2a2b80c5-6d50-40f8-a48b-7b832f0026c1/airportcnschema.json) | 基于cnSchema的机场知识图谱可查询世界各机场的属性，包含名称、时区、机场代码、地理位置（经纬度）等。|
 
+
+#### 比赛
+- ATEC蚂蚁开发者大赛之学习赛--NLP之问题相似度计算--2019-3  
+
 ---
 #### 思考
 - 知识图谱的构建是一个体系化的工程项目，目前结合深度学习技术以及自然语言处理知识在一定程度上提升了构建的效率并降低了成本。知识图谱的地位在认知智能是一个基础资源设施，基于此可以进行问答、对话、、推荐系统、可解释性的增强等方面的应用。  
@@ -69,4 +73,4 @@ Deep learning for Knowledge-Graph
 
 ---
 WeChat：LHH754086474  
-update at 20190329
+update at 20190401
