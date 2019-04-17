@@ -84,6 +84,7 @@ Deep learning for Knowledge-Graph
 | 7          | [200万条商品画像数据](http://www.openkg.cn/dataset/200/resource/33d459e5-f686-4855-af18-d1c9fa5b572f) | 本数据是百分点在7年运营过程中积累的产品画像数据的小结，百分点自建了丰富的电商品分类体系和媒体分类体系。|
 | 8          | [中文症状库](http://www.openkg.cn/dataset/symptom-in-chinese/resource/302dc775-8e4d-41fb-954e-260ce8037cbc) | 这是一个包含症状实体和症状相关三元组的数据集。中文症状库的数据来自8个主流的健康咨询网站、3个中文百科网站和电子病历。|
 | 9          | [cnSchema机场知识图谱](http://openkg1.oss-cn-beijing.aliyuncs.com/2a2b80c5-6d50-40f8-a48b-7b832f0026c1/airportcnschema.json) | 基于cnSchema的机场知识图谱可查询世界各机场的属性，包含名称、时区、机场代码、地理位置（经纬度）等。|
+| 10          | [七律-通用知识图谱](http://openkg.cn/dataset/7lore/resource/30ee798a-3199-4de4-9792-7746bc8891e0) | 本数据共包含8000万条百科三元组，为七律的一部分子集，后续将持续加大开放。七律-7Lore，是狗尾草科技精心打造的百科知识图谱，是人类世界海量知识的集合，它包含了事物、事实、概念、规则等等。|
 --- 
 
 #### 比赛
@@ -98,4 +99,4 @@ Deep learning for Knowledge-Graph
 
 ---
 WeChat：LHH754086474  
-update at 20190406
+update at 20190417
