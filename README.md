@@ -2,6 +2,9 @@ Deep learning for Knowledge-Graph
 ---
 # 认知智能系列  
 ## 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用  
+---
+<i class="fas fa-user-md-chat"></i>[小智平台](./SmartInteraction/)  
+--- 
 ### NLP  
 1. [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 ### 研究总结  
@@ -98,5 +101,10 @@ Deep learning for Knowledge-Graph
 - 结合知识/常识的对话系统，更具准确性和多样性，是一个值得研究的方向，可让机器引导用户进行话题的交流。如上面比赛２就是这一方向的应用。　　
 
 ---
-WeChat：LHH754086474  
-update at 20190417
+<head> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
+</head> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<i class="fab fa-weixin"></i>LHH754086474  
+<i class="far fa-clock"></i> 20190417
