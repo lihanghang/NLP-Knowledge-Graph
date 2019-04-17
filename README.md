@@ -102,9 +102,9 @@ Deep learning for Knowledge-Graph
 
 ---
 <head> 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/v4-shims.js"></script> 
 </head> 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <i class="fab fa-weixin"></i>LHH754086474  
 <i class="far fa-clock"></i> 20190417
