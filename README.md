@@ -3,9 +3,11 @@ Deep learning for Knowledge-Graph
 # 认知智能系列  
 ## 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用  
 ---
-<head>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
+<head> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
+</head> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 <i class="fas fa-user-md-chat"></i>[小智平台](./SmartInteraction/)  
 --- 
 ### NLP  
