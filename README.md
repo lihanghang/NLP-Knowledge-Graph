@@ -3,7 +3,7 @@ Deep learning for Knowledge-Graph
 # 探索认知智能系列  
 ## 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用  
 ---
-![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)
+[![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](./)
 <font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  
 --- 
 ### NLP  
