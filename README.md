@@ -26,7 +26,7 @@ Deep learning for Knowledge-Graph
 #### dialogue system  
 1. [CSDN|公开课笔记：一文详解启发式对话中的知识管理_aispeech](http://www.aispeech.com/index.php?m=content&c=index&a=show&catid=22&id=339)
 2. [对话系统综述](http://naotu.baidu.com/file/59a5b3a1573467a8fcdde3e0c7c19066?token=0d854a82f9c88916)
-
+3. [对话系统中的口语理解技术(SLU)](http://wemedia.ifeng.com/92890282/wemedia.shtml)  
 
 
 
@@ -103,4 +103,4 @@ Deep learning for Knowledge-Graph
 
 ---
 weChat: LHH754086474  
-update: 20190417
+Updated on April 20, 2019  
