@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6166b7f-1216-4a19-868b-0cd535e14bb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Text-Similarity/Input_preprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Text-Similarity/dict.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Text-Similarity/preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Algorithm coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithm coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Text-Similarity/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Text-Similarity/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Text-Similarity/siamese_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/Text-Similarity/siamese_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KBSpider/KBSpider/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KBSpider/KBSpider/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KBSpider/KBSpider/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KBSpider/KBSpider/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KBSpider/KBSpider/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KBSpider/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KBSpider/image/Scrapy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KBSpider/scrapy.cfg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,44 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Text-Similarity/Input_preprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Text-Similarity/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="e#38#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Text-Similarity/siamese_network.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#15#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Text-Similarity/preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+            <state relative-caret-position="242">
+              <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
               <folding>
                 <element signature="e#15#53#0" expanded="true" />
               </folding>
@@ -142,11 +111,6 @@
             <path>
               <item name="Algorithm-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm-code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm-code" type="462c0819:PsiDirectoryNode" />
-              <item name="Text-Similarity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,6 +223,9 @@
       <module name="Algorithm coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Text-Similarity" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -326,16 +293,18 @@
       <workItem from="1554089842469" duration="3942000" />
       <workItem from="1554096719276" duration="32588000" />
       <workItem from="1554186596188" duration="4833000" />
+      <workItem from="1556157575899" duration="1389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126684000" />
+    <option name="totallyTimeSpent" value="128073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="-4" width="1922" height="1085" extended-state="6" />
+    <frame x="1969" y="-4" width="1871" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1388889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14042787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,7 +319,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.17521368" side_tool="true" weight="0.41632652" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946582" weight="0.37244898" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.8247863" visible="true" weight="0.41632652" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8247863" visible="true" weight="0.40612245" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -363,13 +332,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Information-extraction/train.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/Information-Extration-Chinese/lib/python3.6/site-packages/tensorflow/python/client/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -688,16 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Text-Similarity/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/contrib/learn/python/learn/preprocessing/text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -712,6 +664,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Information-extraction/train.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text-Similarity/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#38#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -732,12 +701,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Text-Similarity/train.py">
+    <entry file="file://$PROJECT_DIR$/Text-Similarity/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="242">
+          <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
           <folding>
-            <element signature="e#38#61#0" expanded="true" />
+            <element signature="e#15#53#0" expanded="true" />
           </folding>
         </state>
       </provider>

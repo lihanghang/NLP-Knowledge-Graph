@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Information-extraction" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Text-Similarity" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7 (Algorithm-code) (2)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (Information-Extration-Chinese)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

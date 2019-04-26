@@ -7,7 +7,8 @@ Deep learning for Knowledge-Graph
 <font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  
 --- 
 ### NLP  
-1. [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+1. [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)  
+2. [An Attentive Survey of Attention Models](http://naotu.baidu.com/file/03d4fb82f0c3deec199e61a8d8711b22)  
 ### 研究总结  
 1. [知识图谱综述](http://naotu.baidu.com/file/cffcb478adf07522b64eddb8914c0884?token=01df87c5af357993)   
 2. [知识图谱的挑战](http://naotu.baidu.com/file/9e3257e54c15c6607fa9d5d40111e1bc?token=d8acd3739ba44f6b)  
@@ -104,4 +105,4 @@ Deep learning for Knowledge-Graph
 
 ---
 weChat: LHH754086474  
-Updated on April 20, 2019  
+Updated on April 26, 2019  
