@@ -22,15 +22,18 @@ Deep learning for Knowledge-Graph
 
 
 
-
-
-#### dialogue system  
+#### 对话系统技术 
 1. [CSDN|公开课笔记：一文详解启发式对话中的知识管理_aispeech](http://www.aispeech.com/index.php?m=content&c=index&a=show&catid=22&id=339)
 2. [对话系统综述](http://naotu.baidu.com/file/59a5b3a1573467a8fcdde3e0c7c19066?token=0d854a82f9c88916)
 3. [对话系统中的口语理解技术(SLU)](http://wemedia.ifeng.com/92890282/wemedia.shtml)  
 
+#### 关于NLP/对话/KG的商业化相关（仅供交流学习）
+1. [语音交互中的自然语言处理技术](./NLP&KG基础/ccksslides2013-2018/2017/CCKS交流-语音交互中的自然语言处理技术.pdf)－－xiaomi
+2. [精益知识图谱方法论](./NLP&KG基础/ccksslides2013-2018/2016/鲍捷-精益知识图谱方法论.pdf)--文因互联
+3. [小i机器人在中文语义开放平台的研究与进展](./NLP&KG基础/ccksslides2013-2018/2016/陈培华-小i机器人在中文语义开放平台的研究与进展.pdf)--小ｉ机器人
+4. [科大讯飞-从应用角度来看知识图谱的价值和挑战](./NLP&KG基础/ccksslides2013-2018/2014/科大讯飞-从应用角度来看知识图谱的价值和挑战.pdf)--科大讯飞
 
-
+---
 #### 主流开源的问答&&对话系统列表
 | 编号        | 名称    |  地址  |
 | --------   | -----:  | :----:     |
@@ -40,8 +43,13 @@ Deep learning for Knowledge-Graph
 
 
 
-
-
+#### 主流语义平台列表
+| 编号        | 名称    | 
+| --------   | -----:  | 
+| 1          | [腾讯文智中文语义平台](http://nlp.qq.com/)     |  
+| 2          | [科大讯飞开放语义平台](http://osp.voicecloud.cn/index.html)  | 
+| 3          | [玻森中文语义开放平台](http://bosonnlp.com/) | 
+| 4          | [哈工大语言云](http://ltp.ai/) | 
 
 
 #### 中英文文本预处理工具列表
@@ -63,11 +71,11 @@ Deep learning for Knowledge-Graph
 | 2          | [OrientDB](https://www.w3cschool.cn/orientdb/)     | 开源的noSQL数据库，可处理文档、图形、传统数据库组件。由Java编写，存储速度快。|
 | 3          | [Virtuoso](https://shop.openlinksw.com/license_generator/virtuoso-download/)  | 支持RDF与SPARQL查询。|
 | 4          | [Titan](https://blog.csdn.net/albg_boy/article/details/78439051)   | 可与Gremlin/Hbase进行集成，可实现分布式存储和计算的图数据处理。|
-| 5          | [Apache Jena-IDB ](https://blog.csdn.net/svenhuayuncheng/article/details/78751300)   | TDB是使用triple store的形式对RDF数据提供持久性存储（persistent store），TDB相比RDB、SDB更快且具有扩展性。|
+| 5          | [Apache Jena-IDB ](https://blog.csdn.net/svenhuayuncheng/article/details/78751300)   | 在JAVA下操作RDF。其中TDB是使用triple store的形式对RDF数据提供持久性存储（persistent store），TDB相比RDB、SDB更快且具有扩展性。|
 | 6          | [Cypher](https://neo4j.com/docs/developer-manual/3.4/cypher/)   |声明式图查询语言，表达高效查询和更新图数据库。|
 | 7          | [Gremlin](http://tinkerpop.apache.org/)   |一种函数式数据流语言，可以使得用户使用简洁的方式表述复杂的属性图（property graph）的遍历或查询。|
 | 8          |　[SPARQL](https://www.w3.org/TR/sparql11-query/) |为RDF开发的一种查询语言和数据获取协议。|  
-
+| 9          |　[rdflib](https://rdflib.readthedocs.io/en/stable/) |基于Python语言编写的，RDF / XML，N3，NTriples，N-Quads，Turtle，TriX，RDFa和Microdata的解析器和序列化器，支持SPARQL 1.1查询和更新语句。|  
 
 
 #### 可视化工具
@@ -104,5 +112,9 @@ Deep learning for Knowledge-Graph
 - 结合知识/常识的对话系统，更具准确性和多样性，是一个值得研究的方向，可让机器引导用户进行话题的交流。如上面比赛２就是这一方向的应用。　　
 
 ---
+#### <strong>说明<strong>
+以上内容均为个人在个人学习过程的相关整理（包含互联网内容、个人整理笔记等），希望对研究学习认知智能领域的小伙伴有帮助。
+
+---
 weChat: LHH754086474  
-Updated on April 26, 2019  
+Updated on May 10, 2019  
