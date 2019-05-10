@@ -116,6 +116,8 @@ Deep learning for Knowledge-Graph
 以上内容均为个人在学习过程的相关整理（包含互联网内容、个人整理笔记等），希望对研究学习认知智能领域的小伙伴有帮助。
 
 ---
-[CSDN](https://blog.csdn.net/lihangll)  
-weChat: LHH754086474  
+###
+- [CSDN](https://blog.csdn.net/lihangll)  
+- WeChat: LHH754086474  
+- [个人网站](https://lihanghang.top/)
 Updated on May 10, 2019  
