@@ -5,7 +5,10 @@
 > [Neural Relation Extraction with Selective Attention over Instances](https://www.aclweb.org/anthology/P16-1200)  
 > [A Review of Relation Extraction](https://www.cs.cmu.edu/~nbach/papers/A-survey-on-Relation-Extraction.pdf)  
 ## 代码结构  
+- models：模型相关代码
+- mainATT.py: 启动模型
+
 ## 结果分析  
 
 ---
-Updated on April 26,2019.
+Updated on May 19,2019.
