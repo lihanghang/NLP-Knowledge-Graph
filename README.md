@@ -1,6 +1,6 @@
 Deep learning for Knowledge-Graph
 ---
-# 探索认知智能系列  
+# 探索认知智能系列[趋势：数据＋知识]   
 ## 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用  
 ---
 [![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](https://github.com/lihanghang/Knowledge-Graph)  
@@ -9,7 +9,8 @@ Deep learning for Knowledge-Graph
 ### NLP  
 1. [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)  
 2. [An Attentive Survey of Attention Models](http://naotu.baidu.com/file/03d4fb82f0c3deec199e61a8d8711b22)  
-3. [BERT:Bidirectional Encoder Representations from Transformers](http://naotu.baidu.com/file/83095ddac345831a78c2fd375a33f6e6?token=367ecbf6095b0a9e)
+3. [BERT:Bidirectional Encoder Representations from Transformers](http://naotu.baidu.com/file/83095ddac345831a78c2fd375a33f6e6?token=367ecbf6095b0a9e)  
+4. [ERNIE:Enhanced Representation through Knowledge Integration](http://naotu.baidu.com/file/ce7fddcdb9a77417267dc9e1292649fc?token=3883492da71ba7ab)  
 ### 研究总结  
 1. [知识图谱综述](http://naotu.baidu.com/file/cffcb478adf07522b64eddb8914c0884?token=01df87c5af357993)   
 2. [知识图谱的挑战](http://naotu.baidu.com/file/9e3257e54c15c6607fa9d5d40111e1bc?token=d8acd3739ba44f6b)  
@@ -111,14 +112,14 @@ Deep learning for Knowledge-Graph
 - 目前对于垂直领域的知识图谱构建需求较多。应用方面在智能问答和主动式对话系统的实践是比较热点的方向。
 - 个人觉得一套爬虫系统可以为知识库提供动态更新的知识来源。
 - 结合知识/常识的对话系统，更具准确性和多样性，是一个值得研究的方向，可让机器引导用户进行话题的交流。如上面比赛２就是这一方向的应用。　　
-
+- <strong>自然语言处理/理解目前门槛已经高升到了BERT啦,在绝大数任务中基本都是必提的，基于Transformer做编码器！如何在模型训练中融入知识（可以是多模态）已是目前研究的热点方向，如百度最近提出的ERNIE表示模型就引入这一思想，也在下游任务中取得了不错的效果。</strong>  
 ---
 #### <strong>说明<strong>
-以上内容均为个人在学习过程的相关整理（包含互联网内容、个人整理笔记等），希望对研究学习认知智能领域的小伙伴有帮助。
+- 以上内容均为个人在学习过程的相关整理（包含互联网内容、个人整理笔记等），希望对研究学习认知智能领域的小伙伴有帮助。  
 
 ---
 ###
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
-- 邮箱：hanghangli19@126.com
-Updated on May 13, 2019  
+- 邮箱：hanghangli19@126.com  
+Updated on May 27, 2019  

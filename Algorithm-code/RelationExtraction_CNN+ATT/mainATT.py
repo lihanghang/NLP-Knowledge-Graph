@@ -38,3 +38,96 @@ def train(**kwargs):
 	optimizer = optim.Adadelta(model.parameters(), rho=0.95, eps=1e-6)
 
 
+	# train
+	for epoch in range(opt.num_epochs):
+		total_loss = 0
+		for idx, (data, label_set) in enumerate(train_data_loader):
+			label = [l[0] for l in label_set]
+			optimizer.zero_grad()
+			model.batch_size = opt.batch_size
+			loss = model(data, label)
+			if opt.use_gpu:
+				label = torch.LongTensor(label).cuda()
+			else:
+				label = troch.LongTensor(label)
+		    loss.backward()
+		    optimizer.step()
+		    total_loss += loss.item()
+
+		if epoch > 2:
+			pred_res, p_num = predict_var(model, test_data_loader)
+			all_pre, all_rec = eval_metric_var(pred_res, p_num)
+			last_pre, last_rec = all_pre[-1], all_rec[-1]
+			if last_pre > 0.24 and last_rec > 0.24:
+				save_pr(opt.result_dir, model.model_name, epoch, all_pre, all_rec, opt=opt.print_opt)
+			    print('{} Epoch {} save pr'.format(now, epoch + 1))
+			print('{} Epoch {}/{}: train loss: {}; test precision: {}, test recall {}'.format(now(), epoch + 1, opt.num_epochs, total_loss, last_pre, last_rec))
+	    else:
+	    	print('{} Epoch {}/{}: train loss: {};'.format(now(), epoch + 1, opt.num_epochs, total_loss))
+
+
+def predict_var(model, test_data_loader):
+	'''
+	Apply the prediction method in Lin2016
+	'''
+	model.eval()
+
+	res = []
+	true_y = []
+	for idx, (data, labels) in enumerate(test_data_loader):
+		out = model(data)
+		true_y.extend(labels)
+		if opt.use_gpu:
+			out = out.data.cpu().numpy().tolist()
+		else:
+			out = out.data.numpy().tolist()
+	    for r in range(1, opt.rel_num)
+	        for j in range(len(out[0])):
+	        	res.append([labels[j], r, out[r][j]])
+	model.train()
+	positive_num = len([i for i in true_y if i[0] > 0])
+	return res, positive_num
+
+
+def eval_metric_var(pred_res, p_num):
+	'''
+	Apply the evalation method in lin 2016
+	'''
+    
+    pred_res_sort = sorted(pred_res, key=lambda x: -x[2])
+    correct = 0.0
+    all_pre = []
+    all_rec = []
+
+    for i in range(2000):
+    	true_y = pred_res_sort[i][0]
+    	pred_y = pred_res_sort[i][1]
+    	for j in true_y:
+    		if pred_y == j:
+    			correct += 1
+    			break
+    	precision = correct / (i + 1)
+    	recall = correct / p_num
+    	all_pre.append(precision)
+    	all_rec.append(recall)
+
+    print("positive_num: {}; correct: {}".format(p_num, correct))
+    return all_pre, all_rec
+
+def predict(model, test_data_loader):
+	'''
+	Apply the prediction method in zeng 2015
+	'''
+	model.eval()
+
+	pred_y = []
+	true_y = []
+	pred_p = []
+
+	for idx, (data, labels) in enumerate(test_data_loader):
+		true_y.extend(labels)
+		out = model(data)
+		res = torch.max(out, 1)
+		
+
+
