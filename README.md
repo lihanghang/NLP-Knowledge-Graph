@@ -7,7 +7,7 @@ Deep learning for Knowledge-Graph
 - Algorithm-code 知识图谱相关算法实现  
 - datasets 相关数据集  
 - my summary 主要以PPT总结  
--　NLP&KG基础 自然语言处理与知识图谱基础知识，主要包括词表示、构建等。  
+- NLP&KG基础 自然语言处理与知识图谱基础知识，主要包括词表示、构建等。  
 - SmartInteraction 主要涉及对话系统的实践。是一个长期的规划。  
 - 认知科学 主要扩展知识了解  
 - 事理图谱 以事件为中心进行图谱建立  
