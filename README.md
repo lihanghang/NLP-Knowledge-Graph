@@ -3,6 +3,18 @@ Deep learning for Knowledge-Graph
 # 探索认知智能系列[趋势：数据＋知识]   
 ## 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用  
 ---
+## 目录结构
+- Algorithm-code 知识图谱相关算法实现  
+- datasets 相关数据集  
+- my summary 主要以PPT总结  
+-　NLP&KG基础 自然语言处理与知识图谱基础知识，主要包括词表示、构建等。  
+- SmartInteraction 主要涉及对话系统的实践。是一个长期的规划。  
+- 认知科学 主要扩展知识了解  
+- 事理图谱 以事件为中心进行图谱建立  
+- 文本相似度 主要解决在对话中Query和Answer的匹配  
+- 知识存储 主要是知识库的建立  
+- 知识构建　主要涉及实体、关系的抽取等  
+---
 [![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](https://github.com/lihanghang/Knowledge-Graph)  
 <font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  
 --- 
@@ -66,6 +78,8 @@ Deep learning for Knowledge-Graph
 | 7          |   deepdive   |斯坦福大学的开源知识抽取工具（三元组抽取）， 支持python|
 | 8          |   FudanDNN-NLP3.0   |用于中文分词、命名识别、词性标注、句子分类、语义分析、知识库访问、对话问答,支持Java----复旦大学计算机学院机器人研究实验室所开发的基于深度学习的中文自然语言处理工具|
 | 9          |   Stanford CoreNLP   |可进行多语言的词性标注器、命名实体的识别器、解析器（句子与语法结构）、指代消解器（就是在篇章中确定代词指向哪个名词短语的问题）、情感分析器、   引导模式学习器、开放信息提取器， Java/Python----- Stanford CoreNLP是斯坦福大学的自然语言处理工具包,工具包需要java的支持|
+
+
 #### 图存储与查询工具
 | 编号        | 名称    |  主要功能  |
 | --------   | -----:  | :----:     |
@@ -122,4 +136,4 @@ Deep learning for Knowledge-Graph
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - 邮箱：hanghangli19@126.com  
-Updated on May 27, 2019  
+Updated on June 2, 2019  
