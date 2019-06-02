@@ -117,8 +117,8 @@ Deep learning for Knowledge-Graph
 --- 
 
 #### 比赛
-1. ATEC蚂蚁开发者大赛之学习赛--NLP之问题相似度计算--2019-3  
-2. 百度2019语言与智能技术竞赛之第二赛道--[知识驱动对话](http://lic2019.ccf.org.cn/talk)--2019-4  
+1. ATEC蚂蚁开发者大赛之学习赛--NLP之问题[相似度计算](https://github.com/lihanghang/Knowledge-Graph/tree/master/Algorithm-code/Text-Similarity)--2019-3  
+2. 百度2019语言与智能技术竞赛之第二赛道--[知识驱动对话](https://github.com/lihanghang/Knowledge-driven-dialogue)--2019-4  
 3. SMP2019中文人机对话技术评测（ECDT）,子任务：**领域分类、意图识别和语义槽填充**--[Task1:自然语言理解评测](https://mp.weixin.qq.com/s?__biz=MzIxMjAzNDY5Mg==&mid=2650794638&idx=1&sn=bbba4f2c4b62ccc1bef59d8f12b2c56f&chksm=8f477f65b830f673c76cd1907b4a044a5390bd7f0a6ca28d8bde2dcacd47c57207ffc8e59643&mpshare=1&scene=1&srcid=#rd)--2019-5  
 ---
 #### 思考
