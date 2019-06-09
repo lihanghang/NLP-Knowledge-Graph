@@ -32,6 +32,19 @@ Deep learning for Knowledge-Graph
 5. [KBQA](http://naotu.baidu.com/file/5c17a01de73d972501d8b3cd187908cb?token=b9a47b442d527efe)  
 6. [赵汀阳：人工智能的自我意识何以可能？1-3](http://m.aisixiang.com/data/114807.html)
 7. [**NLP University 开张大吉**](http://blog.sciencenet.cn/blog-362400-944348.html)--李维老师，Simon Fraser University，博士  
+#### 知识图谱相关会议
+| 编号        | 名称    | 等级    | 类型| 领域|
+| :--------:   | :-----  | :-----  |:-----  |:-----  |
+| 1          | ACL     | A类 |  学术会议|人工智能|
+| 2          | CVPR    | A类 |  学术会议|人工智能|
+| 3          |ICML     | A类 |  学术会议|人工智能|
+| 4          | IJCAI   | A类 |  学术会议|人工智能|
+| 5          |EMNLP    | B类 |  学术会议|人工智能|
+|6           |CIKM     | B类 |  学术会议|数据库／数据挖掘／内容检索|
+|7           |AAAI     | A类 |  学术会议|人工智能|
+|8           |SIGKDD   | A类 |  学术会议|数据库／数据挖掘／内容检索|
+|9           |TKDE     | A类 |  学术期刊|(数据库/数据挖掘/内容检索)|
+|10          |SIGIR    | A类 |  学术会议|数据库／数据挖掘／内容检索|
 #### 事理图谱  
 1. [事理图谱综述](http://naotu.baidu.com/file/528dabd616383f39971be09020fc9cab?token=1d18d940bf63ea42)
 
@@ -128,6 +141,7 @@ Deep learning for Knowledge-Graph
 - 个人觉得一套爬虫系统可以为知识库提供动态更新的知识来源。
 - 结合知识/常识的对话系统，更具准确性和多样性，是一个值得研究的方向，可让机器引导用户进行话题的交流。如上面比赛２就是这一方向的应用。　　
 - <strong>自然语言处理/理解目前门槛已经高升到了BERT啦,在绝大数任务中基本都是必提的，基于Transformer做编码器！如何在模型训练中融入知识（可以是多模态）已是目前研究的热点方向，如百度最近提出的ERNIE表示模型就引入这一思想，也在下游任务中取得了不错的效果。</strong>  
+- 知识图谱的表示研究问题（Knowledge Graph Embedding, KGE)是当前的一个研究热点。  
 ---
 #### <strong>说明<strong>
 - 以上内容均为个人在学习过程的相关整理（包含互联网内容、个人整理笔记等），希望对研究学习认知智能领域的小伙伴有帮助。  
