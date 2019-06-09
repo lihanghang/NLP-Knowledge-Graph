@@ -23,6 +23,7 @@ Deep learning for Knowledge-Graph
 2. [An Attentive Survey of Attention Models](http://naotu.baidu.com/file/03d4fb82f0c3deec199e61a8d8711b22)  
 3. [BERT:Bidirectional Encoder Representations from Transformers](http://naotu.baidu.com/file/83095ddac345831a78c2fd375a33f6e6?token=367ecbf6095b0a9e)  
 4. [ERNIE:Enhanced Representation through Knowledge Integration](http://naotu.baidu.com/file/ce7fddcdb9a77417267dc9e1292649fc?token=3883492da71ba7ab)  
+5. [ERNIE: Enhanced Language Representation with Informative Entities](http://naotu.baidu.com/file/3d008a634578596748678f832389dfd1?token=0db6712fd8dbe238)  
 ### 研究总结  
 1. [知识图谱综述](http://naotu.baidu.com/file/cffcb478adf07522b64eddb8914c0884?token=01df87c5af357993)   
 2. [知识图谱的挑战](http://naotu.baidu.com/file/9e3257e54c15c6607fa9d5d40111e1bc?token=d8acd3739ba44f6b)  
@@ -136,4 +137,4 @@ Deep learning for Knowledge-Graph
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - 邮箱：hanghangli19@126.com  
-Updated on June 2, 2019  
+Updated on June 9, 2019  

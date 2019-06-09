@@ -1,8 +1,8 @@
 # 使用分段卷积神经网络结合注意力机制实现文本关系提取
 ## 实验环境  
-- python2.7  
-- numpy1.13.3  
-- pytorch1.0+  
+- python 2.7  
+- numpy 1.13.3  
+- pytorch 1.0+  
 
 ## 实验数据  
 - [NYT](https://pan.baidu.com/s/1DZYXaz7i9qRehnjMScKPdQ)提取码: j5g8  
