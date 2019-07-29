@@ -84,9 +84,9 @@ class FilterNYTLoad(object):
         vecs = []
 
         wordlist.append('BLANK')
-        wordlist.extend([word.strip('\n') for word in file(self.word_path)])
+        wordlist.extend([word.strip('\n') for word in open(self.word_path)])
 
-        for line in file(self.w2v_path):
+        for line in open(self.w2v_path):
             line = line.strip('\n').split()
             vec = map(float, line)
             vecs.append(vec)
@@ -109,7 +109,7 @@ class FilterNYTLoad(object):
         '''
         all_sens =[]
         all_labels =[]
-        f = file(path)
+        f = open(path)
         while 1:
             line = f.readline()
             if not line:
