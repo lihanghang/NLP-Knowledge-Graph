@@ -47,7 +47,7 @@ Deep learning for Knowledge-Graph
 |10          |SIGIR    | A类 |  学术会议|数据库／数据挖掘／内容检索|
 #### 事理图谱  
 1. [事理图谱综述](http://naotu.baidu.com/file/528dabd616383f39971be09020fc9cab?token=1d18d940bf63ea42)
-
+2. [白硕：事理图谱六问六答](https://mp.weixin.qq.com/s/offqg1kuI49B16D-P5QVZw)  
 
 
 #### 对话系统技术 
@@ -150,5 +150,5 @@ Deep learning for Knowledge-Graph
 ###
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
-- 邮箱：hanghangli19@126.com  
-Updated on June 9, 2019  
+- 邮箱：lyhunters@gmail.com  
+- Updated on July 30,2019.  
