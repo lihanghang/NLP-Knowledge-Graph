@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 # coding=utf-8
+from __future__ import print_function
 import tensorflow as tf
 import numpy as np
 import os
@@ -10,8 +11,12 @@ from Input_preprocess import InputHelper
 from siamese_network import SiameseLSTMw2v
 from six.moves import xrange
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
+try:
+    reload(sys)  # Python 2
+    sys.setdefaultencoding('utf-8')
+except NameError:
+    pass  # Python 3
 
 # Parameters
 # word2vec模型（采用已训练好的中文模型）
@@ -51,7 +56,7 @@ DEV_PERCENT = 10
 ALLOW_SOFT_PLACEMENT = True
 LOG_DEVICE_PLACEMENT = False
 
-print '训练开始......................'
+print('训练开始......................')
 start_time = datetime.datetime.now()
 
 inpH = InputHelper()
@@ -224,7 +229,7 @@ with tf.Graph().as_default():
         time_str = datetime.datetime.now().isoformat()
         print("DEV {}: step {}, loss {:g}, acc {:g}, f1 {:g}".format(time_str, step, loss, accuracy, f1))
         dev_summary_writer.add_summary(summaries, step)
-        print (y_batch, sim)
+        print(y_batch, sim)
         return accuracy
 
 
