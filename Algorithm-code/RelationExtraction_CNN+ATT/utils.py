@@ -16,7 +16,7 @@ def save_pr(out_dir, name, epoch, pre, rec, fp_res=None, opt=None):
 		fp_out = open('{}/{}_{}_FP.txt'.format(out_dir, name, epoch + 1), 'w')
 		for idx, r, p in fp_res:
 			fp_out.write('{}{}{}\n'.format(idx, r, p))
-        fp_out.close()
+	fp_out.close()
 
 	for p, r in zip(pre, rec):
 		out.write('{} {}\n'.format(p, r))
