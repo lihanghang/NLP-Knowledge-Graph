@@ -61,10 +61,10 @@ def eval_metric(true_y, pred_y, pred_p):
 			precision = 1.0
 		else:
 			precision = tp * 1.0 / (fp + tp)
-        recall = tp * 1.0 / positive_num
-        if precision != all_pre[-1] or recall != all_rec[-1]:
-        	all_pre.append(precision)
-        	all_rec.append(recall)
+	recall = tp * 1.0 / positive_num
+	if precision != all_pre[-1] or recall != all_rec[-1]:
+		all_pre.append(precision)
+		all_rec.append(recall)
 
 
 	print("tp={}; fp={}; fn={}; positive_num={}".format(tp, fp, fn, positive_num))
