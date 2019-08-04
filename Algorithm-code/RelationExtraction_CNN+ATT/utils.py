@@ -16,7 +16,7 @@ def save_pr(out_dir, name, epoch, pre, rec, fp_res=None, opt=None):
 		fp_out = open('{}/{}_{}_FP.txt'.format(out_dir, name, epoch + 1), 'w')
 		for idx, r, p in fp_res:
 			fp_out.write('{}{}{}\n'.format(idx, r, p))
-        fp_out.close()
+	fp_out.close()
 
 	for p, r in zip(pre, rec):
 		out.write('{} {}\n'.format(p, r))
@@ -61,10 +61,10 @@ def eval_metric(true_y, pred_y, pred_p):
 			precision = 1.0
 		else:
 			precision = tp * 1.0 / (fp + tp)
-        recall = tp * 1.0 / positive_num
-        if precision != all_pre[-1] or recall != all_rec[-1]:
-        	all_pre.append(precision)
-        	all_rec.append(recall)
+	recall = tp * 1.0 / positive_num
+	if precision != all_pre[-1] or recall != all_rec[-1]:
+		all_pre.append(precision)
+		all_rec.append(recall)
 
 
 	print("tp={}; fp={}; fn={}; positive_num={}".format(tp, fp, fn, positive_num))
