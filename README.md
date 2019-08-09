@@ -32,6 +32,7 @@ Deep learning for Knowledge-Graph
 5. [KBQA](http://naotu.baidu.com/file/5c17a01de73d972501d8b3cd187908cb?token=b9a47b442d527efe)  
 6. [赵汀阳：人工智能的自我意识何以可能？1-3](http://m.aisixiang.com/data/114807.html)
 7. [**NLP University 开张大吉**](http://blog.sciencenet.cn/blog-362400-944348.html)--李维老师，Simon Fraser University，博士  
+8. [ACL 2019 知识图谱的全方位总结](https://mp.weixin.qq.com/s/k-NP7Y2ERkbegQhXtDck-Q)  
 #### 知识图谱相关会议
 | 编号        | 名称    | 等级    | 类型| 领域|
 | :--------:   | :-----  | :-----  |:-----  |:-----  |
