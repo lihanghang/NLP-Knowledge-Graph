@@ -1,9 +1,11 @@
 Deep learning for Knowledge-Graph
 ---
 # 探索认知智能系列[趋势：数据＋知识]   
-## 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用  
-[NLP-Progress](https://nlpprogress.com/)
+## 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用
+- [NLP-Progress](https://nlpprogress.com/)
 > Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
+- [AI工程实践能力总结](https://github.com/lihanghang/AI_application_summary)
+> AI工程化实践过程总结，包括编码、部署等经验与工具等
 ---
 ## 目录结构
 - Algorithm-code 知识图谱相关算法实现  
@@ -153,5 +155,5 @@ Deep learning for Knowledge-Graph
 ###
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
-- 邮箱：lyhunters@gmail.com  
-- Updated on September 8,2019.  
+- 邮箱：lhhroots@126.com  
+- Updated on September 14,2019.  
