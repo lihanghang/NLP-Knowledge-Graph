@@ -1,17 +1,42 @@
-Deep learning for Knowledge-Graph
+<!-- TOC -->
+
+- [Deep learning for Knowledge-Graph](#deep-learning-for-knowledge-graph)
+    - [项目外链](#项目外链)
+    - [项目目录说明](#项目目录说明)
+        - [NLP](#nlp)
+        - [研究总结](#研究总结)
+            - [知识图谱相关会议](#知识图谱相关会议)
+            - [事理图谱](#事理图谱)
+            - [对话系统技术](#对话系统技术)
+            - [关于NLP/对话/KG的商业化相关（仅供交流学习）](#关于nlp对话kg的商业化相关仅供交流学习)
+            - [主流开源的问答&&对话系统列表](#主流开源的问答对话系统列表)
+            - [主流语义平台列表](#主流语义平台列表)
+            - [中英文文本预处理工具列表](#中英文文本预处理工具列表)
+            - [图存储与查询工具](#图存储与查询工具)
+            - [可视化工具](#可视化工具)
+            - [中英文知识图谱数据集列表](#中英文知识图谱数据集列表)
+            - [比赛](#比赛)
+            - [思考](#思考)
+            - [<strong>说明<strong>](#strong说明strong)
+    - [](#)
+
+<!-- /TOC -->
+
+# Deep learning for Knowledge-Graph
+> 探索认知智能系列---趋势：数据融合知识  
+> 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用
 ---
-# 探索认知智能系列[趋势：数据＋知识]   
-## 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用
+## 项目外链
 - [NLP-Progress](https://nlpprogress.com/)
 > Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
 - [AI工程实践能力总结](https://github.com/lihanghang/AI_application_summary)
 > AI工程化实践过程总结，包括编码、部署等经验与工具等
 ---
-## 目录结构
+## 项目目录说明
 - Algorithm-code 知识图谱相关算法实现  
 - datasets 相关数据集  
 - my summary 主要以PPT总结  
-- NLP&KG基础 自然语言处理与知识图谱基础知识，主要包括词表示、构建等。  
+- NLP&KG基础 自然语言处理与知识图谱基础知识，主要包括词表示、构建等。 
 - SmartInteraction 主要涉及对话系统的实践。是一个长期的规划。  
 - 认知科学 主要扩展知识了解  
 - 事理图谱 以事件为中心进行图谱建立  
