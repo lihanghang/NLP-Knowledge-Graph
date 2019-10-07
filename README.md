@@ -18,6 +18,7 @@ Deep learning for Knowledge-Graph
 - 文本相似度 主要解决在对话中Query和Answer的匹配  
 - 知识存储 主要是知识库的建立  
 - 知识构建　主要涉及实体、关系的抽取等  
+- 中文金融文档抽取 涉及chFinAnn抽取的研究和探索  
 ---
 [![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](https://github.com/lihanghang/Knowledge-Graph)  
 <font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  
@@ -156,4 +157,4 @@ Deep learning for Knowledge-Graph
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - 邮箱：lhhroots@126.com  
-- Updated on September 14,2019.  
+- Updated on October 7,2019.  
