@@ -3,22 +3,23 @@
 - [Deep learning for Knowledge-Graph](#deep-learning-for-knowledge-graph)
     - [项目外链](#项目外链)
     - [项目目录说明](#项目目录说明)
-        - [NLP](#nlp)
-        - [研究总结](#研究总结)
-            - [知识图谱相关会议](#知识图谱相关会议)
-            - [事理图谱](#事理图谱)
-            - [对话系统技术](#对话系统技术)
-            - [关于NLP/对话/KG的商业化相关（仅供交流学习）](#关于nlp对话kg的商业化相关仅供交流学习)
-            - [主流开源的问答&&对话系统列表](#主流开源的问答对话系统列表)
-            - [主流语义平台列表](#主流语义平台列表)
-            - [中英文文本预处理工具列表](#中英文文本预处理工具列表)
-            - [图存储与查询工具](#图存储与查询工具)
-            - [可视化工具](#可视化工具)
-            - [中英文知识图谱数据集列表](#中英文知识图谱数据集列表)
-            - [比赛](#比赛)
-            - [思考](#思考)
-            - [<strong>说明<strong>](#strong说明strong)
-    - [](#)
+    - [研究总结](#研究总结)
+        - [KG&QA相关理论解析](#kgqa相关理论解析)
+        - [NLP 相关论文解析](#nlp-相关论文解析)
+        - [知识图谱相关会议](#知识图谱相关会议)
+        - [事理图谱](#事理图谱)
+        - [对话系统技术](#对话系统技术)
+        - [关于NLP/对话/KG的商业化相关（仅供交流学习）](#关于nlp对话kg的商业化相关仅供交流学习)
+        - [主流开源的问答&&对话系统列表](#主流开源的问答对话系统列表)
+        - [主流语义平台列表](#主流语义平台列表)
+        - [中英文文本预处理工具列表](#中英文文本预处理工具列表)
+        - [图存储与查询工具](#图存储与查询工具)
+        - [可视化工具](#可视化工具)
+        - [中英文知识图谱数据集列表](#中英文知识图谱数据集列表)
+    - [比赛](#比赛)
+    - [思考](#思考)
+    - [<strong>说明<strong>](#strong说明strong)
+    - [Contact](#contact)
 
 <!-- /TOC -->
 
@@ -48,13 +49,9 @@
 [![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](https://github.com/lihanghang/Knowledge-Graph)  
 <font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  
 --- 
-### NLP  
-1. [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)  
-2. [An Attentive Survey of Attention Models](http://naotu.baidu.com/file/03d4fb82f0c3deec199e61a8d8711b22)  
-3. [BERT:Bidirectional Encoder Representations from Transformers](http://naotu.baidu.com/file/83095ddac345831a78c2fd375a33f6e6?token=367ecbf6095b0a9e)  
-4. [ERNIE:Enhanced Representation through Knowledge Integration](http://naotu.baidu.com/file/ce7fddcdb9a77417267dc9e1292649fc?token=3883492da71ba7ab)  
-5. [ERNIE: Enhanced Language Representation with Informative Entities](http://naotu.baidu.com/file/3d008a634578596748678f832389dfd1?token=0db6712fd8dbe238)  
-### 研究总结  
+ 
+## 研究总结
+### KG&QA相关理论解析  
 1. [知识图谱综述](http://naotu.baidu.com/file/cffcb478adf07522b64eddb8914c0884?token=01df87c5af357993)   
 2. [知识图谱的挑战](http://naotu.baidu.com/file/9e3257e54c15c6607fa9d5d40111e1bc?token=d8acd3739ba44f6b)  
 3. [深度学习与知识图谱](http://naotu.baidu.com/file/c1e3580697d86dcb29797c068b7a1679?token=76a20c7f80d0137b)  
@@ -63,7 +60,13 @@
 6. [赵汀阳：人工智能的自我意识何以可能？1-3](http://m.aisixiang.com/data/114807.html)
 7. [**NLP University 开张大吉**](http://blog.sciencenet.cn/blog-362400-944348.html)--李维老师，Simon Fraser University，博士  
 8. [ACL 2019 知识图谱的全方位总结](https://mp.weixin.qq.com/s/k-NP7Y2ERkbegQhXtDck-Q)  
-#### 知识图谱相关会议
+### NLP 相关论文解析 
+1. [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)  
+2. [An Attentive Survey of Attention Models](http://naotu.baidu.com/file/03d4fb82f0c3deec199e61a8d8711b22)  
+3. [BERT:Bidirectional Encoder Representations from Transformers](http://naotu.baidu.com/file/83095ddac345831a78c2fd375a33f6e6?token=367ecbf6095b0a9e)  
+4. [ERNIE:Enhanced Representation through Knowledge Integration](http://naotu.baidu.com/file/ce7fddcdb9a77417267dc9e1292649fc?token=3883492da71ba7ab)  
+5. [ERNIE: Enhanced Language Representation with Informative Entities](http://naotu.baidu.com/file/3d008a634578596748678f832389dfd1?token=0db6712fd8dbe238) 
+### 知识图谱相关会议
 | 编号        | 名称    | 等级    | 类型| 领域|
 | :--------:   | :-----  | :-----  |:-----  |:-----  |
 | 1          | ACL     | A类 |  学术会议|人工智能|
@@ -76,24 +79,24 @@
 |8           |SIGKDD   | A类 |  学术会议|数据库／数据挖掘／内容检索|
 |9           |TKDE     | A类 |  学术期刊|(数据库/数据挖掘/内容检索)|
 |10          |SIGIR    | A类 |  学术会议|数据库／数据挖掘／内容检索|
-#### 事理图谱  
+### 事理图谱  
 1. [事理图谱综述](http://naotu.baidu.com/file/528dabd616383f39971be09020fc9cab?token=1d18d940bf63ea42)
 2. [白硕：事理图谱六问六答](https://mp.weixin.qq.com/s/offqg1kuI49B16D-P5QVZw)  
 
 
-#### 对话系统技术 
+### 对话系统技术 
 1. [CSDN|公开课笔记：一文详解启发式对话中的知识管理_aispeech](http://www.aispeech.com/index.php?m=content&c=index&a=show&catid=22&id=339)
 2. [对话系统综述](http://naotu.baidu.com/file/59a5b3a1573467a8fcdde3e0c7c19066?token=0d854a82f9c88916)
 3. [对话系统中的口语理解技术(SLU)](http://wemedia.ifeng.com/92890282/wemedia.shtml)  
 
-#### 关于NLP/对话/KG的商业化相关（仅供交流学习）
+### 关于NLP/对话/KG的商业化相关（仅供交流学习）
 1. [语音交互中的自然语言处理技术](./NLP&KG基础/ccksslides2013-2018/2017/CCKS交流-语音交互中的自然语言处理技术.pdf)－－xiaomi
 2. [精益知识图谱方法论](./NLP&KG基础/ccksslides2013-2018/2016/鲍捷-精益知识图谱方法论.pdf)--文因互联
 3. [小i机器人在中文语义开放平台的研究与进展](./NLP&KG基础/ccksslides2013-2018/2016/陈培华-小i机器人在中文语义开放平台的研究与进展.pdf)--小ｉ机器人
 4. [科大讯飞-从应用角度来看知识图谱的价值和挑战](./NLP&KG基础/ccksslides2013-2018/2014/科大讯飞-从应用角度来看知识图谱的价值和挑战.pdf)--科大讯飞
 
 ---
-#### 主流开源的问答&&对话系统列表
+### 主流开源的问答&&对话系统列表
 | 编号        | 名称    |  地址  |
 | --------   | -----:  | :----:     |
 | 1          | [questionAnsweringsystem](https://github.com/ysc/QuestionAnsweringSystem)     |   QuestionAnsweringSystem是一个Java实现的人机问答系统，能够自动分析问题并给出候选答案。|
@@ -102,7 +105,7 @@
 
 
 
-#### 主流语义平台列表
+### 主流语义平台列表
 | 编号        | 名称    | 
 | --------   | -----:  | 
 | 1          | [腾讯文智中文语义平台](http://nlp.qq.com/)     |  
@@ -111,7 +114,7 @@
 | 4          | [哈工大语言云](http://ltp.ai/) | 
 
 
-#### 中英文文本预处理工具列表
+### 中英文文本预处理工具列表
 | 编号        | 名称    |  主要功能  |
 | --------   | -----:  | :----:     |
 | 1          | THULAC  |中文词法分析工具，支持C++/JAVA/Python by清华|
@@ -125,7 +128,7 @@
 | 9          |   Stanford CoreNLP   |可进行多语言的词性标注器、命名实体的识别器、解析器（句子与语法结构）、指代消解器（就是在篇章中确定代词指向哪个名词短语的问题）、情感分析器、   引导模式学习器、开放信息提取器， Java/Python----- Stanford CoreNLP是斯坦福大学的自然语言处理工具包,工具包需要java的支持|
 
 
-#### 图存储与查询工具
+### 图存储与查询工具
 | 编号        | 名称    |  主要功能  |
 | --------   | -----:  | :----:     |
 | 1          | [Neo4j](https://www.w3cschool.cn/neo4j/)  |开源图形数据库，由Java开发。|
@@ -139,14 +142,14 @@
 | 9          |　[rdflib](https://rdflib.readthedocs.io/en/stable/) |基于Python语言编写的，RDF / XML，N3，NTriples，N-Quads，Turtle，TriX，RDFa和Microdata的解析器和序列化器，支持SPARQL 1.1查询和更新语句。|  
 
 
-#### 可视化工具
+### 可视化工具
 | 编号        | 名称    |  主要功能  |
 | --------   | -----:  | :----:     |
 | 1          | ECharts  |百度开源工具，API封装完善，简单好用，易上手，但不支持事件处理。|
 | 2          | Cytoscape.js    | 针对图形和网络，事件交互性的支持不错，同样易上手。|
 | 3          | D3.js  | 使用门槛较高，但支持事件处理器，D3的开销极小，支持大型数据集和交互动画的动态行为，支持图形丰富。|
 
-#### 中英文知识图谱数据集列表
+### 中英文知识图谱数据集列表
 | 编号        | 名称    |  应用任务  |
 | --------   | -----:  | :----:     |
 | 1          | [OpenKG](http://www.openkg.cn/ )      |  开放知识图谱          |
@@ -161,12 +164,12 @@
 | 10          | [七律-通用知识图谱](http://openkg.cn/dataset/7lore/resource/30ee798a-3199-4de4-9792-7746bc8891e0) | 本数据共包含8000万条百科三元组，为七律的一部分子集，后续将持续加大开放。七律-7Lore，是狗尾草科技精心打造的百科知识图谱，是人类世界海量知识的集合，它包含了事物、事实、概念、规则等等。|
 --- 
 
-#### 比赛
+## 比赛
 1. ATEC蚂蚁开发者大赛之学习赛--NLP之问题[相似度计算](https://github.com/lihanghang/Knowledge-Graph/tree/master/Algorithm-code/Text-Similarity)--2019-3  
 2. 百度2019语言与智能技术竞赛之第二赛道--[知识驱动对话](https://github.com/lihanghang/Knowledge-driven-dialogue)--2019-4  
 3. SMP2019中文人机对话技术评测（ECDT）,子任务：**领域分类、意图识别和语义槽填充**--[Task1:自然语言理解评测](https://mp.weixin.qq.com/s?__biz=MzIxMjAzNDY5Mg==&mid=2650794638&idx=1&sn=bbba4f2c4b62ccc1bef59d8f12b2c56f&chksm=8f477f65b830f673c76cd1907b4a044a5390bd7f0a6ca28d8bde2dcacd47c57207ffc8e59643&mpshare=1&scene=1&srcid=#rd)--2019-5  
 ---
-#### 思考
+## 思考
 - 知识图谱的构建是一个体系化的工程项目，目前结合深度学习技术以及自然语言处理知识在一定程度上提升了构建的效率并降低了成本。知识图谱的地位在认知智能是一个基础资源设施，基于此可以进行问答、对话、、推荐系统、可解释性的增强等方面的应用。  
 - 目前对于垂直领域的知识图谱构建需求较多。应用方面在智能问答和主动式对话系统的实践是比较热点的方向。
 - 个人觉得一套爬虫系统可以为知识库提供动态更新的知识来源。
@@ -174,11 +177,11 @@
 - <strong>自然语言处理/理解目前门槛已经高升到了BERT啦,在绝大数任务中基本都是必提的，基于Transformer做编码器！如何在模型训练中融入知识（可以是多模态）已是目前研究的热点方向，如百度最近提出的ERNIE表示模型就引入这一思想，也在下游任务中取得了不错的效果。</strong>  
 - 知识图谱的表示研究问题（Knowledge Graph Embedding, KGE)是当前的一个研究热点。  
 ---
-#### <strong>说明<strong>
+## <strong>说明<strong>
 - 以上内容均为个人在学习过程的相关整理（包含互联网内容、个人整理笔记等），希望对研究学习认知智能领域的小伙伴有帮助。  
 
 ---
-###
+## Contact
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - 邮箱：lhhroots@126.com  
