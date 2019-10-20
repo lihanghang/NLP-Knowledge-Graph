@@ -184,5 +184,5 @@
 ## Contact
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
-- 邮箱：lhhroots@126.com  
-- Updated on October 7,2019.  
+- 邮箱：hanghangli@aliyun.com  
+- Updated on October 20,2019.  
