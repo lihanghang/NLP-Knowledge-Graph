@@ -66,6 +66,7 @@
 3. [BERT:Bidirectional Encoder Representations from Transformers](http://naotu.baidu.com/file/83095ddac345831a78c2fd375a33f6e6?token=367ecbf6095b0a9e)  
 4. [ERNIE:Enhanced Representation through Knowledge Integration](http://naotu.baidu.com/file/ce7fddcdb9a77417267dc9e1292649fc?token=3883492da71ba7ab)  
 5. [ERNIE: Enhanced Language Representation with Informative Entities](http://naotu.baidu.com/file/3d008a634578596748678f832389dfd1?token=0db6712fd8dbe238) 
+6. [Google [T5](https://arxiv.org/abs/1910.10683): Text-To-Text Transfer Transformer](http://naotu.baidu.com/file/00f59fe4e3b92c08fe41d5439fb359c5?token=291c77832b615c13)
 ### 知识图谱相关会议
 | 编号        | 名称    | 等级    | 类型| 领域|
 | :--------:   | :-----  | :-----  |:-----  |:-----  |
@@ -185,4 +186,4 @@
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - 邮箱：lhhroots@126.com  
-- Updated on October 7,2019.  
+- Updated on October 26,2019.  
