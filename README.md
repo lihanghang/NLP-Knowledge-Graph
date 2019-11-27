@@ -6,6 +6,7 @@
     - [研究总结](#研究总结)
         - [KG&QA相关理论解析](#kgqa相关理论解析)
         - [NLP 相关论文解析](#nlp-相关论文解析)
+        - [中文金融文档结构化研究](#中文金融文档结构化研究)
         - [知识图谱相关会议](#知识图谱相关会议)
         - [事理图谱](#事理图谱)
         - [对话系统技术](#对话系统技术)
@@ -67,6 +68,9 @@
 4. [ERNIE:Enhanced Representation through Knowledge Integration](http://naotu.baidu.com/file/ce7fddcdb9a77417267dc9e1292649fc?token=3883492da71ba7ab)  
 5. [ERNIE: Enhanced Language Representation with Informative Entities](http://naotu.baidu.com/file/3d008a634578596748678f832389dfd1?token=0db6712fd8dbe238) 
 6. [Google T5: Text-To-Text Transfer Transformer](http://naotu.baidu.com/file/00f59fe4e3b92c08fe41d5439fb359c5?token=291c77832b615c13) 
+### 中文金融文档结构化研究
+1. [Doc2EDAG](http://naotu.baidu.com/file/22bdac8e2349f389e6101a48eccd1ec0?token=fc71ed550825f103)
+
 ### 知识图谱相关会议
 | 编号        | 名称    | 等级    | 类型| 领域|
 | :--------:   | :-----  | :-----  |:-----  |:-----  |
@@ -187,4 +191,4 @@
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - 邮箱：hanghangli@aliyun.com  
-- Updated on October 27,2019.  
+- Updated on November 27,2019.  
