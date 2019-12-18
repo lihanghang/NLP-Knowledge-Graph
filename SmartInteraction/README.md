@@ -7,6 +7,7 @@
     - [对话系统分类](#对话系统分类)
     - [业界问答系统搭建方法](#业界问答系统搭建方法)
     - [BAT对话研究论文学习总结](#bat对话研究论文学习总结)
+    - [业界人机对话技术](#业界人机对话技术)
     - [对话系统核心模块](#对话系统核心模块)
 
 <!-- /TOC -->
@@ -37,13 +38,14 @@
   + 问答可以通过Sql查询（Berant et al.,2013），分类（Ferhan et al.,2017），相似度匹配(Yu et al.,2017)等方式从知识图谱中直接获取回复；或者通过注意力机制（He et al.,2017）或记忆网络（Madotto et al.,2018）等方式把知识图谱作为先验知识融入到问题表征中来帮助获取更好的回复。
 ## BAT对话研究论文学习总结  
 - [ESIM_Alibaba](http://naotu.baidu.com/file/35d306210f00fa32e80819ab23faaacd?token=a21cc2541fea5bed) 
-  
+## 业界人机对话技术
+- [多轮人机对话与对话管理技术探索与实践--平安寿险PAI](https://mp.weixin.qq.com/s/k-Uatc59J1MxZY8ZaUwS8w) 
 ## 对话系统核心模块
 > 自然语言理解模块 —— Natural Language Understanding (NLU)  
 > 对话管理模块 —— Dialog Management (DM)  
 > 自然语言生成模块 —— Natural Language Generation (NLG)  
 
 ---
-Updated on November 13,2019
+Updated on December 18,2019
 
 
