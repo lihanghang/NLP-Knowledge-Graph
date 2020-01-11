@@ -3,6 +3,7 @@
 - [Deep learning for Knowledge-Graph](#deep-learning-for-knowledge-graph)
     - [项目外链](#项目外链)
     - [项目目录说明](#项目目录说明)
+    - [知识图谱的前世今生](#知识图谱的前世今生)
     - [研究总结](#研究总结)
         - [KG&QA相关理论解析](#kgqa相关理论解析)
         - [NLP 相关论文解析](#nlp-相关论文解析)
@@ -50,6 +51,11 @@
 [![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](https://github.com/lihanghang/Knowledge-Graph)  
 <font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  
 --- 
+## 知识图谱的前世今生
+| 序号        | 文章    | 
+| :--------:   | :-----  | 
+| 1          | [为什么要将「知识图谱」追溯到 1956 年?](https://www.chainnews.com/articles/385804818575.htm)     | 
+
  
 ## 研究总结
 ### KG&QA相关理论解析  
@@ -191,4 +197,4 @@
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - 邮箱：hanghangli@aliyun.com  
-- Updated on November 27,2019.  
+- Updated on January 10,2020.  
