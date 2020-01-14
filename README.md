@@ -35,7 +35,7 @@
 - [AI工程实践能力总结](https://github.com/lihanghang/AI_application_summary)
 > AI工程化实践过程总结，包括编码、部署等经验与工具等
 ---
-## 项目目录说明
+<!-- ## 项目目录说明
 - Algorithm-code 知识图谱相关算法实现  
 - datasets 相关数据集  
 - my summary 主要以PPT总结  
@@ -47,9 +47,9 @@
 - 知识存储 主要是知识库的建立  
 - 知识构建　主要涉及实体、关系的抽取等  
 - 中文金融文档抽取 涉及chFinAnn抽取的研究和探索  
----
-[![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](https://github.com/lihanghang/Knowledge-Graph)  
-<font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  
+--- -->
+<!-- [![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](https://github.com/lihanghang/Knowledge-Graph)  
+<font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  --> 
 --- 
 ## 知识图谱的前世今生
 | 序号        | 文章    | 
