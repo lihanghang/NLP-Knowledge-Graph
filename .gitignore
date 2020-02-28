@@ -1,2 +1,4 @@
 Algorithm-code/venv
 .vscode
+算法实现/.idea
+*.pyc
