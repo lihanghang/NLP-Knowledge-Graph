@@ -38,12 +38,12 @@
  
 ## 业界人机对话技术
 - [多轮人机对话与对话管理技术探索与实践--平安寿险PAI](https://mp.weixin.qq.com/s/k-Uatc59J1MxZY8ZaUwS8w) 
+- IBM-watson系统（重点）
+- Microsoft-XiaoIce系统 （重点）
 ## 对话系统核心模块
 > 自然语言理解模块 —— Natural Language Understanding (NLU)  
 > 对话管理模块 —— Dialog Management (DM)  
 > 自然语言生成模块 —— Natural Language Generation (NLG)  
 
 ---
-Updated on December 18,2019
-
-
+Updated on February 29,2020

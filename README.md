@@ -2,9 +2,9 @@
 
 - [Deep learning for Knowledge-Graph](#deep-learning-for-knowledge-graph)
     - [项目外链](#项目外链)
-    - [项目目录说明](#项目目录说明)
     - [知识图谱的前世今生](#知识图谱的前世今生)
-    - [研究总结](#研究总结)
+    - [研究总结列表](#研究总结列表)
+        - [专题研究](#专题研究)
         - [KG&QA相关理论解析](#kgqa相关理论解析)
         - [NLP 相关论文解析](#nlp-相关论文解析)
         - [中文金融文档结构化研究](#中文金融文档结构化研究)
@@ -32,8 +32,7 @@
 ## 项目外链
 - [NLP-Progress](https://nlpprogress.com/)
 > Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
-- [AI工程实践能力总结](https://github.com/lihanghang/AI_application_summary)
-> AI工程化实践过程总结，包括编码、部署等经验与工具等
+- [技术栈在线文档](https://github.com/lihanghang/AI_application_summary)
 ---
 <!-- ## 项目目录说明
 - Algorithm-code 知识图谱相关算法实现  
@@ -55,9 +54,9 @@
 | 序号        | 文章    | 
 | :--------:   | :-----  | 
 | 1          | [为什么要将「知识图谱」追溯到 1956 年?](https://www.chainnews.com/articles/385804818575.htm)     | 
-
- 
-## 研究总结
+## 研究总结列表
+### 专题研究
+1. [基于知识图谱的对话系统](./基于知识图谱的对话系统)
 ### KG&QA相关理论解析  
 1. [知识图谱综述](http://naotu.baidu.com/file/cffcb478adf07522b64eddb8914c0884?token=01df87c5af357993)   
 2. [知识图谱的挑战](http://naotu.baidu.com/file/9e3257e54c15c6607fa9d5d40111e1bc?token=d8acd3739ba44f6b)  
@@ -197,4 +196,4 @@
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - 邮箱：hanghangli@aliyun.com  
-- Updated on February 19,2020.  
+- Updated on February 29,2020.  
