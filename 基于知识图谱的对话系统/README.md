@@ -39,7 +39,13 @@
 ## 业界人机对话技术
 - [多轮人机对话与对话管理技术探索与实践--平安寿险PAI](https://mp.weixin.qq.com/s/k-Uatc59J1MxZY8ZaUwS8w) 
 - IBM-watson系统（重点）
+  + [DeepQA Team](https://researcher.watson.ibm.com/researcher/view_group_pubs.php?grp=2099&t=1)
+  + [Building Watson: An Overview of the DeepQA Project](https://www.aaai.org/Magazine/Watson/watson.php)
+  + [wiki Watson_(computer)](https://en.wikipedia.org/wiki/Watson_(computer))
+  + [Watson的独特“思考”](http://history.programmer.com.cn/13468/)
 - Microsoft-XiaoIce系统 （重点）
+  + [微软小冰对话机器人架构](http://breezedeus.github.io/2019/02/23/breezedeus-xiaoice-framework.html)
+
 ## 对话系统核心模块
 > 自然语言理解模块 —— Natural Language Understanding (NLU)  
 > 对话管理模块 —— Dialog Management (DM)  
