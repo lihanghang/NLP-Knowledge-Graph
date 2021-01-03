@@ -32,7 +32,7 @@
 ## 项目外链
 - [NLP-Progress](https://nlpprogress.com/)
 > Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
-- [技术栈在线文档](https://github.com/lihanghang/AI_application_summary)
+- [技术栈在线文档](https://ai-application-summary.readthedocs.io/zh_CN/latest/)
 ---
 <!-- ## 项目目录说明
 - Algorithm-code 知识图谱相关算法实现  
@@ -198,5 +198,6 @@
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
 - [wiki-技术总结](https://ai-application-summary.readthedocs.io/zh_CN/latest/)
-- 私人邮箱：hanghangli@aliyun.com  
-- Updated on October 8,2020.  
+- 邮箱：hanghangli@aliyun.com  
+- Updated on January 3,2021.  
+- Authoer: LiHangHang Beijing
