@@ -12,7 +12,7 @@
 <!-- /TOC -->
 
 ## 小智平台初步技术架构　
-![小智平台](./image/SS.png)  
+![小智平台](https://github.com/lihanghang/NLP-Knowledge-Graph/blob/master/基于知识图谱的对话系统/image/SS.png)  
 
 ---
 ## 日常研究总结
@@ -52,4 +52,4 @@
 > 自然语言生成模块 —— Natural Language Generation (NLG)  
 
 ---
-Updated on February 29,2020
+Updated on November 6,2021
