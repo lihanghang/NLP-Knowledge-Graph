@@ -197,7 +197,7 @@
 ## Contact
 - [CSDN](https://blog.csdn.net/lihangll)  
 - [个人网站](https://lihanghang.top/)  
-- [wiki-技术总结](https://ai-application-summary.readthedocs.io/zh_CN/latest/)
+- [wiki-技术总结](https://wiki.lihanghang.top/)
 - 邮箱：hanghangli@aliyun.com  
-- Updated on January 3,2021.  
+- Updated on 11 6,2021.  
 - Authoer: LiHangHang Beijing
