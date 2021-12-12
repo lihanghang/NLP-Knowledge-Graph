@@ -1,3 +1,4 @@
+> 有需要为该开源项目贡献的小伙伴可以联系我哟。
 <!-- TOC -->
 
 - [Deep learning for Knowledge-Graph](#deep-learning-for-knowledge-graph)
