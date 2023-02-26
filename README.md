@@ -1,3 +1,5 @@
+> 有需要为该开源项目贡献的小伙伴可以联系我哟。
+
 <!-- TOC -->
 
 - [Deep learning for Knowledge-Graph](#deep-learning-for-knowledge-graph)
@@ -237,6 +239,19 @@
 - [CSDN](https://blog.csdn.net/lihangll)
 - [个人网站](https://lihanghang.top/)
 - [wiki-技术总结](https://wiki.lihanghang.top/)
+  <<<<<<< HEAD
 - 邮箱：hanghangli@aliyun.co
 - 更新时间：2023.2.26
 - 作者： 李航航 北京
+  =======
+- 邮箱：hanghangli@aliyun.com
+- Updated on 11 6,2021.
+- Authoer: LiHangHang Beijing
+
+>>>>>>> 6aa2dce6d8c6bd96773d49bead16fa9847f0ffb8
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>
