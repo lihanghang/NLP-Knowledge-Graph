@@ -226,6 +226,12 @@
   - 从体验[chatgpt](https://platform.openai.com/docs/models/overview)来看，基本上是我把前面的思考全部覆盖了，信息抽取，对话，观点生成，思维链--有推理，可加入新知识进行更新，写代码，最为惊喜的是能一本正经的胡说八道，对于逻辑性问题还能罗列步骤。
   - 从论文中进一步了解[原理](自然语言处理/语言表示模型/GPT)。GPT-1到GPT3的发展，认识[Transformer](自然语言处理/语言表示模型/encode&decode/Transformer_1706.03762.pdf)基础架构。
 
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=lihanghang/NLP-Knowledge-Graph&type=Date)](https://star-history.com/#lihanghang/NLP-Knowledge-Graph&Date)
+
+
 ---
 
 ## 说明
