@@ -3,18 +3,18 @@
 <!-- TOC -->
 
 - [Deep learning for Knowledge-Graph](#deep-learning-for-knowledge-graph)
-  - [项目外链](#项目外链)
+  - [资源外链](#资源外链)
   - [知识图谱的前世今生](#知识图谱的前世今生)
   - [研究总结列表](#研究总结列表)
     - [专题研究](#专题研究)
-    - [KG&amp;QA相关理论解析](#kgqa相关理论解析)
+    - [KG\&QA相关理论解析](#kgqa相关理论解析)
     - [NLP 相关论文解析](#nlp-相关论文解析)
     - [中文金融文档结构化研究](#中文金融文档结构化研究)
     - [知识图谱相关会议](#知识图谱相关会议)
     - [事理图谱](#事理图谱)
     - [对话系统技术](#对话系统技术)
     - [关于NLP/对话/KG的商业化相关（仅供交流学习）](#关于nlp对话kg的商业化相关仅供交流学习)
-    - [主流开源的问答&amp;&amp;对话系统列表](#主流开源的问答对话系统列表)
+    - [主流开源的问答\&\&对话系统列表](#主流开源的问答对话系统列表)
     - [主流语义平台列表](#主流语义平台列表)
     - [中英文文本预处理工具列表](#中英文文本预处理工具列表)
     - [图存储与查询工具](#图存储与查询工具)
@@ -22,6 +22,7 @@
     - [中英文知识图谱数据集列表](#中英文知识图谱数据集列表)
   - [比赛](#比赛)
   - [思考](#思考)
+  - [Star History](#star-history)
   - [说明](#说明)
   - [Contact](#contact)
 
@@ -32,16 +33,18 @@
 > 探索认知智能系列---趋势：1. 数据融合知识；2. All in LLM。
 > 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用。涉及到NLP领域的前沿技术和论文。
 
-## 项目外链
+## 资源外链
 
 - [NLP-Progress](https://nlpprogress.com/)
 
-> Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
-
+  > Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
+  >
 - [paperswithcode](https://paperswithcode.com/)
+
   > 提供了论文和代码。
   >
 - [技术在线](https://ai-application-summary.readthedocs.io/zh_CN/latest/)
+
   > 个人日常技术和闲聊网站。
   >
 
@@ -203,8 +206,6 @@
 | 9    | [cnSchema机场知识图谱](http://openkg1.oss-cn-beijing.aliyuncs.com/2a2b80c5-6d50-40f8-a48b-7b832f0026c1/airportcnschema.json) |                                           基于cnSchema的机场知识图谱可查询世界各机场的属性，包含名称、时区、机场代码、地理位置（经纬度）等。                                           |
 | 10   |                            [七律-通用知识图谱](http://openkg.cn/dataset/7lore/resource/30ee798a-3199-4de4-9792-7746bc8891e0) | 本数据共包含8000万条百科三元组，为七律的一部分子集，后续将持续加大开放。七律-7Lore，是狗尾草科技精心打造的百科知识图谱，是人类世界海量知识的集合，它包含了事物、事实、概念、规则等等。 |
 
----
-
 ## 比赛
 
 1. ATEC蚂蚁开发者大赛之学习赛--NLP之问题[相似度计算](https://github.com/lihanghang/Knowledge-Graph/tree/master/Algorithm-code/Text-Similarity)--2019-3
@@ -226,19 +227,15 @@
 - 20230226：NLP的发展从2022年的后半程到2023年又是一次范式的变化，随着ChatGPT问世，领域内外无人不晓，在各行各业引起了热列的讨论，国内外大厂纷纷跟进。譬如LLM（Large Language Model）、AIGC（AI Generated Content）、NLP部分细分任务因LLM走向大一统，LLM成为各行各业基础设施等话题层出不穷。ChatGPT的出现一是给人一种惊喜，二是给人新的探索可能，三是对于AI也算一是普及。
   - 从体验[chatgpt](https://platform.openai.com/docs/models/overview)来看，基本上是我把前面的思考全部覆盖了，信息抽取，对话，观点生成，思维链--有推理，可加入新知识进行更新，写代码，最为惊喜的是能一本正经的胡说八道，对于逻辑性问题还能罗列步骤。
   - 从论文中进一步了解[原理](自然语言处理/语言表示模型/GPT)。GPT-1到GPT3的发展，认识[Transformer](自然语言处理/语言表示模型/encode&decode/Transformer_1706.03762.pdf)基础架构。
-- 20230521：国内的LLM跟进速度非常快，发布了不好自家模型，也有开源的，如清华的ChatGLM-6/130b等。围绕LLM的生态发展也很快，各类应用，如Chatpdf，插件等，最近OpenAI发布了chaptgpt IOS版本，更是将LLM的落地推进了一大步，可以畅想未来好多应用都会基于LLM的能力。针对如何基于LLM搭建一些应用，开源框架[LangChain](https://python.langchain.com/en/latest/index.html)迭代速度非常快，基本几行代码就能让你快速体验如基于个人文档的问答， 向量的计算，存储等，方便快捷，推荐大家学习和使用。针对文本，其实大多数文本是非结构化的，如pdf，word，html等需要基于其他工具结构化，langchain也提供了开源方式。LLM私有化部署+本地化知识接入+插件化扩展LLM的能力是当前发展的方向。
+- 20230521：国内的LLM跟进速度非常快，发布了自研大语言模型，也有开源的，如清华的ChatGLM-6/130b等。围绕LLM的生态发展也很快，各类应用，如Chatpdf，插件等，最近OpenAI发布了ChatGpt IOS版本，更是将LLM的落地推进了一大步，可以畅想未来好多应用都会基于LLM的能力。针对如何基于LLM搭建一些应用，开源框架[LangChain](https://python.langchain.com/en/latest/index.html)迭代速度非常快，基本几行代码就能让你快速体验如基于个人文档的问答， 向量的计算，存储等，方便快捷，推荐大家学习和使用。针对文本，其实大多数文本是非结构化的，如pdf，word，html等需要基于其他工具结构化，langchain也提供了开源方式。LLM私有化部署+本地化知识接入+插件化扩展LLM的能力是当前发展的方向。
 
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=lihanghang/NLP-Knowledge-Graph&type=Date)](https://star-history.com/#lihanghang/NLP-Knowledge-Graph&Date)
 
----
-
 ## 说明
 
 - 以上内容均为个人在学习过程的相关整理（包含互联网内容、个人整理笔记等），希望对研究学习认知智能领域的小伙伴有帮助。
-
----
 
 ## Contact
 
