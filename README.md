@@ -29,10 +29,8 @@
 
 # Deep learning for Knowledge-Graph
 
-> 探索认知智能系列---趋势：数据融合知识
-> 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用
-
----
+> 探索认知智能系列---趋势：1. 数据融合知识；2. All in LLM。
+> 包括知识获取、知识库构建、基于知识库的问答系统系列技术研究与应用。涉及到NLP领域的前沿技术和论文。
 
 ## 项目外链
 
@@ -40,7 +38,12 @@
 
 > Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
 
-- [技术栈在线文档](https://ai-application-summary.readthedocs.io/zh_CN/latest/)
+- [paperswithcode](https://paperswithcode.com/)
+  > 提供了论文和代码。
+  >
+- [技术在线](https://ai-application-summary.readthedocs.io/zh_CN/latest/)
+  > 个人日常技术和闲聊网站。
+  >
 
 ---
 
@@ -60,8 +63,6 @@
 
 <!-- [![](https://img.shields.io/badge/技术集成项目-小智v1.0-brightgreen.svg)](https://github.com/lihanghang/Knowledge-Graph)  
 <font color=red size=5>[小智交互平台](./SmartInteraction/)</font>  -->
-
----
 
 ## 知识图谱的前世今生
 
@@ -83,7 +84,7 @@
 4. [CN-DBpedia: A Never-Ending Chinese Knowledge Extraction System](http://naotu.baidu.com/file/a5cf40aae93fe42373e8700dc8d999c8?token=bd54a903100040e8)
 5. [KBQA](http://naotu.baidu.com/file/5c17a01de73d972501d8b3cd187908cb?token=b9a47b442d527efe)
 6. [赵汀阳：人工智能的自我意识何以可能？1-3](http://m.aisixiang.com/data/114807.html)
-7. [**NLP University 开张大吉**](http://blog.sciencenet.cn/blog-362400-944348.html)--李维老师，Simon Fraser University，博士
+7. [NLP University 开张大吉](http://blog.sciencenet.cn/blog-362400-944348.html)--李维老师，Simon Fraser University，博士
 8. [ACL 2019 知识图谱的全方位总结](https://mp.weixin.qq.com/s/k-NP7Y2ERkbegQhXtDck-Q)
 
 ### NLP 相关论文解析
@@ -222,15 +223,13 @@
 - 知识图谱的表示研究问题（Knowledge Graph Embedding, KGE)是当前的一个研究热点。
 - 多模态数据知识融合应该是领域性机器智能走向通用知识智能的一个重要探索阶段。一是，由于多模态数据自身特点，结构化是非常重要的，结构化后可以极大丰富知识图谱的知识构成，更具丰富的表达。二是，CV、NLP组件化后的若能打通两者并协同工作感觉也比较有意思，比如问答场景的回复内容更丰富，和人们更加自然交流等。
 - `<strong>`针对文本数据的结构化，除了选用机器学习方法外，也可以结合正则表达式进行数据的抽取、模型建模的中间处理环节等。如：[正则表达式结合深度学习](自然语言处理/概述/emnlp20reg(思路-正则结合深度学习).pdf) `</strong>`
-- 230226：NLP的发展从2022年的后半程到2023年又是一次范式的变化，随着ChatGPT问世，领域内外无人不晓，在各行各业引起了热列的讨论，国内外大厂纷纷跟进。譬如LLM（Large Language Model）、AIGC（AI Generated Content）、NLP部分细分任务因LLM走向大一统，LLM成为各行各业基础设施等话题层出不穷。ChatGPT的出现一是给人一种惊喜，二是给人新的探索可能，三是对于AI也算一是普及。
+- 20230226：NLP的发展从2022年的后半程到2023年又是一次范式的变化，随着ChatGPT问世，领域内外无人不晓，在各行各业引起了热列的讨论，国内外大厂纷纷跟进。譬如LLM（Large Language Model）、AIGC（AI Generated Content）、NLP部分细分任务因LLM走向大一统，LLM成为各行各业基础设施等话题层出不穷。ChatGPT的出现一是给人一种惊喜，二是给人新的探索可能，三是对于AI也算一是普及。
   - 从体验[chatgpt](https://platform.openai.com/docs/models/overview)来看，基本上是我把前面的思考全部覆盖了，信息抽取，对话，观点生成，思维链--有推理，可加入新知识进行更新，写代码，最为惊喜的是能一本正经的胡说八道，对于逻辑性问题还能罗列步骤。
   - 从论文中进一步了解[原理](自然语言处理/语言表示模型/GPT)。GPT-1到GPT3的发展，认识[Transformer](自然语言处理/语言表示模型/encode&decode/Transformer_1706.03762.pdf)基础架构。
-
 
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=lihanghang/NLP-Knowledge-Graph&type=Date)](https://star-history.com/#lihanghang/NLP-Knowledge-Graph&Date)
-
 
 ---
 
@@ -246,5 +245,5 @@
 - [个人网站](https://lihanghang.top/)
 - [wiki-技术总结](https://wiki.lihanghang.top/)
 - 邮箱：hanghangli@aliyun.co
-- 更新时间：2023.2.26
-- 作者： 李航航 北京
+- 更新时间：2023.5.21
+- 李航航
