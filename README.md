@@ -226,6 +226,7 @@
 - 20230226：NLP的发展从2022年的后半程到2023年又是一次范式的变化，随着ChatGPT问世，领域内外无人不晓，在各行各业引起了热列的讨论，国内外大厂纷纷跟进。譬如LLM（Large Language Model）、AIGC（AI Generated Content）、NLP部分细分任务因LLM走向大一统，LLM成为各行各业基础设施等话题层出不穷。ChatGPT的出现一是给人一种惊喜，二是给人新的探索可能，三是对于AI也算一是普及。
   - 从体验[chatgpt](https://platform.openai.com/docs/models/overview)来看，基本上是我把前面的思考全部覆盖了，信息抽取，对话，观点生成，思维链--有推理，可加入新知识进行更新，写代码，最为惊喜的是能一本正经的胡说八道，对于逻辑性问题还能罗列步骤。
   - 从论文中进一步了解[原理](自然语言处理/语言表示模型/GPT)。GPT-1到GPT3的发展，认识[Transformer](自然语言处理/语言表示模型/encode&decode/Transformer_1706.03762.pdf)基础架构。
+- 20230521：国内的LLM跟进速度非常快，发布了不好自家模型，也有开源的，如清华的ChatGLM-6/130b等。围绕LLM的生态发展也很快，各类应用，如Chatpdf，插件等。针对如何基于LLM搭建一些应用，开源项目[LangChain]()
 
 ## Star History
 
