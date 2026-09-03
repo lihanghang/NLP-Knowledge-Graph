@@ -236,7 +236,13 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=lihanghang/NLP-Knowledge-Graph&type=Date)](https://star-history.com/#lihanghang/NLP-Knowledge-Graph&Date)
+<a href="https://www.star-history.com/?repos=lihanghang%2FNLP-Knowledge-Graph&type=timeline&logscale=&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=lihanghang/NLP-Knowledge-Graph&type=timeline&theme=dark&logscale&legend=top-left&sealed_token=DzMkyTGY44QZtCqo43UKFCJIludWezA0pZVWE6f_9RuS3s0K4x1ZMfxZ79-Kf1dp47L-vCdGX78RMgGi-6t5UX_QMk7kEmgbfFG0aeGpo2x68odMGirD59lAu0bJHdmiipcbW5IDx40h1KgLeCpet2v75Djlqa1CaG2qBXRRd0EnQf28jmlkIcf4WDDx" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=lihanghang/NLP-Knowledge-Graph&type=timeline&logscale&legend=top-left&sealed_token=DzMkyTGY44QZtCqo43UKFCJIludWezA0pZVWE6f_9RuS3s0K4x1ZMfxZ79-Kf1dp47L-vCdGX78RMgGi-6t5UX_QMk7kEmgbfFG0aeGpo2x68odMGirD59lAu0bJHdmiipcbW5IDx40h1KgLeCpet2v75Djlqa1CaG2qBXRRd0EnQf28jmlkIcf4WDDx" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=lihanghang/NLP-Knowledge-Graph&type=timeline&logscale&legend=top-left&sealed_token=DzMkyTGY44QZtCqo43UKFCJIludWezA0pZVWE6f_9RuS3s0K4x1ZMfxZ79-Kf1dp47L-vCdGX78RMgGi-6t5UX_QMk7kEmgbfFG0aeGpo2x68odMGirD59lAu0bJHdmiipcbW5IDx40h1KgLeCpet2v75Djlqa1CaG2qBXRRd0EnQf28jmlkIcf4WDDx" />
+ </picture>
+</a>
 
 ## 说明
 
