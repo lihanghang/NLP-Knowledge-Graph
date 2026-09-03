@@ -44,8 +44,6 @@ markdown_extensions:
     permalink: true
 extra_css:
 - assets/pdf-viewer.css
-extra_javascript:
-- assets/pdf-viewer.js
 nav:
 - 自然语言处理:
   - 自然语言处理: 自然语言处理/index.md

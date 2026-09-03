@@ -68,7 +68,10 @@ title: {title}
 
 # {title}
 
-<div class="pdf-viewer-container" data-pdf="{pdf_filename}"></div>
+<!-- 浏览器原生 PDF 阅读器，无需任何 JS/插件 -->
+<div class="pdf-viewer-container">
+<iframe src="{pdf_filename}" title="{title}" loading="lazy"></iframe>
+</div>
 
 [下载PDF]({pdf_filename}) | [GitHub源文件](https://github.com/lihanghang/NLP-Knowledge-Graph/blob/main/{github_path})
 """
