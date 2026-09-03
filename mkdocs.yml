@@ -1,0 +1,419 @@
+site_name: NLP-Knowledge-Graph 论文库
+site_description: 自然语言处理与知识图谱论文在线阅读
+site_url: https://lihanghang.github.io/NLP-Knowledge-Graph/
+repo_url: https://github.com/lihanghang/NLP-Knowledge-Graph
+repo_name: NLP-Knowledge-Graph
+theme:
+  name: material
+  language: zh
+  custom_dir: docs/overrides
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: 切换到暗色模式
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: 切换到亮色模式
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - navigation.expand
+  - navigation.top
+  - search.highlight
+  - content.code.copy
+  - toc.follow
+plugins:
+- search
+markdown_extensions:
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- tables
+- admonition
+- toc:
+    permalink: true
+extra_css:
+- assets/pdf-viewer.css
+extra_javascript:
+- assets/pdf-viewer.js
+nav:
+- 自然语言处理:
+  - 自然语言处理: 自然语言处理/index.md
+  - 大语言模型:
+    - 大语言模型: 自然语言处理/大语言模型/index.md
+    - RAG:
+      - RAG: 自然语言处理/大语言模型/RAG/index.md
+      - RAG_survey: 自然语言处理/大语言模型/RAG/RAG_survey.md
+    - 2606.05608-The End of Software Engineering-AI Agents Restructuring Software Paradigm: 自然语言处理/大语言模型/2606.05608-The
+        End of Software Engineering-AI Agents Restructuring Software Paradigm.md
+    - 2608.18300-The Lifecycle of LLM-as-a-Judge for Large-Scale Recommendation Explanations: 自然语言处理/大语言模型/2608.18300-The
+        Lifecycle of LLM-as-a-Judge for Large-Scale Recommendation Explanations.md
+    - Baichuan2: 自然语言处理/大语言模型/Baichuan2.md
+    - DeepSeek_R1: 自然语言处理/大语言模型/DeepSeek_R1.md
+    - DeepSeek_V3: 自然语言处理/大语言模型/DeepSeek_V3.md
+    - DeepSeek图解10页PDF: 自然语言处理/大语言模型/DeepSeek图解10页PDF.md
+    - Inference_llm: 自然语言处理/大语言模型/Inference_llm.md
+    - deepseek-v2-tech-report: 自然语言处理/大语言模型/deepseek-v2-tech-report.md
+  - 文本分类:
+    - 文本分类: 自然语言处理/文本分类/index.md
+    - Bag of Tricks for Efficient Text Classification(fastText): 自然语言处理/文本分类/Bag of
+        Tricks for Efficient Text Classification(fastText).md
+    - Convolutional Neural Networks for Sentence Classification(TextCNN): 自然语言处理/文本分类/Convolutional
+        Neural Networks for Sentence Classification(TextCNN).md
+    - Deep Pyramid Convolutional Neural Networks for Text Categorization(DPCNN,ACL,2017): 自然语言处理/文本分类/Deep
+        Pyramid Convolutional Neural Networks for Text Categorization(DPCNN,ACL,2017).md
+    - Hierarchical Attention Networks for Document Classification(HAN): 自然语言处理/文本分类/Hierarchical
+        Attention Networks for Document Classification(HAN).md
+  - 概述:
+    - 概述: 自然语言处理/概述/index.md
+    - Advances in natural language processing: 自然语言处理/概述/Advances in natural language
+        processing.md
+    - Deep learning: 自然语言处理/概述/Deep learning.md
+    - eisenstein-nlp-notes（自然语言处理）: 自然语言处理/概述/eisenstein-nlp-notes（自然语言处理）.md
+    - emnlp20reg(思路-正则结合深度学习): 自然语言处理/概述/emnlp20reg(思路-正则结合深度学习).md
+    - （必读）jmlr-2011_Natural Language Processing (Almost) from Scratch: 自然语言处理/概述/（必读）jmlr-2011_Natural
+        Language Processing (Almost) from Scratch.md
+  - 注意力机制:
+    - 注意力机制: 自然语言处理/注意力机制/index.md
+    - An+Attentive+Survey+of+Attention+Models: 自然语言处理/注意力机制/An+Attentive+Survey+of+Attention+Models.md
+  - 知识图谱嵌入:
+    - 知识图谱嵌入: 自然语言处理/知识图谱嵌入/index.md
+    - CoKE- Contextualized Knowledge Graph Embedding: 自然语言处理/知识图谱嵌入/CoKE- Contextualized
+        Knowledge Graph Embedding.md
+    - KGE_overview_survey: 自然语言处理/知识图谱嵌入/KGE_overview_survey.md
+  - 语言表示模型:
+    - 语言表示模型: 自然语言处理/语言表示模型/index.md
+    - BERT:
+      - BERT: 自然语言处理/语言表示模型/BERT/index.md
+      - 4-BERT Pre-training of Deep Bidirectional Transformers for Language Understanding: 自然语言处理/语言表示模型/BERT/4-BERT
+          Pre-training of Deep Bidirectional Transformers for Language Understanding.md
+      - BERT(中文翻译): 自然语言处理/语言表示模型/BERT/BERT(中文翻译).md
+      - BERTv2.0: 自然语言处理/语言表示模型/BERT/BERTv2.0.md
+    - ERNIE:
+      - ERNIE: 自然语言处理/语言表示模型/ERNIE/index.md
+      - ERNIE 2.0: 自然语言处理/语言表示模型/ERNIE/ERNIE 2.0.md
+      - ERNIE Enhanced Representation through Knowledge Integration(baidu-2019.4): 自然语言处理/语言表示模型/ERNIE/ERNIE
+          Enhanced Representation through Knowledge Integration(baidu-2019.4).md
+    - GPT:
+      - GPT: 自然语言处理/语言表示模型/GPT/index.md
+      - COT_2201.11903: 自然语言处理/语言表示模型/GPT/COT_2201.11903.md
+      - GPT3_2203.02155: 自然语言处理/语言表示模型/GPT/GPT3_2203.02155.md
+      - InstructGPT_2203.02155: 自然语言处理/语言表示模型/GPT/InstructGPT_2203.02155.md
+      - （GPT_2.0）language_models_are_unsupervised_multitask_learners: 自然语言处理/语言表示模型/GPT/（GPT_2.0）language_models_are_unsupervised_multitask_learners.md
+      - （OpenAI_GPT_1.0-3）language_understanding_paper: 自然语言处理/语言表示模型/GPT/（OpenAI_GPT_1.0-3）language_understanding_paper.md
+    - LLaMa_metaAI:
+      - LLaMa_metaAI: 自然语言处理/语言表示模型/LLaMa_metaAI/index.md
+      - LLaMA_metaAI: 自然语言处理/语言表示模型/LLaMa_metaAI/LLaMA_metaAI.md
+    - Tomas Mikolov papers:
+      - Tomas Mikolov papers: 自然语言处理/语言表示模型/Tomas Mikolov papers/index.md
+      - Distributed representations of words and phrases and their compositionality: 自然语言处理/语言表示模型/Tomas
+          Mikolov papers/Distributed representations of words and phrases and their
+          compositionality.md
+      - Efficient estimation of word representations in vector space(Word2Vec　开蒙之作): 自然语言处理/语言表示模型/Tomas
+          Mikolov papers/Efficient estimation of word representations in vector space(Word2Vec　开蒙之作).md
+      - Enriching Word Vectors with Subword Information(与fastText相关): 自然语言处理/语言表示模型/Tomas
+          Mikolov papers/Enriching Word Vectors with Subword Information(与fastText相关).md
+      - word2vec Parameter Learning Explained: 自然语言处理/语言表示模型/Tomas Mikolov papers/word2vec
+          Parameter Learning Explained.md
+    - encode&decode:
+      - encode&decode: 自然语言处理/语言表示模型/encode&decode/index.md
+      - (Glove)Glove_Global_Vectors_for_Word_Representation: 自然语言处理/语言表示模型/encode&decode/(Glove)Glove_Global_Vectors_for_Word_Representation.md
+      - 20191023_(T5)Text-to-Text Transfer Transformer: 自然语言处理/语言表示模型/encode&decode/20191023_(T5)Text-to-Text
+          Transfer Transformer.md
+      - ELMO（2）: 自然语言处理/语言表示模型/encode&decode/ELMO（2）.md
+      - Effective Approaches to Attention-based Neural Machine Translation（2015）: 自然语言处理/语言表示模型/encode&decode/Effective
+          Approaches to Attention-based Neural Machine Translation（2015）.md
+      - Learning Phrase Representations using RNN Encoder–Decoder for SMT(2014): 自然语言处理/语言表示模型/encode&decode/Learning
+          Phrase Representations using RNN Encoder–Decoder for SMT(2014).md
+      - Sequence_to_Sequence_Learning_with_Neural_Networks1409.3215: 自然语言处理/语言表示模型/encode&decode/Sequence_to_Sequence_Learning_with_Neural_Networks1409.3215.md
+      - Transformer_1706.03762: 自然语言处理/语言表示模型/encode&decode/Transformer_1706.03762.md
+      - （NLP+ATT）NEURAL MACHINE TRANSLATION: 自然语言处理/语言表示模型/encode&decode/（NLP+ATT）NEURAL
+          MACHINE TRANSLATION.md
+      - （词向量表示）From static to dynamic word representations- a survey: 自然语言处理/语言表示模型/encode&decode/（词向量表示）From
+          static to dynamic word representations- a survey.md
+    - A Neural Probabilistic Language Model（NNLM-2003,引入DL): 自然语言处理/语言表示模型/A Neural
+        Probabilistic Language Model（NNLM-2003,引入DL).md
+    - ERNIE Enhanced Language Representation with Informative Entities: 自然语言处理/语言表示模型/ERNIE
+        Enhanced Language Representation with Informative Entities.md
+    - Google’s Neural Machine Translation System: 自然语言处理/语言表示模型/Google’s Neural Machine
+        Translation System.md
+    - Improving Word Representations via Global_Context_and _Multiple_Word_Prototypes: 自然语言处理/语言表示模型/Improving
+        Word Representations via Global_Context_and _Multiple_Word_Prototypes.md
+    - Learned in Translation Contextualized Word Vectors（Cove): 自然语言处理/语言表示模型/Learned
+        in Translation Contextualized Word Vectors（Cove).md
+    - Natural Language Processing (almost) from Scratch（×××）: 自然语言处理/语言表示模型/Natural
+        Language Processing (almost) from Scratch（×××）.md
+    - Siamese CBOW: 自然语言处理/语言表示模型/Siamese CBOW.md
+    - XL_net: 自然语言处理/语言表示模型/XL_net.md
+- 知识库构建:
+  - 知识库构建: 知识库构建/index.md
+  - 关系发现:
+    - 关系发现: 知识库构建/关系发现/index.md
+    - (PCNN+ATT)Neural Relation Extraction with Selective Attention over Instances（): 知识库构建/关系发现/(PCNN+ATT)Neural
+        Relation Extraction with Selective Attention over Instances（).md
+    - A Review of Relation Extraction: 知识库构建/关系发现/A Review of Relation Extraction.md
+    - Attention-Based Bidirectional Long Short-Term Memory Networks: 知识库构建/关系发现/Attention-Based
+        Bidirectional Long Short-Term Memory Networks.md
+    - Bidirectional Recurrent Convolutional Neural Network for Relation: 知识库构建/关系发现/Bidirectional
+        Recurrent Convolutional Neural Network for Relation.md
+    - CoType Joint Extraction of Typed Entities and Relations: 知识库构建/关系发现/CoType
+        Joint Extraction of Typed Entities and Relations.md
+    - Deep Residual Learning for Weakly-Supervised Relation Extraction: 知识库构建/关系发现/Deep
+        Residual Learning for Weakly-Supervised Relation Extraction.md
+    - Distant supervision for relation extraction without labeled data: 知识库构建/关系发现/Distant
+        supervision for relation extraction without labeled data.md
+    - Kernel Methods for Relation Extraction: 知识库构建/关系发现/Kernel Methods for Relation
+        Extraction.md
+    - Mining Quality Phrases from Massive Text Corpora: 知识库构建/关系发现/Mining Quality
+        Phrases from Massive Text Corpora.md
+    - Modeling_Relations_and_Their_Mentions_without_Labe: 知识库构建/关系发现/Modeling_Relations_and_Their_Mentions_without_Labe.md
+    - Multi-instance Multi-label Learning for Relation Extraction: 知识库构建/关系发现/Multi-instance
+        Multi-label Learning for Relation Extraction.md
+    - Relation Classification via Multi-Level Attention CNNs: 知识库构建/关系发现/Relation
+        Classification via Multi-Level Attention CNNs.md
+    - SDP-LSTM: 知识库构建/关系发现/SDP-LSTM.md
+    - （PCNN）Distant Supervision for Relation Extraction via Piecewise: 知识库构建/关系发现/（PCNN）Distant
+        Supervision for Relation Extraction via Piecewise.md
+  - 实体识别:
+    - 实体识别: 知识库构建/实体识别/index.md
+    - A Survey on Recent Advances in Named Entity Recognition from DL: 知识库构建/实体识别/A
+        Survey on Recent Advances in Named Entity Recognition from DL.md
+    - Bidirectional LSTM-CRF Models for Sequence Tagging: 知识库构建/实体识别/Bidirectional
+        LSTM-CRF Models for Sequence Tagging.md
+    - Fast and Accurate Entity Recognition with Iterated Dilated Convolutions: 知识库构建/实体识别/Fast
+        and Accurate Entity Recognition with Iterated Dilated Convolutions.md
+    - Fine-Grained Entity Typing in Hyperbolic Space(实体粒度更细): 知识库构建/实体识别/Fine-Grained
+        Entity Typing in Hyperbolic Space(实体粒度更细).md
+    - LAN: 知识库构建/实体识别/LAN.md
+    - Neural Architectures for Named Entity Recognition: 知识库构建/实体识别/Neural Architectures
+        for Named Entity Recognition.md
+    - 命名实体识别综述: 知识库构建/实体识别/命名实体识别综述.md
+  - 知识表示:
+    - 知识表示: 知识库构建/知识表示/index.md
+    - CN-DBpedia System: 知识库构建/知识表示/CN-DBpedia System.md
+    - KG-BERT: 知识库构建/知识表示/KG-BERT.md
+    - 基于OWL描述的本体推理研究_龚资: 知识库构建/知识表示/基于OWL描述的本体推理研究_龚资.md
+    - 知识图谱构建技术综述-UESTC-CS: 知识库构建/知识表示/知识图谱构建技术综述-UESTC-CS.md
+    - 知识表示学习研究进展_刘知远: 知识库构建/知识表示/知识表示学习研究进展_刘知远.md
+- 事理图谱:
+  - 事理图谱: 事理图谱/index.md
+  - 事件抽取:
+    - 事件抽取: 事理图谱/事件抽取/index.md
+    - An Overview of Event Extraction from Text: 事理图谱/事件抽取/An Overview of Event Extraction
+        from Text.md
+    - Event Extraction via DynamicMulti-Pooling Convolutional Neural Networks: 事理图谱/事件抽取/Event
+        Extraction via DynamicMulti-Pooling Convolutional Neural Networks.md
+    - Event Extraction with Generative Adversarial Imitation Learning: 事理图谱/事件抽取/Event
+        Extraction with Generative Adversarial Imitation Learning.md
+    - Exploiting Argument Information to Improve Event Detection: 事理图谱/事件抽取/Exploiting
+        Argument Information to Improve Event Detection.md
+    - （有启发意义的文章）EE with Generative Adversarial Imitation Learning: 事理图谱/事件抽取/（有启发意义的文章）EE
+        with Generative Adversarial Imitation Learning.md
+  - 关系抽取:
+    - 关系抽取: 事理图谱/关系抽取/index.md
+    - Improving Event Causality Recognition with Multiple Background Knowledge: 事理图谱/关系抽取/Improving
+        Event Causality Recognition with Multiple Background Knowledge.md
+  - Constructing and Embedding Abstract Event: 事理图谱/Constructing and Embedding Abstract
+      Event.md
+  - 从知识图谱到事理图谱: 事理图谱/从知识图谱到事理图谱.md
+  - 第3讲+知识抽取与挖掘I: 事理图谱/第3讲+知识抽取与挖掘I.md
+  - 第4讲+知识抽取与挖掘Ⅱ: 事理图谱/第4讲+知识抽取与挖掘Ⅱ.md
+- 基于知识图谱的对话系统:
+  - 基于知识图谱的对话系统: 基于知识图谱的对话系统/index.md
+  - Industry-application:
+    - Industry-application: 基于知识图谱的对话系统/Industry-application/index.md
+    - Watson-DeepQA:
+      - Watson-DeepQA: 基于知识图谱的对话系统/Industry-application/Watson-DeepQA/index.md
+      - Finding-needles-in-the haystack-Search-and-candidate-generation: 基于知识图谱的对话系统/Industry-application/Watson-DeepQA/Finding-needles-in-the
+          haystack-Search-and-candidate-generation.md
+      - IBM-09-relation -extraction-and -scoring: 基于知识图谱的对话系统/Industry-application/Watson-DeepQA/IBM-09-relation
+          -extraction-and -scoring.md
+    - AliMe_Chat_A_Sequence _to_Sequence_and_Rerank _based_Chatbot Engine: 基于知识图谱的对话系统/Industry-application/AliMe_Chat_A_Sequence
+        _to_Sequence_and_Rerank _based_Chatbot Engine.md
+    - ESIM_alibaba_2019: 基于知识图谱的对话系统/Industry-application/ESIM_alibaba_2019.md
+    - XiaoIce_1812.08989: 基于知识图谱的对话系统/Industry-application/XiaoIce_1812.08989.md
+    - 平安人寿谢舒翼-智能问答系统的探索与实践: 基于知识图谱的对话系统/Industry-application/平安人寿谢舒翼-智能问答系统的探索与实践.md
+    - ? 平安寿险AI - ROCLING - A Hybrid Approach of Deep Semantic Matching and Deep Rank
+        for Context Aware Question Answer System_2019090201
+      : 基于知识图谱的对话系统/Industry-application/平安寿险AI - ROCLING - A Hybrid Approach of Deep
+        Semantic Matching and Deep Rank for Context Aware Question Answer System_2019090201.md
+    - 平安寿险AI - ROCLING - A Real-World Human-Machine Interaction Platform in Insurance Industry_2019090901: 基于知识图谱的对话系统/Industry-application/平安寿险AI
+        - ROCLING - A Real-World Human-Machine Interaction Platform in Insurance Industry_2019090901.md
+    - 平安寿险AI-CCKS（杨依莹）-Multi-Module System for Open Domain Chinese Question Answering over Knowledge Base: 基于知识图谱的对话系统/Industry-application/平安寿险AI-CCKS（杨依莹）-Multi-Module
+        System for Open Domain Chinese Question Answering over Knowledge Base.md
+  - QA:
+    - QA: 基于知识图谱的对话系统/QA/index.md
+    - Structure-Doc:
+      - Structure-Doc: 基于知识图谱的对话系统/QA/Structure-Doc/index.md
+      - paper:
+        - paper: 基于知识图谱的对话系统/QA/Structure-Doc/paper/index.md
+        - A Knowledge-Grounded Neural Conversation Model: 基于知识图谱的对话系统/QA/Structure-Doc/paper/A
+            Knowledge-Grounded Neural Conversation Model.md
+        - A Survey of Document Grounded Dialogue Systems (DGDS): 基于知识图谱的对话系统/QA/Structure-Doc/paper/A
+            Survey of Document Grounded Dialogue Systems (DGDS).md
+        - A+Survey+on+Dialogue+Systems: 基于知识图谱的对话系统/QA/Structure-Doc/paper/A+Survey+on+Dialogue+Systems.md
+        - Commonsense Knowledge Aware Conversation Generation with Graph Attention: 基于知识图谱的对话系统/QA/Structure-Doc/paper/Commonsense
+            Knowledge Aware Conversation Generation with Graph Attention.md
+        - KBQA: 基于知识图谱的对话系统/QA/Structure-Doc/paper/KBQA.md
+        - Large-scale Simple Question Answering with Memory Network: 基于知识图谱的对话系统/QA/Structure-Doc/paper/Large-scale
+            Simple Question Answering with Memory Network.md
+        - Learning Symmetric Collaborative Dialogue Agents with Dynamic: 基于知识图谱的对话系统/QA/Structure-Doc/paper/Learning
+            Symmetric Collaborative Dialogue Agents with Dynamic.md
+        - Mem2Seq Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems: 基于知识图谱的对话系统/QA/Structure-Doc/paper/Mem2Seq
+            Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented
+            Dialog Systems.md
+        - StalemateBreaker A Proactive Content-Introducing Approachto Automatic Human-Computer Conversation: 基于知识图谱的对话系统/QA/Structure-Doc/paper/StalemateBreaker
+            A Proactive Content-Introducing Approachto Automatic Human-Computer Conversation.md
+        - （）The design and Implementation of XiaoIce: 基于知识图谱的对话系统/QA/Structure-Doc/paper/（）The
+            design and Implementation of XiaoIce.md
+  - Session:
+    - Session: 基于知识图谱的对话系统/Session/index.md
+    - Task:
+      - Task: 基于知识图谱的对话系统/Session/Task/index.md
+      - Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling: 基于知识图谱的对话系统/Session/Task/Attention-Based
+          Recurrent Neural Network Models for Joint Intent Detection and Slot Filling.md
+  - image:
+    - image: 基于知识图谱的对话系统/image/index.md
+- 知识图谱基础:
+  - 知识图谱基础: 知识图谱基础/index.md
+  - CCKS_2013-2018:
+    - CCKS_2013-2018: 知识图谱基础/CCKS_2013-2018/index.md
+    - '2013':
+      - '2013': 知识图谱基础/CCKS_2013-2018/2013/index.md
+      - 刘康-中文知识图谱体系、获取与服务: 知识图谱基础/CCKS_2013-2018/2013/刘康-中文知识图谱体系、获取与服务.md
+      - 朱小燕-信息获取与知识图谱: 知识图谱基础/CCKS_2013-2018/2013/朱小燕-信息获取与知识图谱.md
+      - 李娟子-跨语言知识图谱构建: 知识图谱基础/CCKS_2013-2018/2013/李娟子-跨语言知识图谱构建.md
+      - 百度-NLP Techniques in Knowledge Graph: 知识图谱基础/CCKS_2013-2018/2013/百度-NLP Techniques
+          in Knowledge Graph.md
+      - 阿里-电子商务语义库: 知识图谱基础/CCKS_2013-2018/2013/阿里-电子商务语义库.md
+      - 韩先培-面向中文知识图谱构建的 知识融合不验证: 知识图谱基础/CCKS_2013-2018/2013/韩先培-面向中文知识图谱构建的 知识融合不验证.md
+    - '2014':
+      - '2014': 知识图谱基础/CCKS_2013-2018/2014/index.md
+      - 李娟子-知识图谱大数据语义链接的基石: 知识图谱基础/CCKS_2013-2018/2014/李娟子-知识图谱大数据语义链接的基石.md
+      - 漆桂林-知识本体推理: 知识图谱基础/CCKS_2013-2018/2014/漆桂林-知识本体推理.md
+      - 科大讯飞-从应用角度来看知识图谱的价值和挑战: 知识图谱基础/CCKS_2013-2018/2014/科大讯飞-从应用角度来看知识图谱的价值和挑战.md
+      - 魪皜魪皝魪皞魪皟魪皠魪皡魪皢鍑洪棬闂棶-鐭ヨ瘑鍥捐氨鑷姩闂瓟: 知识图谱基础/CCKS_2013-2018/2014/魪皜魪皝魪皞魪皟魪皠魪皡魪皢鍑洪棬闂棶-鐭ヨ瘑鍥捐氨鑷姩闂瓟.md
+    - '2015':
+      - '2015': 知识图谱基础/CCKS_2013-2018/2015/index.md
+      - Estevam R-Building a Knowledge Graph by Reading the Web: 知识图谱基础/CCKS_2013-2018/2015/Estevam
+          R-Building a Knowledge Graph by Reading the Web.md
+      - Gerard de Melo-The Future of Knowledge Graphs - Moving beyond Simple Collections of Facts: 知识图谱基础/CCKS_2013-2018/2015/Gerard
+          de Melo-The Future of Knowledge Graphs - Moving beyond Simple Collections
+          of Facts.md
+      - Jianyong Wang-Entity Linking wih a Knowledge Base for Heterogenous Data: 知识图谱基础/CCKS_2013-2018/2015/Jianyong
+          Wang-Entity Linking wih a Knowledge Base for Heterogenous Data.md
+      - 刘知远-大规模知识图谱表示学习的趋势与挑战: 知识图谱基础/CCKS_2013-2018/2015/刘知远-大规模知识图谱表示学习的趋势与挑战.md
+      - 富士通-基于LOD技术的知识优化和知识表示: 知识图谱基础/CCKS_2013-2018/2015/富士通-基于LOD技术的知识优化和知识表示.md
+      - 李娟子-特定领域知识图谱构建初探: 知识图谱基础/CCKS_2013-2018/2015/李娟子-特定领域知识图谱构建初探.md
+      - 秦兵-《大词林》中实体上位词获取及层次化构建方法: 知识图谱基础/CCKS_2013-2018/2015/秦兵-《大词林》中实体上位词获取及层次化构建方法.md
+      - 赵军-深度问答技术: 知识图谱基础/CCKS_2013-2018/2015/赵军-深度问答技术.md
+      - 陈华均-从数据互联到知万物互联: 知识图谱基础/CCKS_2013-2018/2015/陈华均-从数据互联到知万物互联.md
+      - 鲍捷-知识图谱的知识表现方法回顾与展望: 知识图谱基础/CCKS_2013-2018/2015/鲍捷-知识图谱的知识表现方法回顾与展望.md
+      - 黄智生-海量语义数据处理与知识服务: 知识图谱基础/CCKS_2013-2018/2015/黄智生-海量语义数据处理与知识服务.md
+    - '2016':
+      - '2016': 知识图谱基础/CCKS_2013-2018/2016/index.md
+      - Dekang Lin-question answering and knowledge graph: 知识图谱基础/CCKS_2013-2018/2016/Dekang
+          Lin-question answering and knowledge graph.md
+      - Jeffz-Testing and Assessing the Quality of Knowledge Graphs: 知识图谱基础/CCKS_2013-2018/2016/Jeffz-Testing
+          and Assessing the Quality of Knowledge Graphs.md
+      - Sheng-Chuan Wu-Analytic knowledge graph for healthcare: 知识图谱基础/CCKS_2013-2018/2016/Sheng-Chuan
+          Wu-Analytic knowledge graph for healthcare.md
+      - TRS水晶球-基于动态本体的知识管理实例: 知识图谱基础/CCKS_2013-2018/2016/TRS水晶球-基于动态本体的知识管理实例.md
+      - 云知生-从语义到语用: 知识图谱基础/CCKS_2013-2018/2016/云知生-从语义到语用.md
+      - 发现数据之美-大规模知识图谱的构建及应用: 知识图谱基础/CCKS_2013-2018/2016/发现数据之美-大规模知识图谱的构建及应用.md
+      - 图灵机器人-知识图谱中的自动问答: 知识图谱基础/CCKS_2013-2018/2016/图灵机器人-知识图谱中的自动问答.md
+      - 富士通-KGinJapan: 知识图谱基础/CCKS_2013-2018/2016/富士通-KGinJapan.md
+      - 海云数据-图数据可视化辅助关联分析实践: 知识图谱基础/CCKS_2013-2018/2016/海云数据-图数据可视化辅助关联分析实践.md
+      - 王忠远-Understanding Short Texts: 知识图谱基础/CCKS_2013-2018/2016/王忠远-Understanding
+          Short Texts.md
+      - 陈培华-小i机器人在中文语义开放平台的研究与进展: 知识图谱基础/CCKS_2013-2018/2016/陈培华-小i机器人在中文语义开放平台的研究与进展.md
+      - 鲍捷-精益知识图谱方法论: 知识图谱基础/CCKS_2013-2018/2016/鲍捷-精益知识图谱方法论.md
+    - '2017':
+      - '2017': 知识图谱基础/CCKS_2013-2018/2017/index.md
+      - CCKS2017-会议手册: 知识图谱基础/CCKS_2013-2018/2017/CCKS2017-会议手册.md
+      - CCKS交流-语音交互中的自然语言处理技术: 知识图谱基础/CCKS_2013-2018/2017/CCKS交流-语音交互中的自然语言处理技术.md
+      - 丁力-cnschema-: 知识图谱基础/CCKS_2013-2018/2017/丁力-cnschema-.md
+      - 刘康-知识图谱导论: 知识图谱基础/CCKS_2013-2018/2017/刘康-知识图谱导论.md
+      - 王昊奋-知识图谱实践: 知识图谱基础/CCKS_2013-2018/2017/王昊奋-知识图谱实践.md
+      - 邱锡鹏-知识获取方法: 知识图谱基础/CCKS_2013-2018/2017/邱锡鹏-知识获取方法.md
+      - 邹磊-基于图的RDF数据管理: 知识图谱基础/CCKS_2013-2018/2017/邹磊-基于图的RDF数据管理.md
+      - 鼎复数据-金融知识图谱介绍: 知识图谱基础/CCKS_2013-2018/2017/鼎复数据-金融知识图谱介绍.md
+    - '2018':
+      - '2018': 知识图谱基础/CCKS_2013-2018/2018/index.md
+      - 丁力-openkg进展报告: 知识图谱基础/CCKS_2013-2018/2018/丁力-openkg进展报告.md
+      - 云知声-大规模医疗知识图谱构建与应用 CCKS 2018 v1.3: 知识图谱基础/CCKS_2013-2018/2018/云知声-大规模医疗知识图谱构建与应用
+          CCKS 2018 v1.3.md
+      - 思必驰_启发式对话中的知识管理.AISpeech.CCKS2018: 知识图谱基础/CCKS_2013-2018/2018/思必驰_启发式对话中的知识管理.AISpeech.CCKS2018.md
+      - 智通科技-勘探开发知识图谱计算研究及应用0817: 知识图谱基础/CCKS_2013-2018/2018/智通科技-勘探开发知识图谱计算研究及应用0817.md
+      - 腾讯叮当-腾讯叮当对话系统实践: 知识图谱基础/CCKS_2013-2018/2018/腾讯叮当-腾讯叮当对话系统实践.md
+      - 鲍捷-金融知识图谱的发展近况和应用回顾: 知识图谱基础/CCKS_2013-2018/2018/鲍捷-金融知识图谱的发展近况和应用回顾.md
+  - overview:
+    - overview: 知识图谱基础/overview/index.md
+    - 2020-3-4-Knowledge-Graphs（130页）: 知识图谱基础/overview/2020-3-4-Knowledge-Graphs（130页）.md
+    - A Survey on Knowledge Graphs: 知识图谱基础/overview/A Survey on Knowledge Graphs.md
+    - 知识图谱技术综述: 知识图谱基础/overview/知识图谱技术综述.md
+  - ucas-lectures:
+    - ucas-lectures: 知识图谱基础/ucas-lectures/index.md
+    - reading list:
+      - reading list: 知识图谱基础/ucas-lectures/reading list/index.md
+      - Advances in natural language processing: 知识图谱基础/ucas-lectures/reading list/Advances
+          in natural language processing.md
+      - Attention Is All You Need: 知识图谱基础/ucas-lectures/reading list/Attention Is
+          All You Need.md
+      - BERT Pre-training of Deep Bidirectional Transformers for Language Understandingpdf: 知识图谱基础/ucas-lectures/reading
+          list/BERT Pre-training of Deep Bidirectional Transformers for Language Understandingpdf.md
+      - Deep contextualized word representations: 知识图谱基础/ucas-lectures/reading list/Deep
+          contextualized word representations.md
+      - Deep learning: 知识图谱基础/ucas-lectures/reading list/Deep learning.md
+      - Distributed representations of words and phrases and their compositionality: 知识图谱基础/ucas-lectures/reading
+          list/Distributed representations of words and phrases and their compositionality.md
+      - Efficient estimation of word representations in vector space: 知识图谱基础/ucas-lectures/reading
+          list/Efficient estimation of word representations in vector space.md
+      - Neural Machine Translation by Jointly Learning to Align and Translate: 知识图谱基础/ucas-lectures/reading
+          list/Neural Machine Translation by Jointly Learning to Align and Translate.md
+      - Sequence to Sequence Learning with Neural Networks: 知识图谱基础/ucas-lectures/reading
+          list/Sequence to Sequence Learning with Neural Networks.md
+    - 2019-知识图谱-第一讲-知识图谱概述-20190223: 知识图谱基础/ucas-lectures/2019-知识图谱-第一讲-知识图谱概述-20190223.md
+    - 2019-知识图谱-第二讲-机器学习基础: 知识图谱基础/ucas-lectures/2019-知识图谱-第二讲-机器学习基础.md
+    - 知识图谱课件: 知识图谱基础/ucas-lectures/知识图谱课件.md
+- 中文金融文档智能处理:
+  - 中文金融文档智能处理: 中文金融文档智能处理/index.md
+  - IE:
+    - IE: 中文金融文档智能处理/IE/index.md
+    - paper:
+      - paper: 中文金融文档智能处理/IE/paper/index.md
+      - 18-DCFEE: 中文金融文档智能处理/IE/paper/18-DCFEE.md
+      - 19-Doc2EDAG: 中文金融文档智能处理/IE/paper/19-Doc2EDAG.md
+      - LAYOUTLM: 中文金融文档智能处理/IE/paper/LAYOUTLM.md
+      - 一种面向多需求的PDF文档信息抽取方法: 中文金融文档智能处理/IE/paper/一种面向多需求的PDF文档信息抽取方法.md
+- 机器学习:
+  - 机器学习: 机器学习/index.md
+  - lbdl-深度学习小册子: 机器学习/lbdl-深度学习小册子.md
+- 知识图谱技术总结:
+  - 知识图谱技术总结: 知识图谱技术总结/index.md
+- 语义计算:
+  - 语义计算: 语义计算/index.md
+  - Learning Text Similarity with Siamese Recurrent Networks: 语义计算/Learning Text Similarity
+      with Siamese Recurrent Networks.md
+  - SiameseRecurrentArchitecturesforLearningSentenceSimilarity: 语义计算/SiameseRecurrentArchitecturesforLearningSentenceSimilarity.md
+  - cikm2013_DSSM_fullversion: 语义计算/cikm2013_DSSM_fullversion.md
+- 知识存储:
+  - 知识存储: 知识存储/index.md
+  - How_to_Build_Templates _for_RDF_Question Answering—An Uncertain Graph Similarity Join Approach: 知识存储/How_to_Build_Templates
+      _for_RDF_Question Answering—An Uncertain Graph Similarity Join Approach.md
+  - Natural_Language Question_Answering_over RDF —A Graph Data Driven Approach: 知识存储/Natural_Language
+      Question_Answering_over RDF —A Graph Data Driven Approach.md
+- 数据集:
+  - 数据集: 数据集/index.md
+  - text-similarity:
+    - text-similarity: 数据集/text-similarity/index.md

@@ -2,3 +2,7 @@ Algorithm-code/venv
 .vscode
 算法实现/.idea
 .DS_Store
+site/
+
+# 构建产物（CI 中由 scripts/generate_docs.py 自动生成）
+docs/
