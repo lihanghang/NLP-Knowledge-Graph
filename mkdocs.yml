@@ -3,6 +3,8 @@ site_description: 自然语言处理与知识图谱论文在线阅读
 site_url: https://lihanghang.github.io/NLP-Knowledge-Graph/
 repo_url: https://github.com/lihanghang/NLP-Knowledge-Graph
 repo_name: NLP-Knowledge-Graph
+# 每个md生成平铺的 .html，保证 iframe 相对PDF路径正确解析
+use_directory_urls: false
 theme:
   name: material
   language: zh
