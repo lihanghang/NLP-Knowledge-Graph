@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.42.4",
-    "astro": "^7.3.5"
+    "astro": "^7.3.5",
+    "pdfjs-dist": "^6.3.289"
   }
 }

@@ -50,6 +50,11 @@ def sanitize_name(name):
     return re.sub(r'[<>:"/\\|?*#%]', '', name).strip()
 
 
+def route_name(name):
+    """与 Astro 的静态路由保持一致，英文路径统一使用小写"""
+    return sanitize_name(name).lower()
+
+
 def get_pdf_title(filename):
     """从PDF文件名提取标题，去掉可能的arxiv ID前缀如 "2606.05608-" """
     title = filename[:-4] if filename.lower().endswith('.pdf') else filename
@@ -99,6 +104,17 @@ tableOfContents: false
 
 <div class="pdf-viewer-container">
 <iframe src="{url}" title={yaml_str(title)} loading="lazy"></iframe>
+<div class="mobile-pdf-viewer" data-pdf-url="{url}">
+  <div class="mobile-pdf-toolbar" role="toolbar" aria-label="PDF翻页工具">
+    <button type="button" data-pdf-prev aria-label="上一页">‹</button>
+    <output><span data-pdf-page>1</span> / <span data-pdf-count>—</span></output>
+    <button type="button" data-pdf-next aria-label="下一页">›</button>
+  </div>
+  <div class="mobile-pdf-stage">
+    <p class="mobile-pdf-status" aria-live="polite">正在加载 PDF…</p>
+    <canvas class="mobile-pdf-canvas" aria-label={yaml_str(f"{title} PDF 页面")} hidden></canvas>
+  </div>
+</div>
 </div>
 
 <p class="paper-links"><a href="{url}" download>下载PDF</a> · <a href="{github}">GitHub源文件</a></p>
@@ -121,7 +137,7 @@ def category_index(directory, depth, paper_count):
     subs = sub_dirs(directory)
     if subs:
         lines += ["", "## 子分类", ""] + [
-            f"- [{sub.name}](./{quote(sanitize_name(sub.name))}/)"
+            f"- [{sub.name}](./{quote(route_name(sub.name))}/)"
             for sub in subs
         ]
     return "\n".join(lines) + "\n"
@@ -134,11 +150,11 @@ def process_directory(src_dir, out_dir, depth=0):
 
     for pdf in pdfs:
         publish_pdf(pdf)
-        (out_dir / (sanitize_name(pdf.stem) + '.md')).write_text(paper_page(pdf), encoding='utf-8')
+        (out_dir / (route_name(pdf.stem) + '.md')).write_text(paper_page(pdf), encoding='utf-8')
 
     count = len(pdfs)
     for sub in sub_dirs(src_dir):
-        count += process_directory(sub, out_dir / sanitize_name(sub.name), depth + 1)
+        count += process_directory(sub, out_dir / route_name(sub.name), depth + 1)
 
     (out_dir / "index.md").write_text(category_index(src_dir, depth, count), encoding='utf-8')
     return count
