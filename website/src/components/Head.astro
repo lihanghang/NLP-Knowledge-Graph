@@ -75,23 +75,7 @@ import Default from '@astrojs/starlight/components/Head.astro';
 </script>
 
 <script>
-	const mobilePdfQuery = window.matchMedia('(max-width: 50rem)');
-
-	function syncNativePdfFrames() {
-		document.querySelectorAll<HTMLIFrameElement>('iframe[data-pdf-src]').forEach((frame) => {
-			const source = frame.dataset.pdfSrc;
-			if (!source) return;
-			if (mobilePdfQuery.matches) {
-				frame.removeAttribute('src');
-			} else if (frame.getAttribute('src') !== source) {
-				frame.src = source;
-			}
-		});
-	}
-
 	async function setupMobilePdfViewers() {
-		syncNativePdfFrames();
-		if (!mobilePdfQuery.matches) return;
 		const viewers = [...document.querySelectorAll<HTMLElement>('.mobile-pdf-viewer:not([data-pdf-ready])')];
 		if (!viewers.length) return;
 
@@ -104,6 +88,7 @@ import Default from '@astrojs/starlight/components/Head.astro';
 		for (const viewer of viewers) {
 			viewer.dataset.pdfReady = 'loading';
 			const url = viewer.dataset.pdfUrl;
+			const fallback = viewer.dataset.pdfFallback;
 			const stage = viewer.querySelector<HTMLElement>('.mobile-pdf-stage');
 			const canvas = viewer.querySelector<HTMLCanvasElement>('.mobile-pdf-canvas');
 			const status = viewer.querySelector<HTMLElement>('.mobile-pdf-status');
@@ -132,9 +117,9 @@ import Default from '@astrojs/starlight/components/Head.astro';
 					try {
 						const page = await pdf.getPage(pageNumber);
 						const baseViewport = page.getViewport({ scale: 1 });
-						const availableWidth = Math.max(stage.clientWidth - 24, 280);
+						const availableWidth = Math.min(Math.max(stage.clientWidth - 24, 280), 960);
 						const viewport = page.getViewport({ scale: availableWidth / baseViewport.width });
-						const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+						const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
 						const context = canvas.getContext('2d');
 						if (!context) throw new Error('Canvas unavailable');
 
@@ -181,7 +166,7 @@ import Default from '@astrojs/starlight/components/Head.astro';
 				viewer.dataset.pdfReady = 'error';
 				status.textContent = 'PDF 暂时无法载入。';
 				const link = document.createElement('a');
-				link.href = url;
+				link.href = fallback || url;
 				link.target = '_blank';
 				link.rel = 'noopener';
 				link.textContent = '在浏览器中打开';
@@ -192,8 +177,4 @@ import Default from '@astrojs/starlight/components/Head.astro';
 
 	void setupMobilePdfViewers();
 	document.addEventListener('astro:page-load', () => void setupMobilePdfViewers());
-	mobilePdfQuery.addEventListener('change', (event) => {
-		syncNativePdfFrames();
-		if (event.matches) void setupMobilePdfViewers();
-	});
 </script>

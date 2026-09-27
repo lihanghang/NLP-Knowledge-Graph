@@ -4,7 +4,7 @@
 用法: python3 scripts/generate_site.py
 
 - 页面生成到 website/src/content/docs/<分类>/...
-- PDF 放到 website/public/papers/<原路径>，优先硬链接，避免重复占用磁盘
+- PDF 以 .bin 资源放到 website/public/papers/<原路径>，避免手机浏览器拦截 PDF 请求
 两者都是构建产物，已加入 .gitignore。
 """
 
@@ -74,12 +74,13 @@ def direct_pdfs(directory):
 
 def pdf_url(pdf_path):
     rel = pdf_path.relative_to(ROOT).as_posix()
-    return f"{BASE}/papers/{quote(rel)}"
+    return f"{BASE}/papers/{quote(rel)}.bin"
 
 
 def publish_pdf(pdf_path):
-    """把PDF放进 public/papers，同一文件系统下用硬链接"""
-    dest = PAPERS_DIR / pdf_path.relative_to(ROOT)
+    """把 PDF 作为中性二进制资源发布，避免部分手机浏览器强制下载"""
+    rel = pdf_path.relative_to(ROOT)
+    dest = PAPERS_DIR / rel.parent / f"{rel.name}.bin"
     if dest.exists():
         return
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -103,8 +104,7 @@ tableOfContents: false
 <p class="paper-intro">{description}</p>
 
 <div class="pdf-viewer-container">
-<iframe data-pdf-src="{url}" title={yaml_str(title)} loading="lazy"></iframe>
-<div class="mobile-pdf-viewer" data-pdf-url="{url}">
+<div class="mobile-pdf-viewer" data-pdf-url="{url}" data-pdf-fallback="{github}">
   <div class="mobile-pdf-toolbar" role="toolbar" aria-label="PDF翻页工具">
     <button type="button" data-pdf-prev aria-label="上一页">‹</button>
     <output><span data-pdf-page>1</span> / <span data-pdf-count>—</span></output>
@@ -117,7 +117,7 @@ tableOfContents: false
 </div>
 </div>
 
-<p class="paper-links"><a href="{url}" download>下载PDF</a> · <a href="{github}">GitHub源文件</a></p>
+<p class="paper-links"><a href="{url}" download={yaml_str(pdf_path.name)}>下载PDF</a> · <a href="{github}">GitHub源文件</a></p>
 """
 
 
