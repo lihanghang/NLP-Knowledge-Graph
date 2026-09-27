@@ -77,7 +77,20 @@ import Default from '@astrojs/starlight/components/Head.astro';
 <script>
 	const mobilePdfQuery = window.matchMedia('(max-width: 50rem)');
 
+	function syncNativePdfFrames() {
+		document.querySelectorAll<HTMLIFrameElement>('iframe[data-pdf-src]').forEach((frame) => {
+			const source = frame.dataset.pdfSrc;
+			if (!source) return;
+			if (mobilePdfQuery.matches) {
+				frame.removeAttribute('src');
+			} else if (frame.getAttribute('src') !== source) {
+				frame.src = source;
+			}
+		});
+	}
+
 	async function setupMobilePdfViewers() {
+		syncNativePdfFrames();
 		if (!mobilePdfQuery.matches) return;
 		const viewers = [...document.querySelectorAll<HTMLElement>('.mobile-pdf-viewer:not([data-pdf-ready])')];
 		if (!viewers.length) return;
@@ -180,6 +193,7 @@ import Default from '@astrojs/starlight/components/Head.astro';
 	void setupMobilePdfViewers();
 	document.addEventListener('astro:page-load', () => void setupMobilePdfViewers());
 	mobilePdfQuery.addEventListener('change', (event) => {
+		syncNativePdfFrames();
 		if (event.matches) void setupMobilePdfViewers();
 	});
 </script>

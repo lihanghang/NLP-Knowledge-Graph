@@ -103,7 +103,7 @@ tableOfContents: false
 <p class="paper-intro">{description}</p>
 
 <div class="pdf-viewer-container">
-<iframe src="{url}" title={yaml_str(title)} loading="lazy"></iframe>
+<iframe data-pdf-src="{url}" title={yaml_str(title)} loading="lazy"></iframe>
 <div class="mobile-pdf-viewer" data-pdf-url="{url}">
   <div class="mobile-pdf-toolbar" role="toolbar" aria-label="PDF翻页工具">
     <button type="button" data-pdf-prev aria-label="上一页">‹</button>
