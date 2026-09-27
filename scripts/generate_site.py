@@ -13,7 +13,7 @@ import os
 import re
 import shutil
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlencode
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE_DIR = ROOT / "website"
@@ -77,6 +77,16 @@ def pdf_url(pdf_path):
     return f"{BASE}/papers/{quote(rel)}.bin"
 
 
+def pdf_viewer_url(pdf_path):
+    """使用官方 PDF.js Generic Viewer 打开中性二进制资源。"""
+    params = urlencode({
+        "file": pdf_url(pdf_path),
+        "filename": pdf_path.name,
+        "locale": "zh-CN",
+    })
+    return f"{BASE}/pdfjs/web/viewer.html?{params}#zoom=page-width"
+
+
 def publish_pdf(pdf_path):
     """把 PDF 作为中性二进制资源发布，避免部分手机浏览器强制下载"""
     rel = pdf_path.relative_to(ROOT)
@@ -93,6 +103,7 @@ def publish_pdf(pdf_path):
 def paper_page(pdf_path):
     title = get_pdf_title(pdf_path.name)
     url = pdf_url(pdf_path)
+    viewer = pdf_viewer_url(pdf_path)
     github = f"{REPO_URL}/blob/master/{quote(pdf_path.relative_to(ROOT).as_posix())}"
     description = f"在线阅读《{title}》PDF，支持全屏浏览与下载。"
     return f"""---
@@ -104,17 +115,14 @@ tableOfContents: false
 <p class="paper-intro">{description}</p>
 
 <div class="pdf-viewer-container">
-<div class="mobile-pdf-viewer" data-pdf-url="{url}" data-pdf-fallback="{github}">
-  <div class="mobile-pdf-toolbar" role="toolbar" aria-label="PDF翻页工具">
-    <button type="button" data-pdf-prev aria-label="上一页">‹</button>
-    <output><span data-pdf-page>1</span> / <span data-pdf-count>—</span></output>
-    <button type="button" data-pdf-next aria-label="下一页">›</button>
+  <div class="pdf-viewer-header">
+    <span>PDF.js 在线阅读器</span>
+    <div class="pdf-viewer-actions">
+      <a href="{viewer}" target="_blank" rel="noopener">新窗口打开</a>
+      <button type="button" class="pdf-fullscreen-btn" aria-label="全屏查看PDF">⛶ 全屏</button>
+    </div>
   </div>
-  <div class="mobile-pdf-stage">
-    <p class="mobile-pdf-status" aria-live="polite">正在加载 PDF…</p>
-    <canvas class="mobile-pdf-canvas" aria-label={yaml_str(f"{title} PDF 页面")} hidden></canvas>
-  </div>
-</div>
+  <iframe class="pdfjs-viewer-frame" src="{viewer}" title={yaml_str(f"在线阅读《{title}》")} allow="fullscreen" allowfullscreen></iframe>
 </div>
 
 <p class="paper-links"><a href="{url}" download={yaml_str(pdf_path.name)}>下载PDF</a> · <a href="{github}">GitHub源文件</a></p>

@@ -29,11 +29,9 @@ import Default from '@astrojs/starlight/components/Head.astro';
 	// 退化为 CSS 铺满视口的"伪全屏"
 	function setup() {
 		document.querySelectorAll<HTMLElement>('.pdf-viewer-container').forEach((box) => {
-			if (box.querySelector('.pdf-fullscreen-btn')) return;
-			const btn = document.createElement('button');
-			btn.type = 'button';
-			btn.className = 'pdf-fullscreen-btn';
-			box.prepend(btn);
+			const btn = box.querySelector<HTMLButtonElement>('.pdf-fullscreen-btn');
+			if (!btn || btn.dataset.fullscreenReady) return;
+			btn.dataset.fullscreenReady = 'true';
 
 			const isNative = () => document.fullscreenElement === box;
 			const isActive = () => isNative() || box.classList.contains('is-pseudo-fullscreen');
@@ -72,109 +70,4 @@ import Default from '@astrojs/starlight/components/Head.astro';
 
 	setup();
 	document.addEventListener('astro:page-load', setup);
-</script>
-
-<script>
-	async function setupMobilePdfViewers() {
-		const viewers = [...document.querySelectorAll<HTMLElement>('.mobile-pdf-viewer:not([data-pdf-ready])')];
-		if (!viewers.length) return;
-
-		const [pdfjs, workerModule] = await Promise.all([
-			import('pdfjs-dist'),
-			import('pdfjs-dist/build/pdf.worker.min.mjs?url'),
-		]);
-		pdfjs.GlobalWorkerOptions.workerSrc = workerModule.default;
-
-		for (const viewer of viewers) {
-			viewer.dataset.pdfReady = 'loading';
-			const url = viewer.dataset.pdfUrl;
-			const fallback = viewer.dataset.pdfFallback;
-			const stage = viewer.querySelector<HTMLElement>('.mobile-pdf-stage');
-			const canvas = viewer.querySelector<HTMLCanvasElement>('.mobile-pdf-canvas');
-			const status = viewer.querySelector<HTMLElement>('.mobile-pdf-status');
-			const current = viewer.querySelector<HTMLElement>('[data-pdf-page]');
-			const count = viewer.querySelector<HTMLElement>('[data-pdf-count]');
-			const previous = viewer.querySelector<HTMLButtonElement>('[data-pdf-prev]');
-			const next = viewer.querySelector<HTMLButtonElement>('[data-pdf-next]');
-			if (!url || !stage || !canvas || !status || !current || !count || !previous || !next) continue;
-
-			try {
-				const pdf = await pdfjs.getDocument({ url }).promise;
-				let pageNumber = 1;
-				let rendering = false;
-				let renderAgain = false;
-
-				count.textContent = String(pdf.numPages);
-
-				const renderPage = async () => {
-					if (rendering) {
-						renderAgain = true;
-						return;
-					}
-					rendering = true;
-					status.hidden = false;
-					status.textContent = `正在加载第 ${pageNumber} 页…`;
-					try {
-						const page = await pdf.getPage(pageNumber);
-						const baseViewport = page.getViewport({ scale: 1 });
-						const availableWidth = Math.min(Math.max(stage.clientWidth - 24, 280), 960);
-						const viewport = page.getViewport({ scale: availableWidth / baseViewport.width });
-						const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
-						const context = canvas.getContext('2d');
-						if (!context) throw new Error('Canvas unavailable');
-
-						canvas.width = Math.floor(viewport.width * pixelRatio);
-						canvas.height = Math.floor(viewport.height * pixelRatio);
-						canvas.style.width = `${Math.floor(viewport.width)}px`;
-						canvas.style.height = `${Math.floor(viewport.height)}px`;
-						canvas.hidden = false;
-						await page.render({
-							canvasContext: context,
-							viewport,
-							transform: pixelRatio === 1 ? undefined : [pixelRatio, 0, 0, pixelRatio, 0, 0],
-						}).promise;
-
-						current.textContent = String(pageNumber);
-						previous.disabled = pageNumber <= 1;
-						next.disabled = pageNumber >= pdf.numPages;
-						status.hidden = true;
-						stage.scrollTo({ top: 0 });
-					} finally {
-						rendering = false;
-						if (renderAgain) {
-							renderAgain = false;
-							void renderPage();
-						}
-					}
-				};
-
-				previous.addEventListener('click', () => {
-					if (pageNumber <= 1) return;
-					pageNumber -= 1;
-					void renderPage();
-				});
-				next.addEventListener('click', () => {
-					if (pageNumber >= pdf.numPages) return;
-					pageNumber += 1;
-					void renderPage();
-				});
-
-				viewer.dataset.pdfReady = 'true';
-				await renderPage();
-			} catch (error) {
-				console.error('PDF mobile viewer failed:', error);
-				viewer.dataset.pdfReady = 'error';
-				status.textContent = 'PDF 暂时无法载入。';
-				const link = document.createElement('a');
-				link.href = fallback || url;
-				link.target = '_blank';
-				link.rel = 'noopener';
-				link.textContent = '在浏览器中打开';
-				status.append(' ', link);
-			}
-		}
-	}
-
-	void setupMobilePdfViewers();
-	document.addEventListener('astro:page-load', () => void setupMobilePdfViewers());
 </script>
