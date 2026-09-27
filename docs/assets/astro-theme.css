@@ -1,0 +1,384 @@
+/* ============================================
+   Astro-inspired Theme Extensions
+   额外的页面布局和交互优化
+   ============================================ */
+
+/* Header refinements */
+.md-header {
+    background: var(--astro-bg-elevated);
+    box-shadow: 0 1px 0 var(--astro-border);
+    border-bottom: 1px solid var(--astro-border);
+}
+
+/* Sidebar navigation */
+.md-sidebar {
+    background: transparent;
+}
+
+.md-nav__title {
+    font-weight: 600;
+    color: var(--astro-text-primary);
+}
+
+.md-nav__link {
+    color: var(--astro-text-secondary);
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    margin: 2px 0;
+}
+
+.md-nav__link:hover {
+    background: var(--astro-bg-elevated);
+    color: var(--astro-text-primary);
+}
+
+.md-nav__link--active {
+    background: var(--astro-accent-lime);
+    color: var(--astro-accent-dark);
+    font-weight: 600;
+}
+
+/* Tabs navigation */
+.md-tabs {
+    background: var(--astro-bg-elevated);
+    border-bottom: 1px solid var(--astro-border);
+}
+
+.md-tabs__link {
+    color: var(--astro-text-secondary);
+    opacity: 1;
+}
+
+.md-tabs__link--active {
+    color: var(--astro-text-primary);
+    font-weight: 600;
+}
+
+/* Table of contents */
+.md-nav--secondary .md-nav__link {
+    font-size: 0.85rem;
+    padding: 0.3em 0;
+}
+
+.md-nav--secondary .md-nav__link--active {
+    background: transparent;
+    color: var(--astro-text-primary);
+    font-weight: 600;
+    border-left: 2px solid var(--astro-accent-lime);
+    padding-left: 0.8em;
+}
+
+/* Footer */
+.md-footer {
+    background: var(--astro-bg-elevated);
+    border-top: 1px solid var(--astro-border);
+}
+
+/* Content wrapper - generous spacing */
+.md-content__inner {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+article.md-content__inner {
+    max-width: 900px;
+}
+
+/* Improved blockquotes */
+.md-typeset blockquote {
+    border-left: 3px solid var(--astro-accent-lime);
+    background: var(--astro-bg-elevated);
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    border-radius: 8px;
+    box-shadow: var(--astro-shadow-sm);
+}
+
+/* Hero-style headings (for index pages) */
+.md-typeset h1:first-child {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 0.5em;
+    line-height: 1.1;
+    background: linear-gradient(135deg, var(--astro-text-primary) 0%, var(--astro-text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Badge/tag styles */
+.md-typeset .badge,
+.md-tag {
+    background: var(--astro-accent-lime);
+    color: var(--astro-accent-dark);
+    padding: 0.2em 0.6em;
+    border-radius: 999px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+/* Improved lists */
+.md-typeset ul,
+.md-typeset ol {
+    margin: 1em 0;
+}
+
+.md-typeset li {
+    margin: 0.5em 0;
+}
+
+/* Better horizontal rules */
+.md-typeset hr {
+    border: none;
+    height: 1px;
+    background: var(--astro-border);
+    margin: 3em 0;
+}
+
+/* Keyboard shortcuts styling */
+.md-typeset kbd {
+    background: var(--astro-bg-elevated);
+    border: 1px solid var(--astro-border);
+    border-radius: 4px;
+    box-shadow: 0 2px 0 var(--astro-border);
+    padding: 0.15em 0.5em;
+    font-size: 0.9em;
+}
+
+/* Details/summary (collapsible sections) */
+.md-typeset details {
+    border: 1px solid var(--astro-border);
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em 0;
+    background: var(--astro-bg-elevated);
+}
+
+.md-typeset summary {
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    color: var(--astro-text-primary);
+}
+
+/* Improved figure captions */
+.md-typeset figure {
+    margin: 2em 0;
+}
+
+.md-typeset figcaption {
+    text-align: center;
+    color: var(--astro-text-secondary);
+    font-size: 0.9em;
+    margin-top: 0.8em;
+}
+
+/* Images with subtle borders */
+.md-typeset img {
+    border-radius: 8px;
+    border: 1px solid var(--astro-border);
+    box-shadow: var(--astro-shadow-sm);
+}
+
+/* Back to top button */
+.md-top {
+    background: var(--astro-accent-dark);
+    color: white;
+    border-radius: 8px;
+    box-shadow: var(--astro-shadow-md);
+}
+
+.md-top:hover {
+    background: var(--astro-accent-hover);
+}
+
+/* Search overlay */
+.md-search-result__meta {
+    background: var(--astro-bg-elevated);
+}
+
+.md-search-result__item {
+    border-bottom: 1px solid var(--astro-border);
+}
+
+/* Tabbed content */
+.md-typeset .tabbed-set {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--astro-border);
+}
+
+.md-typeset .tabbed-labels {
+    background: var(--astro-bg-elevated);
+    border-bottom: 1px solid var(--astro-border);
+}
+
+.md-typeset .tabbed-labels > label {
+    color: var(--astro-text-secondary);
+    font-weight: 500;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+    color: var(--astro-text-primary);
+}
+
+/* Announcement bar (if enabled) */
+.md-banner {
+    background: var(--astro-accent-lime);
+    color: var(--astro-accent-dark);
+}
+
+/* Version selector/dropdown */
+.md-version__current {
+    color: var(--astro-text-primary);
+}
+
+/* Pagination (previous/next links) */
+.md-footer__link {
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.md-footer__link:hover {
+    background: var(--astro-bg-elevated);
+    box-shadow: var(--astro-shadow-md);
+}
+
+/* Print styles optimization */
+@media print {
+    :root {
+        --astro-bg-base: white;
+        --astro-text-primary: black;
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+    .md-nav--primary .md-nav__title {
+        background: var(--astro-bg-elevated);
+        border-bottom: 1px solid var(--astro-border);
+    }
+}
+
+/* Mobile optimizations */
+@media screen and (max-width: 768px) {
+    /* Reduce font sizes on mobile */
+    .md-typeset h1:first-child {
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+    }
+
+    .md-typeset h1 {
+        font-size: 1.8rem;
+    }
+
+    .md-typeset h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Adjust content padding */
+    .md-content__inner {
+        padding: 1rem;
+    }
+
+    /* Optimize cards for mobile */
+    .paper-card {
+        padding: 1.2em 1.5em;
+        margin: 0.8em 0;
+    }
+
+    /* PDF viewer adjustments */
+    .pdf-viewer-container {
+        height: 60vh;
+        height: calc(var(--vh, 1vh) * 60);
+        border-radius: 8px;
+        margin: 1em 0;
+    }
+
+    .pdf-viewer-container iframe {
+        /* Ensure iframe scales properly on mobile */
+        min-height: 100%;
+    }
+
+    /* Buttons on mobile */
+    .md-button,
+    .pdf-download-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 0.8em 1.2em;
+        font-size: 1em; /* Prevent iOS font scaling */
+    }
+
+    /* Tables scroll horizontally on mobile */
+    .md-typeset table:not([class]) {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Code blocks scroll */
+    .md-typeset pre {
+        font-size: 0.85em;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Reduce shadows on mobile for performance */
+    .paper-card:hover,
+    .md-button:hover,
+    .pdf-download-btn:hover {
+        box-shadow: var(--astro-shadow-sm);
+        transform: none;
+    }
+
+    /* Improve touch targets */
+    .md-nav__link {
+        padding: 0.6em 0.8em;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Search on mobile */
+    .md-search__input {
+        font-size: 16px; /* Prevents iOS zoom */
+    }
+
+    /* Optimize navigation drawer on mobile */
+    .md-nav--primary .md-nav__item {
+        padding: 0.2em 0;
+    }
+
+    /* Footer links on mobile */
+    .md-footer__link {
+        font-size: 0.9em;
+        padding: 0.8em;
+    }
+
+    /* Blockquotes on mobile */
+    .md-typeset blockquote {
+        padding: 0.8em 1em;
+        margin: 1em 0;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .md-content__inner {
+        padding: 1.5rem;
+    }
+
+    .pdf-viewer-container {
+        height: 70vh;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+    outline: 2px solid var(--astro-accent-lime);
+    outline-offset: 2px;
+}

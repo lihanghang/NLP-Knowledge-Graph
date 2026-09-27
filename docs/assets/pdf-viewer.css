@@ -1,11 +1,89 @@
+/* ============================================
+   Astro-inspired Modern Design System
+   ============================================ */
+
+/* Custom Color Palette */
+:root {
+    /* Astro-style neutral tones */
+    --astro-bg-base: #fafafa;
+    --astro-bg-elevated: #ffffff;
+    --astro-text-primary: #1a1a1a;
+    --astro-text-secondary: #6b6b6b;
+    --astro-border: #e5e5e5;
+
+    /* Accent colors */
+    --astro-accent-lime: #d4fc79;
+    --astro-accent-dark: #0a0a0a;
+    --astro-accent-hover: #2a2a2a;
+
+    /* Shadows */
+    --astro-shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+    --astro-shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+    --astro-shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+[data-md-color-scheme="slate"] {
+    --astro-bg-base: #0f1419;
+    --astro-bg-elevated: #1a1f26;
+    --astro-text-primary: #f0f0f0;
+    --astro-text-secondary: #a0a0a0;
+    --astro-border: #2a2f36;
+    --astro-accent-lime: #96e072;
+}
+
+/* Override Material theme with Astro aesthetics */
+[data-md-color-scheme="default"] {
+    --md-default-bg-color: var(--astro-bg-base);
+    --md-default-fg-color: var(--astro-text-primary);
+    --md-default-fg-color--light: var(--astro-text-secondary);
+    --md-default-fg-color--lightest: var(--astro-border);
+}
+
+/* Typography enhancements */
+.md-typeset h1 {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.md-typeset h2 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-top: 2.5em;
+}
+
+/* Buttons - Astro black style */
+.md-button {
+    background: var(--astro-accent-dark);
+    color: white;
+    border-radius: 8px;
+    padding: 0.6em 1.5em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.md-button:hover {
+    background: var(--astro-accent-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--astro-shadow-md);
+}
+
+.md-button--primary {
+    background: var(--astro-accent-dark);
+}
+
+/* PDF Viewer - refined with fullscreen support */
 .pdf-viewer-container {
     width: 100%;
     height: 85vh;
-    border: 1px solid var(--md-default-fg-color--lightest);
-    border-radius: 4px;
+    border: 1px solid var(--astro-border);
+    border-radius: 12px;
     overflow: hidden;
-    margin: 1em 0;
+    margin: 2em 0;
     background: #525659;
+    box-shadow: var(--astro-shadow-lg);
+    position: relative;
 }
 
 .pdf-viewer-container iframe {
@@ -14,43 +92,325 @@
     border: none;
 }
 
+/* Fullscreen button styling */
+.pdf-fullscreen-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(10, 10, 10, 0.9);
+    color: white;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.pdf-fullscreen-btn:hover {
+    background: rgba(42, 42, 42, 0.95);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.pdf-fullscreen-btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Fullscreen state styles */
+.pdf-viewer-container:fullscreen,
+.pdf-viewer-container:-webkit-full-screen,
+.pdf-viewer-container:-moz-full-screen {
+    border-radius: 0;
+    height: 100vh;
+    margin: 0;
+    background: #2b2b2b;
+}
+
+.pdf-viewer-container:fullscreen .pdf-fullscreen-btn,
+.pdf-viewer-container:-webkit-full-screen .pdf-fullscreen-btn {
+    top: 20px;
+    right: 20px;
+    background: rgba(10, 10, 10, 0.95);
+}
+
+/* Fullscreen iframe optimization */
+.pdf-viewer-container:fullscreen iframe,
+.pdf-viewer-container:-webkit-full-screen iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Mobile adjustments for fullscreen button */
+@media screen and (max-width: 768px) {
+    .pdf-fullscreen-btn {
+        font-size: 0.85em;
+        padding: 0.5em 1em;
+        top: 10px;
+        right: 10px;
+        min-height: 44px; /* iOS touch target minimum */
+    }
+
+    .pdf-viewer-container {
+        height: calc(var(--vh, 1vh) * 60);
+        border-radius: 8px;
+        margin: 1em 0;
+    }
+
+    .pdf-viewer-container:fullscreen,
+    .pdf-viewer-container:-webkit-full-screen {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        border-radius: 0;
+    }
+
+    .pdf-viewer-container:fullscreen .pdf-fullscreen-btn,
+    .pdf-viewer-container:-webkit-full-screen .pdf-fullscreen-btn {
+        top: 15px;
+        right: 15px;
+        font-size: 0.9em;
+        padding: 0.6em 1.2em;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .pdf-viewer-container {
+        height: 75vh;
+    }
+
+    .pdf-fullscreen-btn {
+        font-size: 0.9em;
+    }
+}
+
+/* Landscape mobile optimization */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .pdf-viewer-container {
+        height: calc(var(--vh, 1vh) * 80);
+    }
+
+    .pdf-viewer-container:fullscreen,
+    .pdf-viewer-container:-webkit-full-screen {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+}
+
 .pdf-download-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5em;
-    padding: 0.5em 1em;
-    background: var(--md-primary-fg-color);
-    color: var(--md-primary-bg-color);
-    border-radius: 4px;
+    gap: 0.6em;
+    padding: 0.7em 1.6em;
+    background: var(--astro-accent-dark);
+    color: white;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
-    margin: 0.5em 0;
-    transition: opacity 0.2s;
+    margin: 1em 0;
+    transition: all 0.2s ease;
+    box-shadow: var(--astro-shadow-sm);
 }
 
 .pdf-download-btn:hover {
-    opacity: 0.85;
-    color: var(--md-primary-bg-color);
+    background: var(--astro-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--astro-shadow-md);
+    color: white;
 }
 
+/* Paper Cards - Astro minimal style */
 .paper-card {
-    border: 1px solid var(--md-default-fg-color--lightest);
-    border-radius: 6px;
-    padding: 1em 1.2em;
-    margin: 0.8em 0;
-    transition: box-shadow 0.2s;
+    border: 1px solid var(--astro-border);
+    border-radius: 12px;
+    padding: 1.8em 2em;
+    margin: 1.2em 0;
+    background: var(--astro-bg-elevated);
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .paper-card:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: var(--astro-shadow-lg);
+    border-color: var(--astro-text-secondary);
+    transform: translateY(-2px);
 }
 
 .paper-card h3 {
-    margin: 0 0 0.3em 0;
+    margin: 0 0 0.5em 0;
+    font-weight: 600;
+    color: var(--astro-text-primary);
 }
 
 .paper-card p {
-    margin: 0.2em 0;
-    color: var(--md-default-fg-color--light);
-    font-size: 0.85em;
+    margin: 0.3em 0;
+    color: var(--astro-text-secondary);
+    font-size: 0.9em;
+    line-height: 1.6;
 }
+
+/* Navigation enhancements */
+.md-nav__item--active > .md-nav__link {
+    color: var(--astro-text-primary);
+    font-weight: 600;
+}
+
+/* Content area refinements */
+.md-content {
+    background: var(--astro-bg-base);
+}
+
+.md-main__inner {
+    padding-top: 2rem;
+}
+
+/* Code blocks - subtle styling */
+.md-typeset code {
+    background: var(--astro-bg-elevated);
+    border: 1px solid var(--astro-border);
+    border-radius: 4px;
+    padding: 0.15em 0.4em;
+}
+
+.md-typeset pre {
+    border-radius: 8px;
+    border: 1px solid var(--astro-border);
+    box-shadow: var(--astro-shadow-sm);
+}
+
+/* Admonitions - cleaner look */
+.md-typeset .admonition {
+    border-radius: 8px;
+    border-left-width: 3px;
+    box-shadow: var(--astro-shadow-sm);
+}
+
+/* Tables - refined borders */
+.md-typeset table:not([class]) {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--astro-border);
+}
+
+.md-typeset table:not([class]) th {
+    background: var(--astro-bg-elevated);
+    font-weight: 600;
+}
+
+/* Search - modern styling */
+.md-search__input {
+    border-radius: 8px;
+    background: var(--astro-bg-elevated);
+    border: 1px solid var(--astro-border);
+}
+
+.md-search__input:focus {
+    box-shadow: var(--astro-shadow-md);
+}
+
+/* Accent highlights with lime */
+.md-typeset mark {
+    background: var(--astro-accent-lime);
+    color: var(--astro-text-primary);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+
+/* Links - subtle underline */
+.md-typeset a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--astro-border);
+    transition: all 0.2s ease;
+}
+
+.md-typeset a:hover {
+    border-bottom-color: var(--astro-text-primary);
+    color: var(--astro-text-primary);
+}
+
+/* ============================================
+   Additional Mobile & Fullscreen Enhancements
+   ============================================ */
+
+/* Loading state for PDF viewer */
+.pdf-viewer-container::after {
+    content: '加载中...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.2em;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pdf-viewer-container.loading::after {
+    opacity: 1;
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .pdf-viewer-container:fullscreen,
+    .pdf-viewer-container:-webkit-full-screen {
+        /* Fix iOS fullscreen padding */
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
+
+    .pdf-fullscreen-btn {
+        /* Ensure button is above safe area */
+        top: max(12px, env(safe-area-inset-top, 12px));
+        right: max(12px, env(safe-area-inset-right, 12px));
+    }
+}
+
+/* Animation for fullscreen button appearance */
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pdf-fullscreen-btn {
+    animation: fadeInButton 0.3s ease-out;
+}
+
+/* Focus styles for accessibility */
+.pdf-fullscreen-btn:focus-visible {
+    outline: 3px solid var(--astro-accent-lime);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .pdf-fullscreen-btn {
+        border: 2px solid white;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .pdf-fullscreen-btn,
+    .pdf-viewer-container {
+        animation: none;
+        transition: none;
+    }
+}
+

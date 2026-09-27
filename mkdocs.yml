@@ -12,15 +12,15 @@ theme:
   palette:
   - media: '(prefers-color-scheme: light)'
     scheme: default
-    primary: indigo
-    accent: indigo
+    primary: custom
+    accent: lime
     toggle:
       icon: material/brightness-7
       name: 切换到暗色模式
   - media: '(prefers-color-scheme: dark)'
     scheme: slate
-    primary: indigo
-    accent: indigo
+    primary: blue grey
+    accent: lime
     toggle:
       icon: material/brightness-4
       name: 切换到亮色模式
@@ -46,6 +46,9 @@ markdown_extensions:
     permalink: true
 extra_css:
 - assets/pdf-viewer.css
+- assets/astro-theme.css
+extra_javascript:
+- assets/pdf-fullscreen.js
 nav:
 - 自然语言处理:
   - 自然语言处理: 自然语言处理/index.md
