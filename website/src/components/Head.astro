@@ -1,0 +1,55 @@
+---
+import Default from '@astrojs/starlight/components/Head.astro';
+---
+
+<Default><slot /></Default>
+
+<script>
+	// PDF 全屏：给每个阅读器加按钮。浏览器不支持元素全屏时（如 iPhone Safari）
+	// 退化为 CSS 铺满视口的"伪全屏"
+	function setup() {
+		document.querySelectorAll<HTMLElement>('.pdf-viewer-container').forEach((box) => {
+			if (box.querySelector('.pdf-fullscreen-btn')) return;
+			const btn = document.createElement('button');
+			btn.type = 'button';
+			btn.className = 'pdf-fullscreen-btn';
+			box.prepend(btn);
+
+			const isNative = () => document.fullscreenElement === box;
+			const isActive = () => isNative() || box.classList.contains('is-pseudo-fullscreen');
+			const render = () => {
+				const active = isActive();
+				btn.textContent = active ? '✕ 退出全屏' : '⛶ 全屏';
+				btn.setAttribute('aria-label', active ? '退出全屏' : '全屏查看PDF');
+				document.documentElement.classList.toggle('pdf-fullscreen-lock', box.classList.contains('is-pseudo-fullscreen'));
+			};
+
+			btn.addEventListener('click', async () => {
+				if (isNative()) return document.exitFullscreen();
+				if (box.classList.contains('is-pseudo-fullscreen')) {
+					box.classList.remove('is-pseudo-fullscreen');
+					return render();
+				}
+				try {
+					if (!box.requestFullscreen) throw new Error('unsupported');
+					await box.requestFullscreen();
+				} catch {
+					box.classList.add('is-pseudo-fullscreen');
+					render();
+				}
+			});
+
+			document.addEventListener('fullscreenchange', render);
+			document.addEventListener('keydown', (e) => {
+				if (e.key === 'Escape' && box.classList.contains('is-pseudo-fullscreen')) {
+					box.classList.remove('is-pseudo-fullscreen');
+					render();
+				}
+			});
+			render();
+		});
+	}
+
+	setup();
+	document.addEventListener('astro:page-load', setup);
+</script>

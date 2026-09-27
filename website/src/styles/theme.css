@@ -1,0 +1,256 @@
+/* Astro 风格主题：暖白底、近黑文字、青柠绿点缀 */
+
+:root,
+:root[data-theme='light'] {
+	--sl-color-accent-low: #eefdd0;
+	--sl-color-accent: #3f6212;
+	--sl-color-accent-high: #1a2e05;
+	--sl-color-white: #0a0a0a;
+	--sl-color-gray-1: #1a1a1a;
+	--sl-color-gray-2: #333333;
+	--sl-color-gray-3: #555555;
+	--sl-color-gray-4: #6b6b6b;
+	--sl-color-gray-5: #e5e5e5;
+	--sl-color-gray-6: #f3f3ef;
+	--sl-color-gray-7: #fafaf7;
+	--sl-color-black: #fcfcfa;
+	--kg-lime: #d4fc79;
+}
+
+:root[data-theme='dark'] {
+	--sl-color-accent-low: #1f2a0b;
+	--sl-color-accent: #b5e655;
+	--sl-color-accent-high: #e4fbb0;
+	--sl-color-white: #f5f5f0;
+	--sl-color-gray-1: #e8e8e3;
+	--sl-color-gray-2: #c8c8c2;
+	--sl-color-gray-3: #9a9a94;
+	--sl-color-gray-4: #6b6b66;
+	--sl-color-gray-5: #2c2c2a;
+	--sl-color-gray-6: #1a1a19;
+	--sl-color-black: #0f0f0e;
+	--kg-lime: #96e072;
+}
+
+:root {
+	--sl-font: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+}
+
+/* 标题：大字号、紧字距 */
+.sl-markdown-content h1,
+h1#_top {
+	letter-spacing: -0.03em;
+	font-weight: 700;
+}
+
+.sl-markdown-content h2 {
+	letter-spacing: -0.02em;
+}
+
+/* 当前页的侧边栏项用青柠绿高亮 */
+.sidebar-content a[aria-current='page'] {
+	background: var(--kg-lime);
+	color: #0a0a0a;
+	font-weight: 600;
+}
+
+/* 首页 hero */
+.hero .sl-flex a[class*='primary'],
+.hero a.primary {
+	background: #0a0a0a;
+	color: #fafafa;
+	border-color: #0a0a0a;
+	border-radius: 0.5rem;
+}
+
+:root[data-theme='dark'] .hero a.primary {
+	background: var(--kg-lime);
+	color: #0a0a0a;
+	border-color: var(--kg-lime);
+}
+
+.hero img {
+	max-width: 11rem;
+}
+
+/* 首页统计条：上下细线分隔 */
+.home-stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border-top: 1px solid var(--sl-color-gray-5);
+	border-bottom: 1px solid var(--sl-color-gray-5);
+	padding: 1.25rem 0;
+	margin-bottom: 2.5rem;
+}
+
+.home-stats div {
+	display: flex;
+	align-items: baseline;
+	gap: 0.6rem;
+}
+
+.home-stats strong {
+	font-size: 1.5rem;
+	color: var(--sl-color-white);
+}
+
+.home-stats span {
+	color: var(--sl-color-gray-3);
+	font-size: 0.9rem;
+}
+
+/* 卡片：细边框、悬停加深 */
+.sl-link-card {
+	border-radius: 0.75rem;
+	border-color: var(--sl-color-gray-5);
+	transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.sl-link-card:hover {
+	border-color: var(--sl-color-gray-2);
+	transform: translateY(-2px);
+}
+
+/* PDF 阅读器 */
+.pdf-viewer-container {
+	position: relative;
+	width: 100%;
+	height: calc(100dvh - 5.5rem);
+	min-height: 42rem;
+	margin: 1rem 0;
+	border: 1px solid var(--sl-color-gray-5);
+	border-radius: 0.75rem;
+	overflow: hidden;
+	background: #525659;
+}
+
+.pdf-viewer-container iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+}
+
+.pdf-fullscreen-btn {
+	position: absolute;
+	top: 0.75rem;
+	right: 0.75rem;
+	z-index: 10;
+	padding: 0.5rem 1rem;
+	min-height: 2.5rem;
+	border: 0;
+	border-radius: 0.5rem;
+	background: rgba(10, 10, 10, 0.88);
+	color: #fafafa;
+	font-size: 0.85rem;
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.pdf-fullscreen-btn:hover {
+	background: #2a2a2a;
+}
+
+.pdf-fullscreen-btn:focus-visible {
+	outline: 3px solid var(--kg-lime);
+	outline-offset: 2px;
+}
+
+.pdf-viewer-container:fullscreen {
+	border-radius: 0;
+	border: 0;
+	height: 100vh;
+}
+
+/* iPhone 等不支持元素全屏时的伪全屏 */
+.pdf-viewer-container.is-pseudo-fullscreen {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	height: 100dvh;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.pdf-viewer-container.is-pseudo-fullscreen .pdf-fullscreen-btn {
+	top: max(0.75rem, env(safe-area-inset-top));
+	right: max(0.75rem, env(safe-area-inset-right));
+}
+
+html.pdf-fullscreen-lock {
+	overflow: hidden;
+}
+
+.paper-links {
+	color: var(--sl-color-gray-3);
+}
+
+.paper-intro {
+	color: var(--sl-color-gray-3);
+	margin-top: -0.25rem;
+}
+
+/* 论文页使用更宽、更紧凑的阅读布局 */
+main:has(.pdf-viewer-container) h1#_top {
+	font-size: 2rem;
+	line-height: 1.15;
+}
+
+@media (min-width: 72rem) {
+	main:has(.pdf-viewer-container) .sl-container {
+		max-width: 72rem;
+	}
+
+	main:has(.pdf-viewer-container) > .content-panel:first-child {
+		padding-block: 1rem;
+	}
+}
+
+/* 移动端 */
+@media (max-width: 50rem) {
+	.hero {
+		padding-block: 2rem;
+	}
+
+	.hero img {
+		max-width: 7rem;
+	}
+
+	.hero h1 {
+		font-size: clamp(2.25rem, 10vw, 3rem);
+		line-height: 1.05;
+	}
+
+	.hero .tagline {
+		font-size: 1rem;
+	}
+
+	main:has(.pdf-viewer-container) > .content-panel:first-child {
+		padding-block: 1rem;
+	}
+
+	main:has(.pdf-viewer-container) h1#_top {
+		font-size: 1.65rem;
+		line-height: 1.15;
+	}
+
+	.paper-intro {
+		display: none;
+	}
+
+	.pdf-viewer-container {
+		height: 70dvh;
+		min-height: 0;
+		margin-top: 0;
+		border-radius: 0.5rem;
+	}
+
+	.home-stats {
+		grid-template-columns: 1fr;
+		gap: 0.75rem;
+		margin-bottom: 2rem;
+	}
+}

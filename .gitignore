@@ -5,5 +5,10 @@ Algorithm-code/venv
 site/
 __pycache__/
 
-# 构建产物（CI 中由 scripts/generate_docs.py 自动生成）
+# 构建产物（CI 中由 scripts/generate_site.py 自动生成）
 docs/
+website/src/content/docs/
+website/public/papers/
+website/node_modules/
+website/dist/
+website/.astro/

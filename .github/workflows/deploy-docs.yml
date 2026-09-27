@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -17,28 +17,41 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ASTRO_TELEMETRY_DISABLED: 1
     steps:
       - uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
-        run: |
-          pip install mkdocs mkdocs-material
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: website/package-lock.json
 
-      - name: Generate docs from PDFs
-        run: python3 scripts/generate_docs.py
+      - name: Generate pages from PDFs
+        run: python3 scripts/generate_site.py
+
+      - name: Install dependencies
+        working-directory: website
+        run: npm ci
 
       - name: Build site
-        run: mkdocs build
+        working-directory: website
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: website/dist
 
   deploy:
     environment:

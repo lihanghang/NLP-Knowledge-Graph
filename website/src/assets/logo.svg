@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NLP-Knowledge-Graph">
+  <rect x="0.5" y="0.5" width="63" height="63" rx="13.5" fill="#0a0a0a" stroke="#ffffff" stroke-opacity="0.12"/>
+  <g stroke="#fafafa" stroke-width="3" stroke-linecap="round" opacity="0.55">
+    <line x1="30" y1="25" x2="18" y2="44"/>
+    <line x1="30" y1="25" x2="45" y2="42"/>
+    <line x1="18" y1="44" x2="45" y2="42"/>
+    <line x1="30" y1="25" x2="45" y2="16"/>
+  </g>
+  <circle cx="18" cy="44" r="5" fill="#fafafa"/>
+  <circle cx="45" cy="42" r="5" fill="#fafafa"/>
+  <circle cx="45" cy="16" r="3.5" fill="#fafafa"/>
+  <circle cx="30" cy="25" r="7" fill="#d4fc79"/>
+</svg>
