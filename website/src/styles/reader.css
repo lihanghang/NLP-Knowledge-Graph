@@ -1,0 +1,41 @@
+:root { color-scheme: light; --bg: #f7f6f2; --surface: #fff; --ink: #20251f; --muted: #646a60; --line: #dedfd7; --accent: #285a3b; --active: #e5eddf; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--bg); }
+button, input { font: inherit; color: inherit; }
+button, a, input { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button, .icon-button { min-width: 44px; min-height: 44px; border: 0; border-radius: 8px; background: transparent; display: inline-flex; align-items: center; justify-content: center; padding: 8px 12px; text-decoration: none; color: inherit; white-space: nowrap; }
+button:hover, .icon-button:hover { background: var(--active); }
+button:disabled { opacity: 0.4; cursor: default; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+[hidden] { display: none !important; }
+.reader-shell { height: 100vh; height: 100dvh; display: flex; flex-direction: column; padding: env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left); overflow: hidden; }
+.reader-header { display: flex; align-items: center; gap: 8px; padding: 6px 12px; border-bottom: 1px solid var(--line); }
+.reader-heading { flex: 1; min-width: 0; }
+.reader-heading > span { color: var(--muted); font-size: 10px; letter-spacing: 0.08em; }
+h1 { margin: 3px 0; font-size: 14px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pdf-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 4px; padding: 5px 12px; border-bottom: 1px solid var(--line); font-size: 13px; }
+#reading-area { position: relative; flex: 1; min-height: 0; }
+#pdf-frame { border: 0; width: 100%; height: 100%; display: block; background: #525659; }
+.reader-footer { display: flex; align-items: center; gap: 4px; padding: 6px 12px calc(6px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: var(--surface); font-size: 13px; }
+#page-form { display: flex; align-items: center; gap: 5px; }
+#page-input { width: 48px; height: 44px; border: 1px solid var(--line); border-radius: 8px; text-align: center; background: var(--bg); appearance: textfield; padding: 0 3px; }
+#page-input::-webkit-inner-spin-button { appearance: none; }
+#progress-status { flex: 1; min-width: 0; text-align: right; color: var(--muted); font-size: 11px; }
+.notice { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 24px; text-align: center; gap: 16px; background: var(--bg); z-index: 2; }
+.notice h2, .notice p { margin: 0; }
+.notice a { color: var(--accent); min-height: 44px; display: inline-flex; align-items: center; }
+dialog { border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink); padding: 16px; width: min(440px, calc(100% - 24px)); max-height: 80dvh; }
+dialog::backdrop { background: #13201688; }
+.dialog-header { display: flex; align-items: center; justify-content: space-between; }
+.dialog-header h2 { margin: 0; font-size: 18px; }
+dialog p { font-size: 14px; line-height: 1.7; color: var(--muted); }
+.menu-link { display: flex; align-items: center; min-height: 48px; width: 100%; color: var(--ink); text-align: left; justify-content: flex-start; padding: 12px; border-top: 1px solid var(--line); text-decoration: none; font-size: 14px; }
+#outline { padding: 0; list-style: none; }
+#outline button { white-space: normal; text-align: left; justify-content: flex-start; width: 100%; line-height: 1.6; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+@media (min-width: 800px) { .reader-header, .pdf-toolbar, .reader-footer { padding-inline: 24px; } h1 { font-size: 16px; } }
+@media (max-width: 360px) { .reader-header, .pdf-toolbar, .reader-footer { padding-inline: 6px; } .pdf-toolbar button { padding-inline: 8px; } #progress-status { font-size: 10px; } }
+
+.zoom-controls { display: flex; gap: 4px; }
+.pdf-toolbar > span { color: var(--muted); padding-left: 4px; }

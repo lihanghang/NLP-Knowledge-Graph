@@ -9,6 +9,7 @@
 """
 
 import json
+import hashlib
 import os
 import re
 import shutil
@@ -121,6 +122,8 @@ def paper_page(pdf_path):
     category = " / ".join(pdf_path.relative_to(ROOT).parts[:-1])
     date = collected_at(pdf_path)
     metadata = f"paperCategory: {yaml_str(category)}\n"
+    reader_id = hashlib.sha256(pdf_path.relative_to(ROOT).as_posix().encode()).hexdigest()[:16]
+    metadata += f"readerId: {yaml_str(reader_id)}\npdfUrl: {yaml_str(url)}\npdfFilename: {yaml_str(pdf_path.name)}\n"
     if date:
         metadata += f"collectedAt: {yaml_str(date)}\n"
     return f"""---
@@ -130,6 +133,8 @@ tableOfContents: false
 {metadata}---
 
 <p class="paper-intro">{description}</p>
+
+<p class="reader-launch"><a href="{BASE}/read/?paper={reader_id}" data-reader-link>进入专注阅读 ↗</a><span>手机阅读 · 自动记住进度</span></p>
 
 <div class="pdf-viewer-container">
   <div class="pdf-viewer-header">

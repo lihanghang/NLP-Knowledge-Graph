@@ -9,6 +9,9 @@ export const collections = {
 			extend: z.object({
 				paperCategory: z.string().optional(),
 				collectedAt: z.string().datetime({ offset: true }).optional(),
+				readerId: z.string().optional(),
+				pdfUrl: z.string().optional(),
+				pdfFilename: z.string().optional(),
 			}),
 		}),
 	}),

@@ -24,6 +24,12 @@ import Default from '@astrojs/starlight/components/Head.astro';
 </script>
 
 <script>
+	// Phone links open the dedicated reader. The details link explicitly opts out,
+	// so Back never creates a redirect loop and desktop pages keep the full viewer.
+	if (matchMedia('(max-width: 50rem)').matches && !new URLSearchParams(location.search).has('details')) {
+		const link = document.querySelector<HTMLAnchorElement>('[data-reader-link]');
+		if (link) location.replace(link.href);
+	}
 	// PDF 全屏：给每个阅读器加按钮。浏览器不支持元素全屏时（如 iPhone Safari）
 	// 退化为 CSS 铺满视口的"伪全屏"
 	function setup() {

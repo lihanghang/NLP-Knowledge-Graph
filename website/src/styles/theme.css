@@ -112,6 +112,9 @@ h1#_top {
 }
 
 /* PDF 阅读器 */
+.reader-launch { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.reader-launch a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.3rem 1rem; border-radius: 0.5rem; background: var(--sl-color-text-accent); color: var(--sl-color-bg); font-weight: 600; text-decoration: none; }
+.reader-launch span { color: var(--sl-color-gray-3); font-size: 0.85rem; }
 .pdf-viewer-container {
 	position: relative;
 	display: flex;

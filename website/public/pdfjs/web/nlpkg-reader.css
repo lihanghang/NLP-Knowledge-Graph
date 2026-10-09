@@ -1,0 +1,8 @@
+/* Only the dedicated host opts into this chrome-free viewer. */
+html.kg-reader .toolbar,
+html.kg-reader #secondaryToolbar,
+html.kg-reader #viewsManager { display: none !important; }
+html.kg-reader #mainContainer { min-width: 0; }
+html.kg-reader #viewerContainer { inset: 0 !important; overscroll-behavior: contain; }
+html.kg-reader #loadingBar { top: 0; }
+html.kg-reader .pdfViewer .page { border: 0; margin: 0 auto 10px; }

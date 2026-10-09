@@ -1,0 +1,52 @@
+---
+import '../../styles/reader.css';
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>论文阅读 · 知识图谱与语言智能</title>
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <div class="reader-shell">
+      <header class="reader-header">
+        <a id="back" class="icon-button" href="/updates/" aria-label="返回论文详情">←</a>
+        <div class="reader-heading"><span>知识图谱与语言智能</span><h1 id="paper-title">论文阅读</h1></div>
+        <button id="menu-open" class="icon-button" aria-label="打开阅读设置" aria-controls="settings" disabled>•••</button>
+      </header>
+      <nav class="pdf-toolbar" aria-label="PDF 缩放">
+        <span>PDF 阅读</span>
+        <div class="zoom-controls"><button id="zoom-out" aria-label="缩小 PDF" disabled>−</button><button id="zoom-in" aria-label="放大 PDF" disabled>＋</button><button id="fit-width" disabled>适合宽度</button></div>
+      </nav>
+      <main id="reading-area">
+        <div id="loading" class="notice" role="status">正在打开论文…</div>
+        <div id="error" class="notice" role="alert" hidden><h2>暂时无法打开论文</h2><p id="error-message"></p><a href="/updates/">返回论文列表</a><a id="error-source" hidden>下载原文</a><button id="retry">重试</button></div>
+        <iframe id="pdf-frame" title="论文原版 PDF" hidden></iframe>
+      </main>
+      <footer class="reader-footer">
+        <button id="previous" aria-label="上一页" disabled>←</button>
+        <button id="contents-open" aria-label="打开目录与跳页" aria-controls="contents" disabled>目录</button>
+        <form id="page-form"><label for="page-input" class="sr-only">跳转到 PDF 页码</label><input id="page-input" type="number" min="1" value="1" inputmode="numeric" disabled /><span id="page-count">/ —</span><button class="sr-only" type="submit">跳转</button></form>
+        <span id="progress-status" role="status" aria-live="polite">正在加载</span>
+        <button id="next" aria-label="下一页" disabled>→</button>
+      </footer>
+    </div>
+    <dialog id="settings" aria-labelledby="settings-title">
+      <div class="dialog-header"><h2 id="settings-title">阅读设置</h2><button data-close="settings" aria-label="关闭阅读设置">✕</button></div>
+      <p>页码、缩放和阅读位置保存在此浏览器，再次打开可继续阅读。</p>
+      <a id="download" class="menu-link">下载 PDF</a>
+      <a id="full-viewer" class="menu-link" target="_blank" rel="noopener">完整阅读器（搜索、标注） ↗</a>
+      <button id="restart" class="menu-link">从第一页重新阅读</button>
+    </dialog>
+    <dialog id="contents" aria-labelledby="contents-title">
+      <div class="dialog-header"><h2 id="contents-title">目录与页码</h2><button data-close="contents" aria-label="关闭目录">✕</button></div>
+      <p id="outline-note">正在读取目录…</p><ol id="outline"></ol>
+    </dialog>
+    <noscript><p class="notice">阅读器需要 JavaScript。请返回<a href="/updates/">论文列表</a>，在论文详情页下载原文。</p></noscript>
+    <script src="../../scripts/reader.ts"></script>
+  </body>
+</html>

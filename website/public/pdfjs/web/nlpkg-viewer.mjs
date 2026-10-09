@@ -2,6 +2,9 @@
 import { PDFViewerApplication } from "./viewer.mjs";
 
 const filename = new URLSearchParams(location.search).get("filename");
+if (new URLSearchParams(location.search).get('host') === 'reader') {
+  document.documentElement.classList.add('kg-reader');
+}
 
 if (filename) {
   // GitHub Pages serves the source as .pdf.bin so mobile browsers do not
