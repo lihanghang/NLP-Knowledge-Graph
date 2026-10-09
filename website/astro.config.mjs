@@ -15,6 +15,7 @@ const categories = [
 	'语义计算',
 	'知识存储',
 	'数据集',
+	'【拓展】认知科学',
 ];
 
 export default defineConfig({
@@ -36,11 +37,14 @@ export default defineConfig({
 				// 在每页注入 PDF 全屏脚本
 				Head: './src/components/Head.astro',
 			},
-			sidebar: categories.map((name) => ({
-				label: name,
-				collapsed: true,
-				items: [{ autogenerate: { directory: name, collapsed: true } }],
-			})),
+			sidebar: [
+				{ label: '论文更新', link: '/updates/' },
+				...categories.map((name) => ({
+					label: name,
+					collapsed: true,
+					items: [{ autogenerate: { directory: name, collapsed: true } }],
+				})),
+			],
 			pagination: false,
 			lastUpdated: false,
 		}),

@@ -1,0 +1,73 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+	limit?: number;
+}
+
+const { limit } = Astro.props;
+const papers = (await getCollection('docs', ({ data }) => Boolean(data.paperCategory)))
+	.sort((a, b) => {
+		const timestamp = (date?: string) => date ? Date.parse(date) : 0;
+		return timestamp(b.data.collectedAt) - timestamp(a.data.collectedAt)
+			|| a.id.localeCompare(b.id, 'zh-CN');
+	});
+const visible = limit === undefined ? papers : papers.slice(0, limit);
+const dateFormat = new Intl.DateTimeFormat('en-CA', {
+	timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit',
+});
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<ul class="recent-papers" aria-label={limit ? '最近收录的论文' : '全部论文收录记录'}>
+	{visible.map(({ id, data }) => (
+		<li>
+			<a class="paper-title" href={`${base}/${id.split('/').map(encodeURIComponent).join('/')}/`}>
+				{data.title}
+			</a>
+			<div class="paper-meta">
+				{data.collectedAt
+					? <span>收录于 <time datetime={data.collectedAt}>{dateFormat.format(new Date(data.collectedAt))}</time></span>
+					: <span>收录日期待记录</span>}
+				<span>{data.paperCategory}</span>
+			</div>
+		</li>
+	))}
+</ul>
+
+<style>
+	.recent-papers {
+		list-style: none;
+		padding: 0;
+		border-top: 1px solid var(--sl-color-gray-5);
+	}
+	.recent-papers li {
+		margin: 0;
+		padding: 1rem 0;
+		border-bottom: 1px solid var(--sl-color-gray-5);
+	}
+	.paper-title {
+		font-size: 1.05rem;
+		font-weight: 600;
+		line-height: 1.5;
+		text-decoration: none;
+		overflow-wrap: anywhere;
+	}
+	.paper-title:hover { text-decoration: underline; }
+	.paper-title:focus-visible {
+		outline: 2px solid var(--sl-color-accent);
+		outline-offset: 4px;
+	}
+	.paper-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem 1rem;
+		margin-top: 0.35rem;
+		font-size: 0.85rem;
+		color: var(--sl-color-gray-3);
+	}
+	.paper-meta > span { margin: 0; }
+	@media (max-width: 30rem) {
+		.paper-meta { flex-direction: column; }
+	}
+</style>

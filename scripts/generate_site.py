@@ -12,6 +12,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 from pathlib import Path
 from urllib.parse import quote, urlencode
 
@@ -37,6 +38,7 @@ CATEGORIES = [
     ("语义计算", "语义相关"),
     ("知识存储", "图数据库、存储方案"),
     ("数据集", "相关数据集"),
+    ("【拓展】认知科学", "认知科学、思维与知识组织"),
 ]
 
 
@@ -100,17 +102,32 @@ def publish_pdf(pdf_path):
         shutil.copy2(pdf_path, dest)
 
 
+def collected_at(pdf_path):
+    """追踪重命名前的首次添加提交；未提交的文件不伪造收录日期。"""
+    dates = subprocess.check_output(
+        ["git", "log", "--follow", "--diff-filter=A", "--format=%cI", "--",
+         pdf_path.relative_to(ROOT).as_posix()],
+        cwd=ROOT, text=True,
+    ).splitlines()
+    return dates[-1] if dates else None
+
+
 def paper_page(pdf_path):
     title = get_pdf_title(pdf_path.name)
     url = pdf_url(pdf_path)
     viewer = pdf_viewer_url(pdf_path)
     github = f"{REPO_URL}/blob/master/{quote(pdf_path.relative_to(ROOT).as_posix())}"
     description = f"在线阅读《{title}》PDF，支持全屏浏览与下载。"
+    category = " / ".join(pdf_path.relative_to(ROOT).parts[:-1])
+    date = collected_at(pdf_path)
+    metadata = f"paperCategory: {yaml_str(category)}\n"
+    if date:
+        metadata += f"collectedAt: {yaml_str(date)}\n"
     return f"""---
 title: {yaml_str(title)}
 description: {yaml_str(description)}
 tableOfContents: false
----
+{metadata}---
 
 <p class="paper-intro">{description}</p>
 
@@ -170,9 +187,12 @@ def process_directory(src_dir, out_dir, depth=0):
 
 def home_page(stats):
     total = sum(stats.values())
+    # Astro 的分类路由会去掉中文方括号，显示名称仍保留原样。
+    category_routes = {name: quote(route_name(name).replace('【', '').replace('】', ''))
+                       for name in stats}
     cards = "\n".join(
         f'  <LinkCard title={yaml_str(f"{name}  ·  {stats[name]} 篇")} '
-        f'description={yaml_str(desc)} href={yaml_str(f"{BASE}/{quote(name)}/")} />'
+        f'description={yaml_str(desc)} href={yaml_str(f"{BASE}/{category_routes[name]}/")} />'
         for name, desc in CATEGORIES if name in stats
     )
     return f"""---
@@ -194,12 +214,21 @@ hero:
 ---
 
 import {{ LinkCard, CardGrid }} from '@astrojs/starlight/components';
+import RecentPapers from '../../components/RecentPapers.astro';
 
 <div class="home-stats">
   <div><strong>{total}</strong><span>篇论文，在线阅读</span></div>
   <div><strong>{len(stats)}</strong><span>个分类，从基础到前沿</span></div>
   <div><strong>↗</strong><span>开源，向所有人开放</span></div>
 </div>
+
+## 最近收录
+
+按本站收录时间排序，点击论文标题即可阅读。
+
+<RecentPapers limit={{6}} />
+
+[查看全部论文更新 →]({BASE}/updates/)
 
 ## 全部分类
 
@@ -210,6 +239,12 @@ import {{ LinkCard, CardGrid }} from '@astrojs/starlight/components';
 
 
 def main():
+    # 浅克隆会将旧论文误记为最新提交；CI 必须使用完整历史。
+    shallow = subprocess.check_output(
+        ["git", "rev-parse", "--is-shallow-repository"], cwd=ROOT, text=True,
+    ).strip()
+    if shallow == "true":
+        raise RuntimeError("收录日期需要完整 Git 历史，请先运行 git fetch --unshallow")
     # 页面和发布用 PDF 每次全量重建，避免源文件删除后残留旧页面或旧 PDF
     if CONTENT_DIR.exists():
         shutil.rmtree(CONTENT_DIR)
@@ -226,6 +261,18 @@ def main():
             print(f"  {name}: {stats[name]} 篇")
 
     (CONTENT_DIR / "index.mdx").write_text(home_page(stats), encoding='utf-8')
+    (CONTENT_DIR / "updates.mdx").write_text("""---
+title: 论文更新
+description: 按收录日期查看论文库最近新增的论文
+tableOfContents: false
+---
+
+import RecentPapers from '../../components/RecentPapers.astro';
+
+这里按收录日期倒序展示当前论文库中的全部论文。日期为首次加入仓库的时间（北京时间），不是论文发表时间。
+
+<RecentPapers />
+""", encoding='utf-8')
     print(f"\n共生成 {sum(stats.values())} 个论文页面")
 
 
