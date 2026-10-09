@@ -1,5 +1,15 @@
 > 有需要为该开源项目贡献的小伙伴可以联系我哟。
 
+## Knowledge graphs in the era of AI agents
+
+📚 **[Browse the paper collection / 在线阅读论文](https://kg.lihanghang.top/)**
+
+We are exploring how this collection can support research and development around **KG × LLMs, GraphRAG, and agent memory**.
+
+💬 **[Join the discussion / 参与讨论](https://github.com/lihanghang/NLP-Knowledge-Graph/discussions/9)** — Recommend one paper or project and tell us why it matters for AI agents. English and Chinese contributions are welcome.
+
+欢迎推荐一篇论文或一个项目，并简要说明它对 Agent 的价值；也欢迎提出你希望网站帮助解决的具体问题。
+
 <!-- TOC -->
 
 - [Deep learning for Knowledge-Graph](#deep-learning-for-knowledge-graph)
