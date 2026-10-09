@@ -19,11 +19,11 @@ const categories = [
 ];
 
 export default defineConfig({
-	site: 'https://lihanghang.github.io',
-	base: '/NLP-Knowledge-Graph',
+	site: 'https://kg.lihanghang.top',
+	base: '/',
 	integrations: [
 		starlight({
-			title: 'NLP-Knowledge-Graph',
+			title: '知识图谱与语言智能',
 			description: '自然语言处理与知识图谱论文在线阅读',
 			defaultLocale: 'root',
 			locales: { root: { label: '简体中文', lang: 'zh-CN' } },

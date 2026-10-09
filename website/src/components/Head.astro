@@ -5,21 +5,20 @@ import Default from '@astrojs/starlight/components/Head.astro';
 <Default><slot /></Default>
 
 <script is:inline>
-	// GitHub Pages 区分路径大小写，而 Astro 会把英文路由标准化为小写。
-	// 仅在 404 页面修正旧书签中的大写片段（例如 /RAG/ → /rag/）。
+	// 迁移到独立域名后兼容旧仓库路径，并修正旧书签中的英文大写片段。
 	if (document.title.startsWith('404 |')) {
-		const base = '/NLP-Knowledge-Graph/';
-		if (location.pathname.startsWith(base)) {
-			try {
-				const decoded = decodeURIComponent(location.pathname.slice(base.length));
-				const normalized = decoded.replace(/[A-Z]/g, (letter) => letter.toLowerCase());
-				if (normalized !== decoded) {
-					const encoded = normalized.split('/').map(encodeURIComponent).join('/');
-					location.replace(`${base}${encoded}${location.search}${location.hash}`);
-				}
-			} catch {
-				// 路径无法解码时保留默认 404 页面。
+		try {
+			const decoded = decodeURIComponent(location.pathname);
+			const normalized = decoded
+				.replace(/^\/NLP-Knowledge-Graph(?=\/|$)/, '')
+				.replace(/[A-Z]/g, (letter) => letter.toLowerCase()) || '/';
+			if (normalized !== decoded) {
+				const target = new URL(location.href);
+				target.pathname = normalized.split('/').map(encodeURIComponent).join('/');
+				location.replace(target.href);
 			}
+		} catch {
+			// 路径无法解码时保留默认 404 页面。
 		}
 	}
 </script>

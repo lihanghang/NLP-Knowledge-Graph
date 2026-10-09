@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE_DIR = ROOT / "website"
 CONTENT_DIR = SITE_DIR / "src" / "content" / "docs"
 PAPERS_DIR = SITE_DIR / "public" / "papers"
-BASE = "/NLP-Knowledge-Graph"
+BASE = ""
 REPO_URL = "https://github.com/lihanghang/NLP-Knowledge-Graph"
 
 SKIP_DIRS = {".git", "node_modules", "site", "docs", "website", "__pycache__", ".github"}
@@ -196,11 +196,11 @@ def home_page(stats):
         for name, desc in CATEGORIES if name in stats
     )
     return f"""---
-title: NLP Knowledge Graph 论文库
+title: 知识图谱与语言智能
 description: 自然语言处理与知识图谱论文在线阅读
 template: splash
 hero:
-  tagline: 自然语言处理与知识图谱的经典与前沿论文，打开即读，无需下载。
+  tagline: 围绕知识表示、推理与语言智能，持续整理经典与前沿研究。
   image:
     file: ../../assets/logo.svg
   actions:
