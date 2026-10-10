@@ -16,7 +16,9 @@ function start() {
   const script = document.createElement('script');
   script.type = 'module';
   script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
-  script.dataset.cfBeacon = JSON.stringify({ token });
+  // This is a multi-page site. Reader URL cleanup and in-page navigation must
+  // not be treated as additional page views by the Navigation / History APIs.
+  script.dataset.cfBeacon = JSON.stringify({ token, spa: false });
   document.head.append(script);
 }
 
