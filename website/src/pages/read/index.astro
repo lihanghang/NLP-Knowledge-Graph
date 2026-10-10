@@ -1,5 +1,6 @@
 ---
 import '../../styles/reader.css';
+import SiteRelease from '../../components/SiteRelease.astro';
 ---
 <!doctype html>
 <html lang="zh-CN">
@@ -41,6 +42,7 @@ import '../../styles/reader.css';
       <a id="download" class="menu-link">下载 PDF</a>
       <a id="full-viewer" class="menu-link" target="_blank" rel="noopener">完整阅读器（搜索、标注） ↗</a>
       <button id="restart" class="menu-link">从第一页重新阅读</button>
+      <SiteRelease />
     </dialog>
     <dialog id="contents" aria-labelledby="contents-title">
       <div class="dialog-header"><h2 id="contents-title">目录与页码</h2><button data-close="contents" aria-label="关闭目录">✕</button></div>

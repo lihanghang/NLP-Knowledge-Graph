@@ -1,0 +1,25 @@
+---
+import { release } from '../utils/release';
+---
+
+<p class="site-release" aria-label="网站版本信息">
+  {release.updated && <span>更新于 <time datetime={release.datetime} title="当前版本的更新时间，北京时间">{release.updated}</time></span>}
+  <span>版本 {release.url ? <a href={release.url} target="_blank" rel="noopener" aria-label={`查看版本 ${release.version} 的更新记录`}><code>{release.version}</code></a> : release.version}</span>
+</p>
+
+<style>
+  .site-release {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.15rem 1.25rem;
+    margin-block: 0;
+    color: var(--sl-color-gray-3, var(--muted, #555));
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+  .site-release > span { display: inline-flex; align-items: center; gap: 0.35em; }
+  .site-release a { display: inline-flex; align-items: center; min-height: 44px; color: inherit; text-underline-offset: 0.2em; }
+  .site-release a:hover { color: var(--sl-color-white, var(--ink, #111)); }
+  .site-release code { font-size: 0.95em; }
+</style>

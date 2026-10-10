@@ -36,6 +36,7 @@ export default defineConfig({
 			components: {
 				// 在每页注入 PDF 全屏脚本
 				Head: './src/components/Head.astro',
+				LastUpdated: './src/components/SiteRelease.astro',
 			},
 			sidebar: [
 				{ label: '论文更新', link: '/updates/' },
