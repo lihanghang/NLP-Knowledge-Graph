@@ -19,8 +19,10 @@ export async function recordView(db, paperId, key, paper, now) {
       WHERE excluded.last_seen - recent_views.last_seen >= ? RETURNING last_seen`)
       .bind(key, paperId, now, WINDOW_SECONDS),
     db.prepare('SELECT last_seen FROM recent_views WHERE visitor_key = ?').bind(key),
+    db.prepare('SELECT COALESCE(SUM(views), 0) AS totalViews FROM paper_daily WHERE paper_id = ?').bind(paperId),
   ]);
-  return { counted: results[1].results.length > 0, nextEligibleAt: (results[2].results[0].last_seen + WINDOW_SECONDS) * 1000 };
+  return { counted: results[1].results.length > 0, nextEligibleAt: (results[2].results[0].last_seen + WINDOW_SECONDS) * 1000,
+    totalViews: results[3].results[0].totalViews };
 }
 
 async function loadCatalog(env) {
@@ -44,6 +46,21 @@ function json(body, status, origin) {
 export async function handleRequest(request, env, catalogLoader = loadCatalog) {
   const path = new URL(request.url).pathname;
   if (path === '/health' && request.method === 'GET') return json({ ok: true }, 200);
+  const countPath = /^\/v1\/papers\/([a-f0-9]{16})\/views$/.exec(path);
+  if (countPath) {
+    if (request.method !== 'GET') return json({ error: 'Method not allowed' }, 405, env.SITE_ORIGIN);
+    try {
+      const paperId = countPath[1];
+      const catalog = await catalogLoader(env);
+      if (!Object.hasOwn(catalog, paperId)) return json({ error: 'Unknown paper' }, 404, env.SITE_ORIGIN);
+      const row = await env.DB.prepare('SELECT COALESCE(SUM(views), 0) AS totalViews FROM paper_daily WHERE paper_id = ?')
+        .bind(paperId).first();
+      // Only the aggregate is public. No visitor keys or per-day reports.
+      return json({ paperId, totalViews: row.totalViews }, 200, env.SITE_ORIGIN);
+    } catch {
+      return json({ error: 'Temporarily unavailable' }, 503, env.SITE_ORIGIN);
+    }
+  }
   if (path !== '/v1/view') return json({ error: 'Not found' }, 404);
   const origin = request.headers.get('Origin');
   if (origin !== env.SITE_ORIGIN) return json({ error: 'Origin not allowed' }, 403);

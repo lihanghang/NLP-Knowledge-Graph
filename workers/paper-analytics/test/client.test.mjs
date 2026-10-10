@@ -47,3 +47,13 @@ test('network failure retries at most once and does not mark a failed view as co
   startViewTracking(id, b.win); b.tick(20); await flush(); await flush();
   assert.equal(attempts, 2); assert.equal(b.storage.has(`kg-analytics:next:${id}`), false);
 });
+
+test('a successful or deduplicated read publishes the server total to the containing page', async () => {
+  for (const counted of [true, false]) {
+    const b = browser(), messages = [];
+    b.win.parent = { postMessage: (...args) => messages.push(args) };
+    b.win.fetch = async () => Response.json({ counted, totalViews: 7, nextEligibleAt: Date.now() + 1800000 });
+    startViewTracking(id, b.win); b.tick(20); await flush();
+    assert.deepEqual(messages, [[{ type: 'kg:paper-views', paperId: id, totalViews: 7 }, b.win.location.origin]]);
+  }
+});

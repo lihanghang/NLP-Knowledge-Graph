@@ -39,3 +39,5 @@ dialog p { font-size: 14px; line-height: 1.7; color: var(--muted); }
 
 .zoom-controls { display: flex; gap: 4px; }
 .pdf-toolbar > span { color: var(--muted); padding-left: 4px; }
+.reader-meta { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
+.reader-meta [data-paper-views] { font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }

@@ -1,6 +1,6 @@
 # 论文阅读统计
 
-GitHub Pages 上的 PDF.js 阅读器向 Cloudflare Worker 上报，D1 保存按论文、按日汇总的阅读次数。PDF 文件继续由原站点提供；前台不显示次数或排行榜。
+GitHub Pages 上的 PDF.js 阅读器向 Cloudflare Worker 上报，D1 保存按论文、按日汇总的阅读次数。论文详情页和专注阅读页展示该论文累计阅读次数，阅读上报成功后同步更新。PDF 文件继续由原站点提供；不提供排行榜。
 
 ## 统计口径
 
@@ -25,7 +25,7 @@ SELECT * FROM daily_stats;
 
 [打开数据库控制台](https://dash.cloudflare.com/0e7319c81818adb53ec94b3341afb5a8/workers/d1/databases/6767d78c-bd0a-4bd4-bdf0-529fb624e8b5/console)
 
-报表只在已登录的 Cloudflare 后台提供，Worker 不暴露公开查询接口。也可在本目录运行：
+按日、今日及近 7 天报表只在已登录的 Cloudflare 后台提供。公开接口 `GET /v1/papers/<id>/views` 仅返回合法论文的 ID 与累计阅读次数，不包含访客记录；查询本身不会增加次数。未有阅读时返回 0，服务故障时页面隐藏次数而非显示 0。也可在本目录运行：
 
 ```sh
 npx wrangler d1 execute kg-paper-analytics --remote --command 'SELECT * FROM paper_stats'

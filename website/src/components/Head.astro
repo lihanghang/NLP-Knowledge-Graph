@@ -3,6 +3,7 @@ import Default from '@astrojs/starlight/components/Head.astro';
 ---
 
 <Default><slot /></Default>
+<script type="module" src="/analytics/paper-counts.mjs"></script>
 
 <script is:inline>
 	// 迁移到独立域名后兼容旧仓库路径，并修正旧书签中的英文大写片段。

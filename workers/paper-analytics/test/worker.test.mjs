@@ -15,6 +15,7 @@ function database() {
   const db = { prepare(sql) { return { bind(...values) { return {
     sql, values,
     async run() { return sqlite.prepare(sql).run(...values); },
+    async first() { return sqlite.prepare(sql).get(...values); },
   }; } }; }, async batch(statements) {
     sqlite.exec('BEGIN');
     try {
@@ -87,4 +88,30 @@ test('Worker entrypoint receives execution context without treating it as catalo
     assert.equal((await response.json()).counted, true);
     await worker.scheduled({}, { DB: db });
   } finally { globalThis.fetch = originalFetch; sqlite.close(); }
+});
+
+test('public paper counts return only the aggregate, include zero, and never record a read', async () => {
+  const { sqlite, db } = database(), env = { DB: db, SITE_ORIGIN: origin };
+  const catalog = async () => ({ [id]: {}, [other]: {} });
+  const request = (paperId = id, method = 'GET') => new Request(`https://kg-stats.lihanghang.top/v1/papers/${paperId}/views`, { method });
+  const zero = await handleRequest(request(), env, catalog);
+  assert.equal(zero.headers.get('Access-Control-Allow-Origin'), origin);
+  assert.equal(zero.headers.get('Cache-Control'), 'no-store');
+  assert.deepEqual(await zero.json(), { paperId: id, totalViews: 0 });
+  assert.equal(sqlite.prepare('SELECT COUNT(*) n FROM recent_views').get().n, 0);
+  const key = await visitorKey(id, visitor), now = Math.floor(Date.now() / 1000);
+  assert.equal((await recordView(db, id, key, paper, now)).totalViews, 1);
+  assert.equal((await recordView(db, id, key, paper, now + 1)).totalViews, 1);
+  assert.equal((await recordView(db, id, key, paper, now + 1800)).totalViews, 2);
+  for (let n = 0; n < 3; n++) assert.deepEqual(await (await handleRequest(request(), env, catalog)).json(), { paperId: id, totalViews: 2 });
+  assert.deepEqual(await (await handleRequest(request(other), env, catalog)).json(), { paperId: other, totalViews: 0 });
+  assert.equal((await handleRequest(request('0000000000000000'), env, catalog)).status, 404);
+  assert.equal((await handleRequest(request('bad'), env, catalog)).status, 404);
+  assert.equal((await handleRequest(request(id, 'POST'), env, catalog)).status, 405);
+  assert.equal((await handleRequest(new Request('https://example.com/v1/ranking'), env, catalog)).status, 404);
+  const unavailable = await handleRequest(request(), { ...env, DB: { prepare() { throw Error('offline'); } } }, catalog);
+  assert.equal(unavailable.status, 503);
+  assert.equal(Object.hasOwn(await unavailable.json(), 'totalViews'), false);
+  assert.equal(sqlite.prepare('SELECT SUM(views) n FROM paper_daily').get().n, 2);
+  sqlite.close();
 });

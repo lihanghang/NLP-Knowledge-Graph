@@ -54,6 +54,9 @@ export function startViewTracking(paperId, win = window, endpoint = ENDPOINT, al
         }
         const result = await response.json();
         if (Number.isFinite(result.nextEligibleAt)) win.localStorage.setItem(eventKey, String(result.nextEligibleAt));
+        if (Number.isSafeInteger(result.totalViews) && result.totalViews >= 0) {
+          win.parent?.postMessage?.({ type: 'kg:paper-views', paperId, totalViews: result.totalViews }, win.location.origin);
+        }
         return;
       } catch {
         if (attempt === 0) await new Promise(resolve => win.setTimeout(resolve, 2000));

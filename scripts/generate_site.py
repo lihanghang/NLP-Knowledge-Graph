@@ -139,6 +139,8 @@ tableOfContents: false
 
 <p class="paper-intro">{description}</p>
 
+<p class="paper-view-count" data-paper-views="{reader_id}" hidden aria-live="polite" title="累计阅读次数；同一浏览器 30 分钟内重复阅读计为一次">阅读次数</p>
+
 <p class="reader-launch"><a href="{BASE}/read/?paper={reader_id}" data-reader-link>进入专注阅读 ↗</a><span>手机阅读 · 自动记住进度</span></p>
 
 <div class="pdf-viewer-container">

@@ -20,7 +20,7 @@ import SiteRelease from '../../components/SiteRelease.astro';
         <button id="menu-open" class="icon-button" aria-label="打开阅读设置" aria-controls="settings" disabled>•••</button>
       </header>
       <nav class="pdf-toolbar" aria-label="PDF 缩放">
-        <span>PDF 阅读</span>
+        <span class="reader-meta"><span>PDF 阅读</span><span data-paper-views hidden aria-live="polite" title="累计阅读次数；同一浏览器 30 分钟内重复阅读计为一次"></span></span>
         <div class="zoom-controls"><button id="zoom-out" aria-label="缩小 PDF" disabled>−</button><button id="zoom-in" aria-label="放大 PDF" disabled>＋</button><button id="fit-width" disabled>适合宽度</button></div>
       </nav>
       <main id="reading-area">
@@ -50,5 +50,6 @@ import SiteRelease from '../../components/SiteRelease.astro';
     </dialog>
     <noscript><p class="notice">阅读器需要 JavaScript。请返回<a href="/updates/">论文列表</a>，在论文详情页下载原文。</p></noscript>
     <script src="../../scripts/reader.ts"></script>
+    <script type="module" src="/analytics/paper-counts.mjs"></script>
   </body>
 </html>
