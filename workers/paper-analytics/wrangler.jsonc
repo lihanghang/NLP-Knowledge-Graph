@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kg-paper-analytics",
+  "account_id": "0e7319c81818adb53ec94b3341afb5a8",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-10-10",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "kg-stats.lihanghang.top", "custom_domain": true }],
+  "vars": { "SITE_ORIGIN": "https://kg.lihanghang.top" },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "kg-paper-analytics",
+    "database_id": "6767d78c-bd0a-4bd4-bdf0-529fb624e8b5",
+    "migrations_dir": "migrations"
+  }],
+  "triggers": { "crons": ["17 * * * *"] },
+  "observability": { "enabled": false }
+}

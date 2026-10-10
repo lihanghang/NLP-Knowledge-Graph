@@ -39,6 +39,9 @@ jobs:
           cache: npm
           cache-dependency-path: website/package-lock.json
 
+      - name: Check paper analytics
+        run: node --test workers/paper-analytics/test/*.test.mjs
+
       - name: Generate pages from PDFs
         run: python3 scripts/generate_site.py
 

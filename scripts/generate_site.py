@@ -80,12 +80,17 @@ def pdf_url(pdf_path):
     return f"{BASE}/papers/{quote(rel)}.bin"
 
 
+def paper_id(pdf_path):
+    return hashlib.sha256(pdf_path.relative_to(ROOT).as_posix().encode()).hexdigest()[:16]
+
+
 def pdf_viewer_url(pdf_path):
     """使用官方 PDF.js Generic Viewer 打开中性二进制资源。"""
     params = urlencode({
         "file": pdf_url(pdf_path),
         "filename": pdf_path.name,
         "locale": "zh-CN",
+        "paper": paper_id(pdf_path),
     })
     return f"{BASE}/pdfjs/web/viewer.html?{params}#zoom=page-width"
 
@@ -122,7 +127,7 @@ def paper_page(pdf_path):
     category = " / ".join(pdf_path.relative_to(ROOT).parts[:-1])
     date = collected_at(pdf_path)
     metadata = f"paperCategory: {yaml_str(category)}\n"
-    reader_id = hashlib.sha256(pdf_path.relative_to(ROOT).as_posix().encode()).hexdigest()[:16]
+    reader_id = paper_id(pdf_path)
     metadata += f"readerId: {yaml_str(reader_id)}\npdfUrl: {yaml_str(url)}\npdfFilename: {yaml_str(pdf_path.name)}\n"
     if date:
         metadata += f"collectedAt: {yaml_str(date)}\n"

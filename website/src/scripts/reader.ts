@@ -109,7 +109,7 @@ async function start() {
     const link = element<HTMLAnchorElement>(key); link.href = paper.file; link.download = paper.filename; link.hidden = false;
   }
   const viewer = new URL('/pdfjs/web/viewer.html', location.origin);
-  viewer.search = new URLSearchParams({ file: paper.file, filename: paper.filename, locale: 'zh-CN' }).toString();
+  viewer.search = new URLSearchParams({ file: paper.file, filename: paper.filename, locale: 'zh-CN', paper: id }).toString();
   viewer.hash = 'zoom=page-width'; element<HTMLAnchorElement>('full-viewer').href = viewer.href;
   viewer.searchParams.set('host', 'reader');
   // Feed the same page to PDF.js's own initial-view pass. It can run after the

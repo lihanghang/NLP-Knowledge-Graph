@@ -12,3 +12,6 @@ website/public/papers/
 website/node_modules/
 website/dist/
 website/.astro/
+workers/**/node_modules/
+workers/**/.wrangler/
+workers/**/.dev.vars*
