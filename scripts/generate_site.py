@@ -224,6 +224,10 @@ hero:
       link: {REPO_URL}
       icon: external
       variant: minimal
+    - text: RSS 订阅
+      link: {BASE}/rss.xml
+      icon: external
+      variant: minimal
 ---
 
 import {{ LinkCard, CardGrid }} from '@astrojs/starlight/components';
@@ -238,6 +242,8 @@ import RecentPapers from '../../components/RecentPapers.astro';
 ## 最近收录
 
 按本站收录时间排序，点击论文标题即可阅读。
+
+[📡 订阅 RSS 更新]({BASE}/rss.xml)
 
 <RecentPapers limit={{6}} />
 
@@ -282,7 +288,7 @@ tableOfContents: false
 
 import RecentPapers from '../../components/RecentPapers.astro';
 
-这里按收录日期倒序展示当前论文库中的全部论文。日期为首次加入仓库的时间（北京时间），不是论文发表时间。
+这里按收录日期倒序展示当前论文库中的全部论文。日期为首次加入仓库的时间（北京时间），不是论文发表时间。也可以通过 [RSS 订阅](/rss.xml) 在阅读器中接收更新。
 
 <RecentPapers />
 """, encoding='utf-8')
